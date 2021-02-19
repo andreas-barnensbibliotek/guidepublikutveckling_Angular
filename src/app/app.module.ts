@@ -1,18 +1,80 @@
+import { MaincontentModule } from './maincontent/maincontent.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgcCookieConsentConfig, NgcCookieConsentModule } from 'ngx-cookieconsent';
+
+import { Global } from './core/Models/global';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 
+import { AppComponent } from './app.component';
+import { StartComponent } from './main/start/start.component';
+import { Err404pageComponent } from './shared/err404page/err404page.component';
+import { MainNavComponent } from './shared/main-nav/main-nav.component';
+import { MainFooterComponent } from './shared/main-footer/main-footer.component';
+
+const cookieConfig:NgcCookieConsentConfig = {
+  cookie: {
+    domain: 'localhost'// it is recommended to set your domain, for cookies to work properly
+  },
+  palette: {
+    popup: {
+      background: '#000'
+    },
+    button: {
+      background: '#ccc'
+    }
+  },
+  theme: 'classic',
+  type: 'opt-out',
+  layout: 'my-custom-layout',
+  layouts: {
+    "my-custom-layout": '{{messagelink}}{{compliance}}'
+  },
+  elements:{
+    messagelink: `
+    <span id="cookieconsent:desc" class="cc-message">{{message}}<p>
+      <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{cookiePolicyHref}}" target="_blank">{{cookiePolicyLink}}</a>,
+      <a aria-label="learn more about our privacy policy" tabindex="1" class="cc-link" href="{{privacyPolicyHref}}" target="_blank">{{privacyPolicyLink}}</a> and our
+      <a aria-label="learn more about our terms of service" tabindex="2" class="cc-link" href="{{tosHref}}" target="_blank">{{tosLink}}</a></p>
+    </span>
+    `,
+  },
+  content:{
+    message: 'På guidepublikutveckling.se använder vi cookies för att ge dig en bra användarupplevelse. Genom att bläddra vidare godkänner du att vi använder cookies och browserstorage.',
+
+    cookiePolicyLink: 'Cookie Policy',
+    cookiePolicyHref: 'https://cookie.com',
+
+    privacyPolicyLink: 'Privacy Policy',
+    privacyPolicyHref: 'https://privacy.com',
+
+    tosLink: 'Terms of Service',
+    tosHref: 'https://tos.com',
+  }
+};
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StartComponent,
+    Err404pageComponent,
+    MainNavComponent,
+    MainFooterComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgcCookieConsentModule.forRoot(cookieConfig),
+    MaincontentModule
   ],
-  providers: [],
+  providers: [
+    Global,
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+
+}
