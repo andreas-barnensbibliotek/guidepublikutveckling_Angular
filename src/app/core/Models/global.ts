@@ -37,7 +37,7 @@ export class Global {
     //   //this.RedirectNotRegisterd();
     //   return false;
     // }
-    return !!localStorage.getItem("userreg");
+    return true; //!!localStorage.getItem("userreg");
   }
   public registerUser(){
     try{

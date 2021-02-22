@@ -1,0 +1,36 @@
+MappStruktur Angular projket
+
+Core :  Models
+        Service
+        interceptors
+        authGuard
+
+Main :  Globala sidor
+        startsida
+        om oss
+        kontakt
+        ordlista
+        nedladdningsbarafiler
+        worksheet        
+
+Maincontent :   Kursspecifika sidor
+                guidestart startsida
+                spine - c to k
+    Maincontent-Nav
+    Maincontent.Module
+    Maincontent router
+
+Forms : Registreringsformulär
+        kontatformulär
+
+Shared :    Error404page
+            error500
+            error400
+            main-footer
+            main-nav
+
+root :  app.module
+        app.router
+        appComponent
+
+

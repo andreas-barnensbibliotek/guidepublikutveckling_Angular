@@ -1,8 +1,10 @@
+import { maincontentRoutingModule } from './maincontent-routing.module';
 import { GuidestartComponent } from './guidestart/guidestart.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CSpineComponent } from './publik/c-spine/c-spine.component';
 import { DSpineComponent } from './publik/d-spine/d-spine.component';
+import { FSpineComponent } from './privat/f-spine/f-spine.component';
 
 
 
@@ -10,15 +12,18 @@ import { DSpineComponent } from './publik/d-spine/d-spine.component';
   declarations: [
     GuidestartComponent,
     CSpineComponent,
-    DSpineComponent
+    DSpineComponent,
+    FSpineComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    maincontentRoutingModule,
   ],
   exports:[
     GuidestartComponent,
     CSpineComponent,
-    DSpineComponent
+    DSpineComponent,
+    maincontentRoutingModule
   ]
 })
 export class MaincontentModule { }
