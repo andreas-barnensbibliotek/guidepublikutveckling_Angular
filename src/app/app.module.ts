@@ -1,3 +1,6 @@
+import { RegisterComponent } from './shared/register/register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AjquizModule } from './main/ajquiz/ajquiz.module';
 import { MaincontentModule } from './maincontent/maincontent.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,6 +15,7 @@ import { StartComponent } from './main/start/start.component';
 import { Err404pageComponent } from './shared/err404page/err404page.component';
 import { MainNavComponent } from './shared/main-nav/main-nav.component';
 import { MainFooterComponent } from './shared/main-footer/main-footer.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
@@ -49,10 +53,18 @@ const cookieConfig:NgcCookieConsentConfig = {
     privacyPolicyLink: 'Privacy Policy',
     privacyPolicyHref: 'https://privacy.com',
 
-    tosLink: 'Terms of Service',
+    tosLink: 'hantering av Service',
     tosHref: 'https://tos.com',
+    header: 'Kakor används på denna webbplats. Cookies used on the website!',
+    dismiss: 'avböj!',
+    allow: 'Tillåt kakor/ cookies',
+    deny: 'Avböj',
+    link: 'läs mer',
+    policy: 'Kakor Policy'
   }
 };
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,13 +72,18 @@ const cookieConfig:NgcCookieConsentConfig = {
     Err404pageComponent,
     MainNavComponent,
     MainFooterComponent,
+    RegisterComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgcCookieConsentModule.forRoot(cookieConfig),
-    MaincontentModule
+    MaincontentModule,
+    AjquizModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [
     Global,

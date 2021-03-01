@@ -1,0 +1,11 @@
+{
+  "cookie": {
+      "header": "Kakor används på denna webbplats. Cookies used on the website!",
+      "message": "This website uses cookies to ensure you get the best experience on our website.",
+      "dismiss": "avböj!",
+      "allow": "Tillåt kakor/ cookies",
+      "deny": "Avböj",
+      "link": "läs mer",
+      "policy": "Kakor Policy"
+  }
+}

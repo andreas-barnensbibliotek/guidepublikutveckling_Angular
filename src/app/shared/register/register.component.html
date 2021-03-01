@@ -1,0 +1,47 @@
+
+<div class="container">
+  <div class="row">
+  <form [formGroup]="regFormgoup" (ngSubmit)="onSubmit()" class="form-container form-container-1">
+    <div class="form-group row">
+      <label for="regnamn" class="col-4 col-form-label">Namn</label>
+      <div class="col-8">
+        <input id="regnamn" name="regnamn" placeholder="Namn" type="text" required="required" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="regOrganisation" class="col-4 col-form-label">Organisation</label>
+      <div class="col-8">
+        <input id="regOrganisation" name="regOrganisation" placeholder="Organisation" type="text" required="required" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="regRoll" class="col-4 col-form-label">Roll</label>
+      <div class="col-8">
+        <input id="regRoll" name="regRoll" placeholder="Roll" type="text" required="required" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="regEpost" class="col-4 col-form-label">E-post</label>
+      <div class="col-8">
+        <input id="regEpost" name="regEpost" placeholder="E-post" type="text" required="required" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-4"></div>
+      <div class="col-8">
+        <div class="custom-control custom-checkbox custom-control-inline">
+          <input name="regConfirm" id="regConfirm_0" type="checkbox" aria-describedby="regConfirmHelpBlock" required="required" class="custom-control-input" value="approve">
+          <label for="regConfirm_0" class="custom-control-label">Ja</label>
+        </div>
+        <span id="regConfirmHelpBlock" class="form-text text-muted">Jag godkänner att de uppgifter jag fyller i lagras hos Förvaltningen för kulturutveckling.    Vi skyddar dina personuppgifter i enlighet med EU:s dataskyddsförordning GDPR (General Data Protection Regulation) och dess grundläggande principer om att personuppgifter ska behandlas på ett lagligt, korrekt och öppet sätt i förhållande till dig som registrerad deltagare.   Läs mer om hur dina personuppgifter skyddas här. LÄNKA TILL: https://edpb.europa.eu/our-work-tools/general-guidance/gdpr-guidelines-recommendations-best-practices_en</span>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="offset-4 col-8">
+        <button name="submit" type="submit" class="btn btn-primary">Registrera</button>
+      </div>
+    </div>
+
+</form>
+</div>
+</div>
