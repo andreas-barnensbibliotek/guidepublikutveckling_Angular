@@ -5,40 +5,56 @@
     <div class="form-group row">
       <label for="regnamn" class="col-4 col-form-label">Namn</label>
       <div class="col-8">
-        <input id="regnamn" name="regnamn" placeholder="Namn" type="text" required="required" class="form-control">
+        <input
+        [class.is-invalid]="txtRegnamn.invalid && txtRegnamn.touched" formControlName="txtRegnamn"
+        id="txtRegnamn" name="namn" placeholder="Namn" title="namn" type="text" required="required" class="form-control">
+        <div class="text-danger" *ngIf="txtRegnamn.invalid && txtRegnamn.touched">Du måste fylla i namn</div>
       </div>
     </div>
     <div class="form-group row">
       <label for="regOrganisation" class="col-4 col-form-label">Organisation</label>
       <div class="col-8">
-        <input id="regOrganisation" name="regOrganisation" placeholder="Organisation" type="text" required="required" class="form-control">
+        <input
+        [class.is-invalid]="txtRegOrganisation.invalid && txtRegOrganisation.touched" formControlName="txtRegOrganisation"
+        id="txtRegOrganisation" name="txtRegOrganisation" title="Organisation" placeholder="Organisation" type="text" required="required" class="form-control">
+        <div class="text-danger" *ngIf="txtRegOrganisation.invalid && txtRegOrganisation.touched">Du måste fylla i organisation</div>
       </div>
     </div>
     <div class="form-group row">
       <label for="regRoll" class="col-4 col-form-label">Roll</label>
       <div class="col-8">
-        <input id="regRoll" name="regRoll" placeholder="Roll" type="text" required="required" class="form-control">
+        <input
+        [class.is-invalid]="txtRegRoll.invalid && txtRegRoll.touched" formControlName="txtRegRoll"
+        id="txtRegRoll" name="txtRegRoll" placeholder="Roll" title="Roll" type="text" required="required" class="form-control">
+        <div class="text-danger" *ngIf="txtRegRoll.invalid && txtRegRoll.touched">Du måste fylla i din arbetsroll</div>
       </div>
     </div>
     <div class="form-group row">
       <label for="regEpost" class="col-4 col-form-label">E-post</label>
       <div class="col-8">
-        <input id="regEpost" name="regEpost" placeholder="E-post" type="text" required="required" class="form-control">
+        <input
+        [class.is-invalid]="txtRegEpost.invalid && txtRegEpost.touched" formControlName="txtRegEpost"
+        id="txtRegEpost" name="txtRegEpost" title="E-post" placeholder="E-post" type="text" required="required" class="form-control">
+        <div class="text-danger" *ngIf="txtRegEpost.invalid && txtRegEpost.touched">Du måste fylla i en giltig epostadress</div>
       </div>
     </div>
     <div class="form-group row">
       <div class="col-4"></div>
       <div class="col-8">
         <div class="custom-control custom-checkbox custom-control-inline">
-          <input name="regConfirm" id="regConfirm_0" type="checkbox" aria-describedby="regConfirmHelpBlock" required="required" class="custom-control-input" value="approve">
-          <label for="regConfirm_0" class="custom-control-label">Ja</label>
+          <input name="chkboxregConfirm" id="chkboxregConfirm"  formControlName="chkboxregConfirm"
+          type="checkbox" aria-describedby="regConfirmHelpBlock" required="required" class="custom-control-input" >
+          <label for="chkboxregConfirm" class="custom-control-label">Ja</label>
+          <div class="text-danger ml-2" *ngIf="chkboxregConfirm.invalid && chkboxregConfirm.touched">Du måste godkänna för att gå vidare</div>
         </div>
         <span id="regConfirmHelpBlock" class="form-text text-muted">Jag godkänner att de uppgifter jag fyller i lagras hos Förvaltningen för kulturutveckling.    Vi skyddar dina personuppgifter i enlighet med EU:s dataskyddsförordning GDPR (General Data Protection Regulation) och dess grundläggande principer om att personuppgifter ska behandlas på ett lagligt, korrekt och öppet sätt i förhållande till dig som registrerad deltagare.   Läs mer om hur dina personuppgifter skyddas här. LÄNKA TILL: https://edpb.europa.eu/our-work-tools/general-guidance/gdpr-guidelines-recommendations-best-practices_en</span>
       </div>
     </div>
+
     <div class="form-group row">
       <div class="offset-4 col-8">
-        <button name="submit" type="submit" class="btn btn-primary">Registrera</button>
+        <button name="submit" type="submit" [disabled]="!regFormgoup.valid" class="btn btn-primary">Registrera</button>
+        <div class="text-muted" *ngIf="regFormgoup.invalid && regFormgoup.touched">*Du måste fylla i alla fält</div>
       </div>
     </div>
 

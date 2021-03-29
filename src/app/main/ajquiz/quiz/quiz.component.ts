@@ -28,35 +28,6 @@ export class QuizComponent implements OnInit {
 
 	answerArray = [];
 
-	allQuestions: any = [{
-		"id": 1,
-		"question": "Vad heter Belgiens huvudstad?",
-		"a": "Wien",
-		"b": "Berlin",
-		"c": "Bryssel",
-		"d": "Prag",
-		"answer": "c"
-	},
-	{
-		"id": 2,
-		"question": "Vad heter Australiens huvudstad?",
-		"a": "Wien",
-		"b": "Camberra",
-		"c": "Bryssel",
-		"d": "Prag",
-		"answer": "b"
-	},
-	{
-		"id": 3,
-		"question": "Vad heter Bulgariens huvudstad?",
-		"a": "Wien",
-		"b": "Sofia",
-		"c": "Bryssel",
-		"d": "Prag",
-		"answer": "b"
-	}
-	];
-
 	/**Method call on submit the test */
 	submitTest() {
 		this.rightAnswer = 0;
@@ -106,9 +77,36 @@ export class QuizComponent implements OnInit {
 	}
 
 	ngOnInit() {
-
-
-
 	}
+
+  // Alla frågorna till quizet
+  allQuestions: any = [{
+		"id": 1,
+		"question": "Vad heter Belgiens huvudstad?",
+		"a": "Wien",
+		"b": "Berlin",
+		"c": "Bryssel",
+		"d": "Prag",
+		"answer": "c"
+	},
+	{
+		"id": 2,
+		"question": "Vad heter Australiens huvudstad?",
+		"a": "Wien",
+		"b": "Camberra",
+		"c": "Bryssel",
+		"d": "Prag",
+		"answer": "b"
+	},
+	{
+		"id": 3,
+		"question": "Vad heter Bulgariens huvudstad?",
+		"a": "Wien",
+		"b": "Sofia",
+		"c": "Bryssel",
+		"d": "Prag",
+		"answer": "b"
+	}
+	];
 
 }

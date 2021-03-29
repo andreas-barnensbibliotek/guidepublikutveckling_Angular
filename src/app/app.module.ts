@@ -16,6 +16,9 @@ import { Err404pageComponent } from './shared/err404page/err404page.component';
 import { MainNavComponent } from './shared/main-nav/main-nav.component';
 import { MainFooterComponent } from './shared/main-footer/main-footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { GenericContentComponent } from './maincontent/generic-content/generic-content.component';
+import { GuideNavComponent } from './shared/guide-nav/guide-nav.component';
+
 
 const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
@@ -23,10 +26,10 @@ const cookieConfig:NgcCookieConsentConfig = {
   },
   palette: {
     popup: {
-      background: '#000'
+      background: '#222'
     },
     button: {
-      background: '#ccc'
+      background: '#111'
     }
   },
   theme: 'classic',
@@ -72,8 +75,9 @@ const cookieConfig:NgcCookieConsentConfig = {
     Err404pageComponent,
     MainNavComponent,
     MainFooterComponent,
-    RegisterComponent
-
+    RegisterComponent,
+    GenericContentComponent,
+    GuideNavComponent
   ],
   imports: [
     BrowserModule,

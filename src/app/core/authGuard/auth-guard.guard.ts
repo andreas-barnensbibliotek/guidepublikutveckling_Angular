@@ -14,12 +14,12 @@ export class AuthGuardGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      
+
       if(this._global.isUserRegistred()){
         return true;
       }else{
-        return this._router.navigate(['/start']);
+        return this._router.navigate(['/register']);
       }
   }
-  
+
 }

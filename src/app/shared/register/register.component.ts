@@ -1,3 +1,5 @@
+import { WpApiService } from './../../core/Service/wp-api/wp-api.service';
+import { Router } from '@angular/router';
 import { Global } from './../../core/Models/global';
 // import { WpApiService } from './../../services/wp-Api/wp-api.service';
 // import { registerUserFormData } from './../models/RegisteruserFormData';
@@ -15,109 +17,68 @@ export class RegisterComponent implements OnInit {
   userdata:any;
   regFormgoup!:FormGroup;
   tmpAllLanguages:{};
+  emailPattern:any = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
+
   get formlanguage() { return this.regFormgoup.get('txtformlanguage')}
 
-  constructor( private _global:Global, private fb: FormBuilder) {
+  constructor( private _global:Global, private fb: FormBuilder, private _router:Router, private _wpApi:WpApiService) {
     this.tmpAllLanguages = "" // _global.getUserGuidLanguage();
   }
 
-    get txtfirstname():any {
-      return this.regFormgoup.get('txtfirstname');
+    get txtRegnamn():any {
+      return this.regFormgoup.get('txtRegnamn');
     }
-    get txtcountry(): any {
-      return this.regFormgoup.get('txtcountry');
+    get txtRegOrganisation(): any {
+      return this.regFormgoup.get('txtRegOrganisation');
     }
-    get txtlastname(): any {
-      return this.regFormgoup.get('txtlastname');
+    get txtRegRoll(): any {
+      return this.regFormgoup.get('txtRegRoll');
     }
-    get radiogender(): any {
-       return this.regFormgoup.get('radiogender');
+    get txtRegEpost(): any {
+       return this.regFormgoup.get('txtRegEpost');
     }
-    get txtcomments(): any {
-      return this.regFormgoup.get('txtcomments');
-    }
-    get txtprofession(): any {
-      return this.regFormgoup.get('txtprofession');
-    }
-    get txtemail(): any {
-      return this.regFormgoup.get('txtemail');
-    }
-    // get drpChooselang(): any {
-    //   return this.regFormgoup.get('drpChooselang');
-    // }
+    get chkboxregConfirm(): any {
+      return this.regFormgoup.get('chkboxregConfirm');
+   }
 
 
   ngOnInit(): void {
-    // this._global.currentLanguageHandler.subscribe(()=>{
-    //   this.loadFormSettings();
-    // });
-    // this._wpApi.currentPageDataHandler.subscribe(()=>{
-    //   this.getpagedata();
-    // })
     this.loadFormSettings();
-    this.getpagedata();
   }
-
-  selectLanguageChangeHandler (event: any) {
-    //update the ui
-    let lang = event.target.value;
-    // this._global.setUserLanguage(lang);
-    this.getpagedata();
-  }
-
-  getpagedata(){
-    // this._wpApi.getPageSlug("register").subscribe(Response => {
-    //   this.mainPageData = Response
-    //   console.log(this.mainPageData)
-    // });
-  }
-
 
   loadFormSettings(){
-
     this.regFormgoup = this.fb.group({
-      // drpChooselang:['', Validators.required],
-      txtfirstname: ['', Validators.required],
-      txtlastname:['', Validators.required],
-      radiogender:['', Validators.required],
-      txtcomments:[''],
-      txtcountry:['', Validators.required],
-      txtorganisation:[''],
-      txtprofession:['', Validators.required],
-      txtemail:['', Validators.required]
-    })
+      txtRegnamn: ['', Validators.required],
+      txtRegOrganisation:['', Validators.required],
+      txtRegRoll:['', Validators.required],
+      txtRegEpost:['', [Validators.required, Validators.pattern(this.emailPattern)]],
+      chkboxregConfirm:[''],
+    });
 
-    // let defaultDrpFullLanguageValue= this._global.getUserfullLanguage(CurrentShortLanguage);
-    // this.regFormgoup.patchValue({ drpChooselang: defaultDrpFullLanguageValue });
   }
 
   onSubmit(){
     if (this.regFormgoup.valid){
+      let registerobj= {
+        post_title : "Register user - " + this.regFormgoup.get('txtRegnamn')!.value,
+        namn: this.regFormgoup.get('txtRegnamn')!.value,
+        organisation: this.regFormgoup.get('txtRegOrganisation')!.value,
+        roll: this.regFormgoup.get('txtRegRoll')!.value,
+        approve: this.regFormgoup.get('chkboxregConfirm')!.value,
+        epost: this.regFormgoup.get('txtRegEpost')!.value,
+      };
 
-      // let registerobj= {
-      //   post_title : "Register user - " + this.regFormgoup.get('txtcountry').value,
-      //   country: this.regFormgoup.get('txtcountry').value,
-      //   // language: this.regFormgoup.get('drpChooselang').value,
-      //   gender: this.regFormgoup.get('radiogender').value,
-      //   comments: this.regFormgoup.get('txtcomments').value,
-      //   // befattning: this.regFormgoup.get('txtprofession').value,
-      //   profession: this.regFormgoup.get('txtprofession').value,
-      //   firstname: this.regFormgoup.get('txtfirstname').value,
-      //   lastname: this.regFormgoup.get('txtlastname').value,
-      //   organisation: this.regFormgoup.get('txtorganisation').value,
-      //   email: this.regFormgoup.get('txtemail').value,
-      // };
-
-      // this.registerUserDB(registerobj);
+      this.registerUserDB(registerobj);
     };
   }
 
   registerUserDB(regData:any){
 
-    // this._wpApi.postRegisterUser(JSON.parse(JSON.stringify(regData))).subscribe((response)=>{
-    //   console.log("detta är efter post"+ response);
-    //   this._global.registerUser();
-    // });
+    this._wpApi.postRegisterUser(JSON.parse(JSON.stringify(regData))).subscribe((response)=>{
+     console.log("detta är efter post");
+      this._global.registerUser();
+      this._router.navigate(['/guide']);
+    });
 
   }
 }

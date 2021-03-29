@@ -1,17 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" routerLink="/" routerLinkActive="router-link-active" >guidepublikutveckling</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/" routerLinkActive="active" >Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="guidestart" routerLinkActive="active" >guidestart <span class="sr-only">(current)</span></a>
-      </li>
-
-    </ul>
+<div class="container-grid header-bgr">
+  <div class="container-grid site-title-logo">
+    <h1 class="heading-1 site-title">Guide i publikutveckling</h1>
+    <div class="container-grid vgr-logo"></div>
   </div>
-</nav>
+  <nav class="container-grid navbar navbar-dark navbar-expand-md nav-tl">
+    <div class="container-grid nav-title-tl">
+      <h6 class="heading-2">arbetsmaterial</h6>
+    </div><a class="glyph navbar-toggler" href="#" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i class="coffeecup-icons-menu7"></i></a>
+    <nav class="container-grid collapse navbar-collapse" id="navbarNav">
+      <ul class="list-container navbar-nav" *ngFor="let itm of mainNavData" >
+
+        <li class="list-item-container nav-item active">
+          <a class="link-text nav-link nav-link-tl" routerLink="{{itm.acf.link}}" routerLinkActive="active" >{{itm.acf.linkname}}</a>
+        </li>
+
+      </ul>
+    </nav>
+  </nav>
+</div>
+
+<app-guide-nav></app-guide-nav>

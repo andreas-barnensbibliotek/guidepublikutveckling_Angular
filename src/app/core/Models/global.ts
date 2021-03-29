@@ -1,20 +1,14 @@
 
-
-import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
-
-// import { LocalStorageHandler } from './localstorageHandler';
 import {Injectable } from "@angular/core";
 
 @Injectable() // Decorator that marks a class as available to be provided and injected as a dependency.
 export class Global {
-  private _liveserver:string = "https://centrestageonline.org";
-  private _devserver:string = "https://dev.centrestageonline.org";
-  private _localdevserver:string = "http://localhost:81/centrestageonline.org";
+  private _liveserver:string = "https://guidepublikutveckling.se";
+  private _devserver:string = "http://dev.guidepublikutveckling.se";
+  private _localdevserver:string = "http://localhost:81/republikonline";
   private _wpApi:string = "/wpAdmin/wp-json/wp/v2/";
   private _wpApiPost:string = "/wpAdmin/wp-json/addreg/v2/";
-
-  // storageHandler:LocalStorageHandler
 
   userregistered:string = ""
 
@@ -23,34 +17,25 @@ export class Global {
   devkey:string = "/devkey/alf/?type=json";
 
   constructor(private router: Router) {
-
   }
-
-
 
   public isUserRegistred(){
-
-    console.log("registered: " +localStorage.getItem("userreg"));
-    // if(this.userregistered){
-    //   return true;
-    // }else{
-    //   //this.RedirectNotRegisterd();
-    //   return false;
-    // }
-    return true; //!!localStorage.getItem("userreg");
+    // console.log("registered: " +localStorage.getItem("userreg"));
+    return !!localStorage.getItem("userreg");
+    // return true;
+    // return false;
   }
+
   public registerUser(){
     try{
       localStorage.setItem("userreg", "true");
-      this.router.navigate(['/episodes']);
+      this.router.navigate(['/guide']);
       return true;
+
     }catch{
       return false;
     };
   }
-  // RedirectNotRegisterd(){
-  //   this.router.navigate(['/register']);
-  // }
 
   public isEmptyObj = (obj:any) => {
     return obj === null || undefined
@@ -65,11 +50,4 @@ export class Global {
           })();
     };
 
-    public getCookieText(){
-    //  return this._cookieHandler.getCookieSettings();
-    }
-
-    public getlangFormButtonText(){
-      // return this._formButtonObj.getRegFormLanguageText(this.getUserShortLanguage());
-    }
 }

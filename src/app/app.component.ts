@@ -10,31 +10,20 @@ import { Subscription } from 'rxjs';
 })
 export class AppComponent implements OnInit, OnDestroy {
    //keep refs to subscriptions to be able to unsubscribe later
-   //keep refs to subscriptions to be able to unsubscribe later
   popupOpenSubscription: Subscription = new Subscription;
-logg:any;
-
+  logg:any;
   title = 'guidepublikutveckling';
-  constructor(private ccService: NgcCookieConsentService){
 
-  }
+  constructor(private ccService: NgcCookieConsentService){}
 
   ngOnInit() {
  // Support for translated cookies messages
-
-      this.popupOpenSubscription = this.ccService.popupOpen$.subscribe(
-        () => {
-
-        });
-
-
+      this.popupOpenSubscription = this.ccService.popupOpen$.subscribe(() => {});
   }
-
 
   ngOnDestroy() {
     // unsubscribe to cookieconsent observables to prevent memory leaks
     this.popupOpenSubscription.unsubscribe();
   }
-
 
 }

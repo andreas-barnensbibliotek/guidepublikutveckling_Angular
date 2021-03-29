@@ -14,9 +14,9 @@ const routerOptions: ExtraOptions = {
   scrollOffset: [0, 64],
 };
 const routes: Routes = [
-  { path: '',  redirectTo: 'start', pathMatch: 'full' },
-{ path: 'start', component: StartComponent },
-{ path: 'guidestart',
+  { path: '',  redirectTo: 'hem', pathMatch: 'full' },
+{ path: 'hem', component: StartComponent },
+{ path: 'guide',
   loadChildren: './maincontent/maincontent.module#MaincontentModule',
   canActivate: [AuthGuardGuard]
 },

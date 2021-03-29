@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { CSpineComponent } from './publik/c-spine/c-spine.component';
 import { DSpineComponent } from './publik/d-spine/d-spine.component';
 import { FSpineComponent } from './privat/f-spine/f-spine.component';
+import { MaincontentComponent } from './maincontent/maincontent.component';
 
 
 
@@ -13,7 +14,8 @@ import { FSpineComponent } from './privat/f-spine/f-spine.component';
     GuidestartComponent,
     CSpineComponent,
     DSpineComponent,
-    FSpineComponent
+    FSpineComponent,
+    MaincontentComponent
   ],
   imports: [
     CommonModule,
