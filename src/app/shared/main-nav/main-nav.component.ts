@@ -12,7 +12,7 @@ export class MainNavComponent implements OnInit {
 
   mainNavData:any=[];
 
-  constructor(private wpApi:WpApiService, private glb:Global) { }
+  constructor(private wpApi:WpApiService, public glb:Global) { }
 
   ngOnInit(): void {
     this.wpApi.currentPageDataHandler.subscribe(()=>{

@@ -1,4 +1,7 @@
-<app-main-nav></app-main-nav>
+<ng-container *ngIf="glb.VisaMainNav">
+  <app-main-nav ></app-main-nav>
+</ng-container>
+
 <router-outlet></router-outlet>
 
 <app-main-footer></app-main-footer>

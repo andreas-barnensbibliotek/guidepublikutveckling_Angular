@@ -8,14 +8,15 @@ import { Observable } from 'rxjs';
 })
 export class AuthGuardGuard implements CanActivate {
 
-  constructor(private _global:Global, private _router:Router){
+  constructor(private _glb:Global, private _router:Router){
   }
 
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
-      if(this._global.isUserRegistred()){
+      if(this._glb.isUserRegistred()){
+        this._glb.VisaGuideNav= true;
         return true;
       }else{
         return this._router.navigate(['/register']);

@@ -13,11 +13,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartComponent } from './main/start/start.component';
 import { Err404pageComponent } from './shared/err404page/err404page.component';
-import { MainNavComponent } from './shared/main-nav/main-nav.component';
+
 import { MainFooterComponent } from './shared/main-footer/main-footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { GenericContentComponent } from './maincontent/generic-content/generic-content.component';
-import { GuideNavComponent } from './shared/guide-nav/guide-nav.component';
+import { MainNavComponent } from './shared/main-nav/main-nav.component';
+import { IntroduktionComponent } from './maincontent/publik/introduktion/introduktion.component';
+import { VarforgoradetComponent } from './maincontent/publik/varforgoradet/varforgoradet.component';
 
 
 const cookieConfig:NgcCookieConsentConfig = {
@@ -77,7 +79,8 @@ const cookieConfig:NgcCookieConsentConfig = {
     MainFooterComponent,
     RegisterComponent,
     GenericContentComponent,
-    GuideNavComponent
+    IntroduktionComponent,
+    VarforgoradetComponent
   ],
   imports: [
     BrowserModule,

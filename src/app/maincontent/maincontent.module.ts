@@ -1,21 +1,31 @@
 import { maincontentRoutingModule } from './maincontent-routing.module';
-import { GuidestartComponent } from './guidestart/guidestart.component';
+import { GuidestartComponent } from './privat/guidestart/guidestart.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CSpineComponent } from './publik/c-spine/c-spine.component';
-import { DSpineComponent } from './publik/d-spine/d-spine.component';
-import { FSpineComponent } from './privat/f-spine/f-spine.component';
-import { MaincontentComponent } from './maincontent/maincontent.component';
+import { MaincontentComponent } from './maincontent.component';
+import { GuideNavComponent } from '../shared/guide-nav/guide-nav.component';
+import { GenericComponent } from './publik/generic/generic.component';
+import { VarbefinnerniernuComponent } from './privat/varbefinnerniernu/varbefinnerniernu.component';
+import { VarvillninaComponent } from './privat/varvillnina/varvillnina.component';
+import { VilkavillnihaombordComponent } from './privat/vilkavillnihaombord/vilkavillnihaombord.component';
+import { HurskanitaerditComponent } from './privat/hurskanitaerdit/hurskanitaerdit.component';
+import { HurvetniattnikommitframComponent } from './privat/hurvetniattnikommitfram/hurvetniattnikommitfram.component';
+import { VilkaverktygbehoverniComponent } from './privat/vilkaverktygbehoverni/vilkaverktygbehoverni.component';
 
 
 
 @NgModule({
   declarations: [
     GuidestartComponent,
-    CSpineComponent,
-    DSpineComponent,
-    FSpineComponent,
-    MaincontentComponent
+    MaincontentComponent,
+    GuideNavComponent,
+    GenericComponent,
+    VarbefinnerniernuComponent,
+    VarvillninaComponent,
+    VilkavillnihaombordComponent,
+    HurskanitaerditComponent,
+    HurvetniattnikommitframComponent,
+    VilkaverktygbehoverniComponent,
   ],
   imports: [
     CommonModule,
@@ -23,8 +33,6 @@ import { MaincontentComponent } from './maincontent/maincontent.component';
   ],
   exports:[
     GuidestartComponent,
-    CSpineComponent,
-    DSpineComponent,
     maincontentRoutingModule
   ]
 })

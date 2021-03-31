@@ -11,9 +11,11 @@ export class Global {
   private _wpApiPost:string = "/wpAdmin/wp-json/addreg/v2/";
 
   userregistered:string = ""
+  VisaMainNav:boolean=true;
+  VisaGuideNav:boolean=false;
 
-  server:string = this._devserver + this._wpApi;
-  postserver:string = this._devserver + this._wpApiPost;
+  server:string = this._localdevserver + this._wpApi;
+  postserver:string = this._localdevserver + this._wpApiPost;
   devkey:string = "/devkey/alf/?type=json";
 
   constructor(private router: Router) {

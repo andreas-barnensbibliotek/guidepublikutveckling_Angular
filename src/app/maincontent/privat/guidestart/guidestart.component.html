@@ -1,0 +1,23 @@
+<div class="container-grid pagedivider-up bluegreen-beige"></div>
+  <div class="container-grid guide1-sektion1">
+    <div class="container-grid container-23" [innerHtml]="htmlPageData[0]?.acf.content">
+      <h1 class="h1-intro-guide">Färdplan för publikutveckling</h1>
+      <p class="paragraph ingress-guide">Det är klokt att planera din resa innan du startar. Det spar tid, kraft och minskar oron. Din verksamhetsplan och din publikutvecklingsplan bör hänga ihop, fokusera på samma övergripande mål och använda samma tänkesätt. På så sätt försäkrar du dig om att du fokuserar på rätt saker, vilket gör att du når målen i stället för att slösa tid och resurser på att göra lite av varje.</p>
+    </div>
+  </div>
+  <div class="container-grid guide1-sektion2">
+    <div class="container-grid container-5" >
+      <h1 class="h1-overrubrik-guide" [innerHtml]="htmlPageData[0]?.acf.rubrik_item1"></h1>
+      <h1 class="bigbig" [innerHtml]="htmlPageData[0]?.acf.rubrik_item2"></h1>
+      <div class="container-grid two-col-tl card-wrap">
+        <a routerLink="{{htmlPageData[0]?.acf.link_item2}}" [innerHtml]="htmlPageData[0]?.acf.content_item2" class="link-container link-container-1 two-col card-guide alt-guide-start" title="Vad är publikutveckling?">
+          </a>
+      </div>
+    </div>
+  </div>
+  <div class="container-grid guide1-sektion3 fardplan-intro">
+    <div class="container-grid container-5 fardplan-intro">
+      <h1 class="h1-intro-guide" [innerHtml]="htmlPageData[0]?.acf.rubrik_item3"></h1>
+      <a routerLink="{{htmlPageData[0]?.acf.link_item3}}" class="link-container link-container-7" title="Var befinner ni er nu?"></a>
+    </div>
+  </div>

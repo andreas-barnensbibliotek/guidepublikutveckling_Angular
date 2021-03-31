@@ -1,0 +1,68 @@
+<div class="container-grid container-1" role="tablist" aria-multiselectable="true" id="accordion">
+  <div class="card container-grid">
+    <div class="container-grid card-header card-header-tl" id="headingOne" role="tab"></div>
+  </div>
+</div>
+<div class="container-grid pagedivider-up bluegreen-beige vad-ar"></div>
+<div class="container-grid sektion2-tl-1 vad-pub-1" [innerHtml]="htmlPageData[0]?.acf.content">
+  </div>
+<div class="container-grid vad-pub beige-1 container-4-1">
+  <div class="container-grid container-5-1 varfor">
+    <div class="container-grid container-19">
+      <div class="container-grid card-wrap-tl varfor">
+        <div class="container-grid container-16" [innerHtml]="htmlPageData[0]?.acf.content_item1">
+          </div>
+        <a routerLink="{{htmlPageData[0]?.acf.link_item1}}" class="link-container link-container-4">
+          <p class="paragraph p-standard-bold" [innerHtml]="htmlPageData[0]?.acf.rubrik_item1"> </p>
+          <div class="container-grid container-6-1">
+            <div class="rule rule-1-1">
+              <hr>
+            </div>
+            <div class="container-grid container-7-1"></div>
+          </div>
+        </a>
+      </div>
+      <div class="container-grid card-wrap-tl varfor">
+        <div class="container-grid container-16" [innerHtml]="htmlPageData[0]?.acf.content_item2">
+        </div>
+        <a routerLink="{{htmlPageData[0]?.acf.link_item2}}" class="link-container link-container-4">
+          <p class="paragraph p-standard-bold" [innerHtml]="htmlPageData[0]?.acf.rubrik_item2"></p>
+          <div class="container-grid container-6-1">
+            <div class="rule rule-1-1">
+              <hr>
+            </div>
+            <div class="rule rule-1-1">
+              <hr>
+            </div>
+            <div class="container-grid container-7-1"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="container-grid container-20">
+      <div class="container-grid card-wrap-tl varfor">
+        <div class="container-grid container-16" [innerHtml]="htmlPageData[0]?.acf.content_item3">
+          </div>
+          <a routerLink="{{htmlPageData[0]?.acf.link_item3}}" class="link-container link-container-4">
+          <p class="paragraph p-standard-bold" [innerHtml]="htmlPageData[0]?.acf.rubrik_item3"></p>
+          <div class="container-grid container-6-1">
+            <div class="rule rule-1-1">
+              <hr>
+            </div>
+            <div class="container-grid container-7-1"></div>
+          </div>
+        </a>
+      </div>
+      <div class="container-grid card-wrap-tl varfor empty"></div>
+    </div>
+  </div>
+</div>
+<div class="container-grid container-17"><a routerLink="{{htmlPageData[0]?.acf.link_item4}}" class="link-container link-container-5" title="Är publikutveckling verkligen vårt jobb?">
+    <p class="paragraph ingress no-space" [innerHtml]="htmlPageData[0]?.acf.rubrik_item4"></p>
+    <div class="container-grid container-6-1 pilb">
+      <div class="rule rule-1-1">
+        <hr>
+      </div>
+      <div class="container-grid container-7-1"></div>
+    </div>
+  </a></div>
