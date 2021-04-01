@@ -1,3 +1,4 @@
+import { OrdlistaComponent } from './maincontent/publik/ordlista/ordlista.component';
 import { RegisterComponent } from './shared/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AjquizModule } from './main/ajquiz/ajquiz.module';
@@ -20,6 +21,7 @@ import { GenericContentComponent } from './maincontent/generic-content/generic-c
 import { MainNavComponent } from './shared/main-nav/main-nav.component';
 import { IntroduktionComponent } from './maincontent/publik/introduktion/introduktion.component';
 import { VarforgoradetComponent } from './maincontent/publik/varforgoradet/varforgoradet.component';
+import { ScrollToTopComponent } from './shared/scroll-to-top/scroll-to-top.component';
 
 
 const cookieConfig:NgcCookieConsentConfig = {
@@ -80,7 +82,9 @@ const cookieConfig:NgcCookieConsentConfig = {
     RegisterComponent,
     GenericContentComponent,
     IntroduktionComponent,
-    VarforgoradetComponent
+    VarforgoradetComponent,
+    OrdlistaComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,

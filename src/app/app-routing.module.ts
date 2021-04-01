@@ -1,3 +1,4 @@
+import { OrdlistaComponent } from './maincontent/publik/ordlista/ordlista.component';
 import { VarforgoradetComponent } from './maincontent/publik/varforgoradet/varforgoradet.component';
 import { RegisterComponent } from './shared/register/register.component';
 import { QuizComponent } from './main/ajquiz/quiz/quiz.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
 { path: 'introduktion', component: IntroduktionComponent, data: { bodyClass: 'body-1' }  },
 { path: 'varforgoradet', component: VarforgoradetComponent, data: { bodyClass: 'body-1' }  },
 { path: 'quiz', component: QuizComponent, data: { bodyClass: 'body-1' }},
+{ path: 'ordlista', component: OrdlistaComponent, data: { bodyClass: 'ord-color'}},
 { path: 'register', component: RegisterComponent },
   { path: '**',  component: Err404pageComponent},
 ];

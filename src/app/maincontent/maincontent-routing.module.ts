@@ -1,3 +1,7 @@
+import { VilketarnastastegComponent } from './privat/vilketarnastasteg/vilketarnastasteg.component';
+import { VardetvartdetComponent } from './privat/vardetvartdet/vardetvartdet.component';
+import { VadbehovernipafardenComponent } from './privat/vadbehovernipafarden/vadbehovernipafarden.component';
+import { VilkaverktygbehoverniComponent } from './privat/vilkaverktygbehoverni/vilkaverktygbehoverni.component';
 import { HurvetniattnikommitframComponent } from './privat/hurvetniattnikommitfram/hurvetniattnikommitfram.component';
 import { HurskanitaerditComponent } from './privat/hurskanitaerdit/hurskanitaerdit.component';
 import { VilkavillnihaombordComponent } from './privat/vilkavillnihaombord/vilkavillnihaombord.component';
@@ -19,7 +23,10 @@ const maincontentRoutes: Routes = [
             {path:'vilka-vill-ni-ha-ombord',component: VilkavillnihaombordComponent },
             {path:'hur-ska-ni-ta-er-dit',component: HurskanitaerditComponent },
             {path:'hur-vet-ni-att-ni-kommit-fram',component: HurvetniattnikommitframComponent },
-            {path:'vart-vill-ni-na',component: VarvillninaComponent },
+            {path:'vilka-verktyg-behover-ni',component: VilkaverktygbehoverniComponent },
+            {path:'vad-behover-ni-pa-farden',component: VadbehovernipafardenComponent },
+            {path:'var-det-vart-det',component: VardetvartdetComponent },
+            {path:'vilket-ar-nasta-steg',component: VilketarnastastegComponent },
             {path:':slug',component: GenericContentComponent},
 
           ]

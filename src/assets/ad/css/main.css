@@ -73,21 +73,6 @@ h1.h1-dekor {
   line-height: 23vw;
 }
 
-h1.h1-about {
-  float: none;
-  margin-top: 50px;
-  margin-bottom: 8px;
-  padding-top: 0;
-  padding-bottom: 20px;
-  max-width: 600px;
-  width: auto;
-  border-bottom-width: .1875rem;
-  border-bottom-style: solid;
-  font-weight: 700;
-  font-size: 9.76vw;
-  line-height: 10.45vw;
-}
-
 h1 span.underrubrik-about {
   font-weight: 400;
   font-size: 1.75rem;
@@ -109,6 +94,12 @@ h1.h1-overrubrik-guide {
 
 h1.h1-overrubrik-guide.white {
   color: #fff;
+}
+
+h1.h1-about {
+  font-weight: 700;
+  font-size: 8.89vw;
+  line-height: 9.52vw;
 }
 
 h1.big-1.bigbig-1.bottom.vad-pub.white-1:hover {
@@ -160,6 +151,12 @@ h2.h2-about {
   font-size: 20px;
 }
 
+h2.h2-big-about {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+}
+
 h2.h2-bold.white:hover {
   color: #fff;
   text-decoration: underline;
@@ -192,6 +189,13 @@ h2.h2-regular.heading-3:hover {
 
 h2.h2-bold.white:active {
   text-decoration: none;
+}
+
+h3.h3-about {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
 }
 
 h4.heading-4 {
@@ -364,6 +368,7 @@ p.paragraph.p-standard {
 p.paragraph span.h3-about {
   font-weight: 700;
   font-size: 1.25rem;
+  line-height: 1.6;
 }
 
 p.paragraph span.paragraph-text-1 {
@@ -381,30 +386,13 @@ p.paragraph span.h2-text {
 }
 
 p.paragraph.ingress-about {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-bottom: 0;
-  color: #000;
   font-size: 28px;
 }
 
 p.paragraph.p-standard-about {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-top: 0;
-  padding-bottom: 40px;
-  border-bottom-width: .1875rem;
-  border-bottom-style: solid;
+  margin-bottom: 4px;
   font-size: 19px;
-}
-
-p.paragraph.referens-about {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom-width: .1875rem;
-  border-bottom-style: solid;
-  line-height: 28px;
+  line-height: 32px;
 }
 
 p.paragraph span.p-link-about {
@@ -683,6 +671,11 @@ p.paragraph.bold-guide.p-std {
   font-weight: 700;
 }
 
+p.paragraph.referens-about {
+  margin-bottom: 4px;
+  line-height: 28px;
+}
+
 p.paragraph.p-std:hover {
   color: #000;
   text-decoration: underline;
@@ -778,12 +771,13 @@ ul.unorder-list.unordered-list-3 {
   margin-top: 0;
 }
 
+ul.unorder-list.unordered-list-4 {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
 blockquote.citat-about {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom-width: .1875rem;
-  border-bottom-style: solid;
+  margin-bottom: 4px;
   font-size: 30px;
   line-height: 42px;
 }
@@ -909,21 +903,24 @@ body.body-1 {
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
-  min-height: 0vh;
+  min-width: 10px;
+  min-height: 100vw;
   background-color: #f6f4ea;
 }
-/*
-body.body-2 {
+
+body.ord-color{
   position: static;
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
-  min-height: 0vh;
-  background-color: #f6f4ea;
-} */
-
-body.ord-color {
+  min-width: 10px;
+  min-height: 100vw;
   background-color: #bbcac2;
+}
+
+
+body.body-2 {
+  background-color: #f6f4ea;
 }
 
 .link-container.link-container-1 {
@@ -2158,20 +2155,9 @@ li.list-item.list-item-2 {
   width: auto;
 }
 
-.container-grid.image-about {
-  background-image: url('https://cdn.coffeecupcloud.com/appresources/v1/common/background_online_image.png');
-  background-attachment: scroll;
-  background-position: left top;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-
-  background-blend-mode: normal;
-}
-
 li.list-item.list-item-about {
   font-size: 19px;
+  line-height: 32px;
 }
 
 .container-grid.quiz-wrap-about {
@@ -2382,6 +2368,61 @@ li.list-item span.list-item-text-2 {
   background-color: #45606c;
 }
 
+.container-grid.con-close {
+  position: static;
+  float: right;
+  clear: none;
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 0;
+  padding-top: 0;
+  min-width: 60px;
+  min-height: 60px;
+  max-width: 60px;
+  max-height: 60px;
+  width: auto;
+}
+
+.container-grid.con-h1-about {
+  margin-top: 50px;
+  padding-bottom: 20px;
+  min-height: 50px;
+  max-width: 600px;
+  height: auto;
+  border-bottom-width: .1875rem;
+  border-bottom-style: solid;
+}
+
+.container-grid.con-ingress-about {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  min-height: 0;
+}
+
+.container-grid.con-p-about {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom-width: .1875rem;
+  border-bottom-style: solid;
+}
+
+.container-grid.image-about {
+  background-image: url('https://cdn.coffeecupcloud.com/appresources/v1/common/background_online_image.png');
+  background-attachment: scroll;
+  background-position: left top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  background-blend-mode: normal;
+}
+
+.container-grid.con-ulist-about {
+  margin-top: 30px;
+}
+
 a.glyph.navbar-toggler:visited {
   color: #fff;
 }
@@ -2415,11 +2456,6 @@ a.glyph.navbar-toggler:active {
 
   h1.bigbig-1 {
     font-size: 15.67vw;
-  }
-
-  h1.h1-about {
-    font-size: 56px;
-    line-height: 60px;
   }
 
   h2.citat.h2-bold {
@@ -2575,6 +2611,11 @@ a.glyph.navbar-toggler:active {
   h1.h1-overrubrik-guide {
     font-size: 48px;
     line-height: 52px;
+  }
+
+  h1.h1-about {
+    font-size: 56px;
+    line-height: 62px;
   }
 
   h2.citat.h2-bold {
@@ -2925,19 +2966,11 @@ a.glyph.navbar-toggler:active {
     font-size: 120px;
   }
 
-  h1.h1-about {
-    margin-top: 0;
-  }
-
   p.paragraph.citat.paragraph-2 {
     line-height: 50px;
   }
 
   p.paragraph.ingress {
-    max-width: 800px;
-  }
-
-  p.paragraph.ingress-about {
     max-width: 800px;
   }
 
@@ -3163,6 +3196,12 @@ a.glyph.navbar-toggler:active {
     padding-left: 10px;
     background-color: #45606c;
   }
+
+  .container-grid.con-close {
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 0;
+  }
 }
 
 @media screen and (min-width: 62rem) {
@@ -3327,8 +3366,6 @@ a.glyph.navbar-toggler:active {
   }
 
   p.paragraph.ingress-about {
-    max-width: 800px;
-    color: #000;
     font-size: 28px;
     line-height: 42px;
   }

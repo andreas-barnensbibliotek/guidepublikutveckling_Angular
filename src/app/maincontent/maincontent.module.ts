@@ -11,6 +11,9 @@ import { VilkavillnihaombordComponent } from './privat/vilkavillnihaombord/vilka
 import { HurskanitaerditComponent } from './privat/hurskanitaerdit/hurskanitaerdit.component';
 import { HurvetniattnikommitframComponent } from './privat/hurvetniattnikommitfram/hurvetniattnikommitfram.component';
 import { VilkaverktygbehoverniComponent } from './privat/vilkaverktygbehoverni/vilkaverktygbehoverni.component';
+import { VadbehovernipafardenComponent } from './privat/vadbehovernipafarden/vadbehovernipafarden.component';
+import { VardetvartdetComponent } from './privat/vardetvartdet/vardetvartdet.component';
+import { VilketarnastastegComponent } from './privat/vilketarnastasteg/vilketarnastasteg.component';
 
 
 
@@ -26,6 +29,10 @@ import { VilkaverktygbehoverniComponent } from './privat/vilkaverktygbehoverni/v
     HurskanitaerditComponent,
     HurvetniattnikommitframComponent,
     VilkaverktygbehoverniComponent,
+    VadbehovernipafardenComponent,
+    VardetvartdetComponent,
+    VilketarnastastegComponent
+
   ],
   imports: [
     CommonModule,
