@@ -16,7 +16,6 @@ import { VardetvartdetComponent } from './privat/vardetvartdet/vardetvartdet.com
 import { VilketarnastastegComponent } from './privat/vilketarnastasteg/vilketarnastasteg.component';
 
 
-
 @NgModule({
   declarations: [
     GuidestartComponent,
@@ -32,7 +31,6 @@ import { VilketarnastastegComponent } from './privat/vilketarnastasteg/vilketarn
     VadbehovernipafardenComponent,
     VardetvartdetComponent,
     VilketarnastastegComponent
-
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,11 @@
+<h1 class="h1-dekor" [innerHtml]="htmlPageData[0]?.acf.rubrik"></h1>
+  <div class="container-grid container-22">
+    <a (click)="goBack()" class="link-container link-container-6" title="Tillbaka"></a>
+  </div>
+  <div class="container-grid container-21">
+    <h1 class="h1-about" [innerHtml]="htmlPageData[0]?.acf.rubrik_item1"></h1>
+    <p class="paragraph ingress-about" [innerHtml]="htmlPageData[0]?.acf.content_item1">
+    </p>
+    <app-quiz></app-quiz>
+    <p class="paragraph p-standard-about"><br></p>
+  </div>

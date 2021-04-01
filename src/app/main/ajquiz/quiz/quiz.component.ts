@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-
+import { Component, OnInit, ViewChild, OnDestroy } from '@angular/core';
 import { QuestionClass } from './question-class';
 import { ToastrService } from 'ngx-toastr';
 import { ModalDirective } from 'ngx-bootstrap/modal';
@@ -24,7 +23,8 @@ export class QuizComponent implements OnInit {
 	@ViewChild('questionForm') questionForm: any;
 	@ViewChild('questionTest') questionTest : any;
 
-	constructor( private toastr: ToastrService) { }
+	constructor( private toastr: ToastrService) {
+  }
 
 	answerArray = [];
 
@@ -39,22 +39,17 @@ export class QuizComponent implements OnInit {
 					this.rightAnswer++;
 				}
 			}
-
 		}
 		this.submitModal.show();
-
 	}
-
 	startQuiz() {
 		for (let i = 0; i < this.allQuestions.length; i++) {
 			if ("selected" in this.allQuestions[i]) {
 				delete this.allQuestions[i]["selected"];
 			}
-
 		}
 		this.questionTest.reset();
 		this.isQuestionCardShow = true;
-
 	}
 	HomePage() {
 		this.isQuestionCardShow = false;
@@ -69,16 +64,13 @@ export class QuizComponent implements OnInit {
 		this.questionForm.reset();
 		this.toastr.success("Du har lagt till frågan!");
 		this.addQuestionModal.hide();
-
 	}
 	checkAnswers(){
 		this.submitModal.hide();
 		this.answerModal.show();
 	}
-
 	ngOnInit() {
 	}
-
   // Alla frågorna till quizet
   allQuestions: any = [{
 		"id": 1,
