@@ -74,12 +74,12 @@ export class QuizComponent implements OnInit {
   // Alla frågorna till quizet
   allQuestions: any = [{
 		"id": 1,
-		"question": "Vad heter Belgiens huvudstad?",
-		"a": "Wien",
-		"b": "Berlin",
-		"c": "Bryssel",
-		"d": "Prag",
-		"answer": "c"
+		"question": "Hur många procent av Sveriges befolkning har sett en film på bio de senaste 12 månaderna?",
+		"a": "21%",
+		"b": "53%",
+		"c": "77%",
+		"d": "85%",
+		"answer": "a"
 	},
 	{
 		"id": 2,
