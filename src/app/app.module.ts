@@ -1,4 +1,4 @@
-import { HurvalkannerdudinpublikComponent } from './maincontent/publik/hurvalkannerdudinpublik/hurvalkannerdudinpublik.component';
+import { HurvalkannerdudinpublikComponent } from './maincontent/publik/C/hurvalkannerdudinpublik/hurvalkannerdudinpublik.component';
 import { OrdlistaComponent } from './maincontent/publik/ordlista/ordlista.component';
 import { RegisterComponent } from './shared/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';

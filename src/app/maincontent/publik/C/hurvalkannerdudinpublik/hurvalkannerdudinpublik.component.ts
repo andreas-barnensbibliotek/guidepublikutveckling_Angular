@@ -1,5 +1,5 @@
-import { Global } from './../../../core/Models/global';
-import { WpApiService } from './../../../core/Service/wp-api/wp-api.service';
+import { Global } from '../../../../core/Models/global';
+import { WpApiService } from '../../../../core/Service/wp-api/wp-api.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Location } from '@angular/common';
 

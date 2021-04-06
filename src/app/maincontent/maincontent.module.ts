@@ -14,6 +14,7 @@ import { VilkaverktygbehoverniComponent } from './privat/vilkaverktygbehoverni/v
 import { VadbehovernipafardenComponent } from './privat/vadbehovernipafarden/vadbehovernipafarden.component';
 import { VardetvartdetComponent } from './privat/vardetvartdet/vardetvartdet.component';
 import { VilketarnastastegComponent } from './privat/vilketarnastasteg/vilketarnastasteg.component';
+import { IntervjuSkanesDansteaterComponent } from './publik/c/intervju-skanes-dansteater/intervju-skanes-dansteater.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { VilketarnastastegComponent } from './privat/vilketarnastasteg/vilketarn
     VilkaverktygbehoverniComponent,
     VadbehovernipafardenComponent,
     VardetvartdetComponent,
-    VilketarnastastegComponent
+    VilketarnastastegComponent,
+    IntervjuSkanesDansteaterComponent
   ],
   imports: [
     CommonModule,

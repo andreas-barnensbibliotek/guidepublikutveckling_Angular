@@ -1,4 +1,4 @@
-import { HurvalkannerdudinpublikComponent } from './maincontent/publik/hurvalkannerdudinpublik/hurvalkannerdudinpublik.component';
+import { HurvalkannerdudinpublikComponent } from './maincontent/publik/C/hurvalkannerdudinpublik/hurvalkannerdudinpublik.component';
 import { OrdlistaComponent } from './maincontent/publik/ordlista/ordlista.component';
 import { VarforgoradetComponent } from './maincontent/publik/varforgoradet/varforgoradet.component';
 import { RegisterComponent } from './shared/register/register.component';
@@ -10,6 +10,7 @@ import { RouterModule, Routes,ExtraOptions } from '@angular/router';
 import { StartComponent } from './main/start/start.component';
 import { Err404pageComponent } from './shared/err404page/err404page.component';
 import { IntroduktionComponent } from './maincontent/publik/introduktion/introduktion.component';
+import { GenericComponent } from './maincontent/publik/generic/generic.component';
 
 const routerOptions: ExtraOptions = {
   enableTracing: true,
@@ -28,9 +29,11 @@ const routes: Routes = [
 { path: 'varforgoradet', component: VarforgoradetComponent, data: { bodyClass: 'body-1' }  },
 { path: 'quiz', component: QuizComponent, data: { bodyClass: 'body-1' }},
 { path: 'ordlista', component: OrdlistaComponent, data: { bodyClass: 'ord-color'}},
-{ path: 'hur-val-kanner-du-din-publik', component: HurvalkannerdudinpublikComponent},
 { path: 'register', component: RegisterComponent },
-  { path: '**',  component: Err404pageComponent},
+{ path: 'c/hur-val-kanner-du-din-publik', component: HurvalkannerdudinpublikComponent},
+{ path: 'c/:slug',component: GenericComponent },
+{ path: 'd/:slug',component: GenericComponent },
+{ path: '**',  component: Err404pageComponent},
 ];
 
 
