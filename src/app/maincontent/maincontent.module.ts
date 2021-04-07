@@ -15,6 +15,7 @@ import { VadbehovernipafardenComponent } from './privat/vadbehovernipafarden/vad
 import { VardetvartdetComponent } from './privat/vardetvartdet/vardetvartdet.component';
 import { VilketarnastastegComponent } from './privat/vilketarnastasteg/vilketarnastasteg.component';
 import { IntervjuSkanesDansteaterComponent } from './publik/c/intervju-skanes-dansteater/intervju-skanes-dansteater.component';
+import { IntervjuHeatherComponent } from './publik/video/intervju-heather/intervju-heather.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { IntervjuSkanesDansteaterComponent } from './publik/c/intervju-skanes-da
     VadbehovernipafardenComponent,
     VardetvartdetComponent,
     VilketarnastastegComponent,
-    IntervjuSkanesDansteaterComponent
+    IntervjuSkanesDansteaterComponent,
+    IntervjuHeatherComponent
   ],
   imports: [
     CommonModule,

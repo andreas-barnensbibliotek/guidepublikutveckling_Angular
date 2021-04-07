@@ -1,0 +1,9 @@
+<p>intervju-heather works!</p>
+
+<div class="row">
+  <div class="col-2">
+  <div *ngIf="!showVideobox" class="loader">Loading...</div>
+  <iframe *ngIf="showVideobox" [src]="videoUrl" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+</div>
+<br>

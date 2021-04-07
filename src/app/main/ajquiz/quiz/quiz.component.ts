@@ -79,25 +79,52 @@ export class QuizComponent implements OnInit {
 		"b": "53%",
 		"c": "77%",
 		"d": "85%",
-		"answer": "a"
+		"answer": "c"
 	},
 	{
 		"id": 2,
-		"question": "Vad heter Australiens huvudstad?",
-		"a": "Wien",
-		"b": "Camberra",
-		"c": "Bryssel",
-		"d": "Prag",
+		"question": "Hur många procent av Sveriges befolkning har besökt ett museum de senaste 12 månaderna?",
+    "a": "21%",
+		"b": "53%",
+		"c": "77%",
+		"d": "85%",
 		"answer": "b"
 	},
 	{
 		"id": 3,
-		"question": "Vad heter Bulgariens huvudstad?",
-		"a": "Wien",
-		"b": "Sofia",
-		"c": "Bryssel",
-		"d": "Prag",
-		"answer": "b"
+		"question": "Hur många procent av Sveriges befolkning har sett en stand up-föreställning de senaste 12 månaderna?",
+		"a": "21%",
+		"b": "53%",
+		"c": "77%",
+		"d": "85%",
+		"answer": "a"
+	},
+	{
+		"id": 4,
+		"question": "Hur många procent av Sveriges befolkning har tidigare sett en teaterföreställning, men inte de senaste 3 åren?",
+		"a": "2%",
+		"b": "9%",
+		"c": "15%",
+		"d": "28%",
+		"answer": "d"
+	},
+	{
+		"id": 5,
+		"question": "Hur många procent av Sveriges befolkning har aldrig varit på en live-konsert, och är inte heller intresserad?",
+		"a": "3%",
+		"b": "12%",
+		"c": "24%",
+		"d": "37%",
+		"answer": "a"
+	},
+	{
+		"id": 6,
+		"question": "Hur många procent av Sveriges befolkning har aldrig sett modern dans eller balett, men skulle vara intresserad av att gå på en föreställning någon gång? ",
+		"a": "3%",
+		"b": "12%",
+		"c": "24%",
+		"d": "37%",
+		"answer": "c"
 	}
 	];
 

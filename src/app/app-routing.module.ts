@@ -1,3 +1,4 @@
+import { IntervjuHeatherComponent } from './maincontent/publik/video/intervju-heather/intervju-heather.component';
 import { HurvalkannerdudinpublikComponent } from './maincontent/publik/C/hurvalkannerdudinpublik/hurvalkannerdudinpublik.component';
 import { OrdlistaComponent } from './maincontent/publik/ordlista/ordlista.component';
 import { VarforgoradetComponent } from './maincontent/publik/varforgoradet/varforgoradet.component';
@@ -31,6 +32,7 @@ const routes: Routes = [
 { path: 'ordlista', component: OrdlistaComponent, data: { bodyClass: 'ord-color'}},
 { path: 'register', component: RegisterComponent },
 { path: 'c/hur-val-kanner-du-din-publik', component: HurvalkannerdudinpublikComponent},
+{ path: 'c/video',component: IntervjuHeatherComponent },
 { path: 'c/:slug',component: GenericComponent },
 { path: 'd/:slug',component: GenericComponent },
 { path: '**',  component: Err404pageComponent},
