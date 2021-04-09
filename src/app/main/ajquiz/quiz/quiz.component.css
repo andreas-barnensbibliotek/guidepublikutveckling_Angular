@@ -2,3 +2,7 @@
     color: #116a65;
     font-weight: 700;
 }
+.modal-body{
+  overflow: auto;
+  max-height: 90vh;
+}

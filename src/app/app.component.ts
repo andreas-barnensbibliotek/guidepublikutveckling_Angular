@@ -1,7 +1,7 @@
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { DOCUMENT } from '@angular/common';
 import { Component, OnDestroy, OnInit, Inject, Renderer2 } from '@angular/core';
-import { NgcCookieConsentService } from 'ngx-cookieconsent';
+import { NgcCookieConsentService, NgcStatusChangeEvent } from 'ngx-cookieconsent';
 
 import { Subscription } from 'rxjs';
 import { Global } from './core/Models/global';
@@ -15,6 +15,7 @@ import { filter, map, mergeMap } from 'rxjs/operators';
 export class AppComponent implements OnInit, OnDestroy {
    //keep refs to subscriptions to be able to unsubscribe later
   popupOpenSubscription: Subscription = new Subscription;
+  // statusChangeSubscription: Subscription = new Subscription;
   logg:any;
   title = 'guidepublikutveckling';
 
@@ -48,11 +49,19 @@ export class AppComponent implements OnInit, OnDestroy {
         }
         });
 
+        // Använd denna för att tabort alla cookies om anv clickar deny i NgcCookieConsent (glöm inte unsubscribe)
+        // this.statusChangeSubscription = this.ccService.statusChange$.subscribe(
+        //   (event: NgcStatusChangeEvent) => {
+        //       if(event.status==='deny'){
+        //         this.glb.deleteAllCookies();
+        //       }
+        // });
   }
 
   ngOnDestroy() {
     // unsubscribe to cookieconsent observables to prevent memory leaks
     this.popupOpenSubscription.unsubscribe();
+    // this.statusChangeSubscription.unsubscribe();
   }
 
   private updateBodyClass(customBodyClass?: string) {

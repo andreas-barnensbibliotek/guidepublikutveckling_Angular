@@ -1,0 +1,17 @@
+f1 		  /guide/f/ta-reda-pa-mer-om-din-publik
+f1-1 	  /guide/f/hur-ska-du-fa-svar-pa-dina-fragor
+f1-1 	  /guide/f/audience-atlas-sverige
+f1-1b 	/guide/f/bedriva-primarforskning
+f1-1c 	/guide/f/informationskallor
+f1-3 	  /guide/f/fa-anvandbara-svar
+f1-4 	  /guide/f/gor-det-sjalv-undersokning
+
+Ej klara
+f1-2  	/guide/f/
+f1-4a 	/guide/f/
+f1-4b 	/guide/f/
+f2	 	  /guide/f/
+f2-1 	  /guide/f/
+f3	 	  /guide/f/
+f5 		  /guide/f/
+f6 		  /guide/f/

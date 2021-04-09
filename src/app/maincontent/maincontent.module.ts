@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaincontentComponent } from './maincontent.component';
 import { GuideNavComponent } from '../shared/guide-nav/guide-nav.component';
-import { GenericComponent } from './publik/generic/generic.component';
+import { GenericComponent } from './generic/generic.component';
 import { VarbefinnerniernuComponent } from './privat/varbefinnerniernu/varbefinnerniernu.component';
 import { VarvillninaComponent } from './privat/varvillnina/varvillnina.component';
 import { VilkavillnihaombordComponent } from './privat/vilkavillnihaombord/vilkavillnihaombord.component';
@@ -14,8 +14,9 @@ import { VilkaverktygbehoverniComponent } from './privat/vilkaverktygbehoverni/v
 import { VadbehovernipafardenComponent } from './privat/vadbehovernipafarden/vadbehovernipafarden.component';
 import { VardetvartdetComponent } from './privat/vardetvartdet/vardetvartdet.component';
 import { VilketarnastastegComponent } from './privat/vilketarnastasteg/vilketarnastasteg.component';
-import { IntervjuSkanesDansteaterComponent } from './publik/c/intervju-skanes-dansteater/intervju-skanes-dansteater.component';
+
 import { IntervjuHeatherComponent } from './publik/video/intervju-heather/intervju-heather.component';
+import { GenericExtraComponent } from './generic-extra/generic-extra.component';
 
 
 @NgModule({
@@ -33,8 +34,8 @@ import { IntervjuHeatherComponent } from './publik/video/intervju-heather/interv
     VadbehovernipafardenComponent,
     VardetvartdetComponent,
     VilketarnastastegComponent,
-    IntervjuSkanesDansteaterComponent,
-    IntervjuHeatherComponent
+    IntervjuHeatherComponent,
+    GenericExtraComponent,
   ],
   imports: [
     CommonModule,

@@ -1,15 +1,15 @@
-import { WpApiService } from './../../../core/Service/wp-api/wp-api.service';
+import { Global } from './../../core/Models/global';
+import { WpApiService } from './../../core/Service/wp-api/wp-api.service';
 import { Component, OnInit } from '@angular/core';
-import { Global } from 'src/app/core/Models/global';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-generic',
-  templateUrl: './generic.component.html',
-  styleUrls: ['./generic.component.scss']
+  selector: 'app-generic-extra',
+  templateUrl: './generic-extra.component.html',
+  styleUrls: ['./generic-extra.component.scss']
 })
-export class GenericComponent implements OnInit {
+export class GenericExtraComponent implements OnInit {
 
   htmlPageData:any=[];
   currpageSlug:any;
@@ -49,5 +49,9 @@ export class GenericComponent implements OnInit {
 
   ngOnDestroy(){
     this.glb.VisaMainNav= true;
+  }
+
+  isTom(val:any){
+    return !this.glb.isEmptyObj(val);
   }
 }

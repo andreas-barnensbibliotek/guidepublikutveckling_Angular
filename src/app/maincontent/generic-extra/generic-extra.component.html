@@ -1,0 +1,30 @@
+<h1 class="h1-dekor" [innerHtml]="htmlPageData[0]?.acf.rubrik"></h1>
+<div class="container-grid container-22" style="z-index: 9999!important; position: relative;" >
+
+  <a (click)="goBack()"  data-placement="top" class="link-container link-container-6" style="z-index: 9999!important;" title="Tillbaka"></a>
+</div>
+<div class="container-grid container-21">
+  <div [innerHtml]="htmlPageData[0]?.acf.content">
+  </div>
+  <div *ngIf="isTom(htmlPageData[0]?.acf.content_item1)" [innerHtml]="htmlPageData[0]?.acf.content_item1">
+  </div>
+  <div *ngIf="isTom(htmlPageData[0]?.acf.content_item2)" [innerHtml]="htmlPageData[0]?.acf.content_item2">
+  </div>
+  <div *ngIf="isTom(htmlPageData[0]?.acf.content_item3)" [innerHtml]="htmlPageData[0]?.acf.content_item3">
+  </div>
+  <div *ngIf="isTom(htmlPageData[0]?.acf.content_item4)" [innerHtml]="htmlPageData[0]?.acf.content_item4">
+  </div>
+  <!-- <div *ngIf="isTom(htmlPageData[0]?.acf.content_item5)" [innerHtml]="htmlPageData[0]?.acf.content_item5">
+  </div>
+  <div *ngIf="isTom(htmlPageData[0]?.acf.content_item6)" [innerHtml]="htmlPageData[0]?.acf.content_item6">
+  </div>
+  <div *ngIf="isTom(htmlPageData[0]?.acf.content_item7)" [innerHtml]="htmlPageData[0]?.acf.content_item7">
+  </div>
+  <div *ngIf="isTom(htmlPageData[0]?.acf.content_item8)" [innerHtml]="htmlPageData[0]?.acf.content_item8">
+  </div>
+  <div *ngIf="isTom(htmlPageData[0]?.acf.content_item9)" [innerHtml]="htmlPageData[0]?.acf.content_item9">
+  </div>
+  <div *ngIf="isTom(htmlPageData[0]?.acf.content_item10)" [innerHtml]="htmlPageData[0]?.acf.content_item10">
+  </div> -->
+</div>
+

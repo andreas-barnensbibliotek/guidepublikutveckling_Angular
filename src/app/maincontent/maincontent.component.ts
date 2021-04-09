@@ -1,3 +1,4 @@
+import { Global } from './../core/Models/global';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaincontentComponent implements OnInit {
 
-  constructor() { }
+  constructor(public glb:Global) { }
 
   ngOnInit(): void {
   }

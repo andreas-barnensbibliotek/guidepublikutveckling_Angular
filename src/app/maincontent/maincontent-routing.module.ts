@@ -8,10 +8,11 @@ import { VilkavillnihaombordComponent } from './privat/vilkavillnihaombord/vilka
 import { VarvillninaComponent } from './privat/varvillnina/varvillnina.component';
 import { VarbefinnerniernuComponent } from './privat/varbefinnerniernu/varbefinnerniernu.component';
 import { MaincontentComponent } from './maincontent.component';
-import { GenericContentComponent } from './generic-content/generic-content.component';
+
 import { GuidestartComponent } from './privat/guidestart/guidestart.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GenericComponent } from './generic/generic.component';
 
 const maincontentRoutes: Routes = [
     {
@@ -27,7 +28,8 @@ const maincontentRoutes: Routes = [
             {path:'vad-behover-ni-pa-farden',component: VadbehovernipafardenComponent },
             {path:'var-det-vart-det',component: VardetvartdetComponent },
             {path:'vilket-ar-nasta-steg',component: VilketarnastastegComponent },
-            {path:':slug',component: GenericContentComponent},
+            {path:'f/:slug',component: GenericComponent },
+            {path:':slug',component: GenericComponent},
 
           ]
     }

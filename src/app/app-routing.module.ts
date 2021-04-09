@@ -11,7 +11,7 @@ import { RouterModule, Routes,ExtraOptions } from '@angular/router';
 import { StartComponent } from './main/start/start.component';
 import { Err404pageComponent } from './shared/err404page/err404page.component';
 import { IntroduktionComponent } from './maincontent/publik/introduktion/introduktion.component';
-import { GenericComponent } from './maincontent/publik/generic/generic.component';
+import { GenericComponent } from './maincontent/generic/generic.component';
 
 const routerOptions: ExtraOptions = {
   enableTracing: true,

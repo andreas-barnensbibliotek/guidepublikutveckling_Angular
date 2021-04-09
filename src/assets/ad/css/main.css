@@ -97,6 +97,8 @@ h1.h1-overrubrik-guide.white {
 }
 
 h1.h1-about {
+  margin-top: 50px;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 8.89vw;
   line-height: 9.52vw;
@@ -171,8 +173,8 @@ h2.h2-bold:hover {
 }
 
 h2:hover {
-  /* color: transparent;
-  text-decoration: underline;*/
+  color: #000;
+  text-decoration: none;
 }
 
 h2.citat.h2-bold:hover {
@@ -197,9 +199,23 @@ h2.h2-bold.white:active {
 h3.h3-about {
   margin-top: 32px;
   margin-bottom: 0;
+  color: #000;
   font-weight: 700;
   font-size: 20px;
   line-height: 32px;
+}
+
+h3 span.heading-text-1 {
+  font-weight: 500;
+}
+
+h3.h3-about.medium {
+  font-weight: 500;
+}
+
+h3.f1-3.h3-about.medium {
+  margin-top: 32px;
+  margin-bottom: 0;
 }
 
 h4.heading-4 {
@@ -396,6 +412,8 @@ p.paragraph.ingress-about {
 
 p.paragraph.p-standard-about {
   margin-bottom: 0;
+  color: #000;
+  font-weight: 400;
   font-size: 19px;
   line-height: 32px;
 }
@@ -481,36 +499,6 @@ p.paragraph span.paragraph-text-24 {
 }
 
 p.paragraph span.paragraph-text-25 {
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-p.paragraph span.paragraph-text-26 {
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-p.paragraph span.paragraph-text-27 {
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-p.paragraph span.paragraph-text-28 {
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-p.paragraph span.paragraph-text-29 {
-  font-weight: 700;
-  font-size: 1.1875rem;
-}
-
-p.paragraph span.paragraph-text-30 {
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-p.paragraph span.paragraph-text-31 {
   font-weight: 700;
   font-size: 1.25rem;
 }
@@ -687,11 +675,37 @@ p.paragraph.referens-about {
 
 p.paragraph.p-image-about {
   margin-top: 5px;
+  margin-bottom: 40px;
 }
 
 p.paragraph.last.p-standard-about {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+p.paragraph.link-text-about.p-standard-about {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-26 {
+  font-weight: 400;
+}
+
+p.paragraph.p-standard-about.space-down {
+  margin-bottom: 40px;
+}
+
+p.paragraph.bold-about.p-standard-about {
+  font-weight: 700;
+}
+
+p.paragraph.bold-about.p-space-above-40.p-standard-about {
+  margin-top: 40px;
+}
+
+p.paragraph.f1-4-space-above.p-standard-about {
+  margin-top: 5px;
 }
 
 p.paragraph.p-std:hover {
@@ -704,8 +718,8 @@ p.paragraph.p-std.white:hover {
 }
 
 p.paragraph:hover {
-  /* color: transparent;
-  text-decoration: underline;*/
+  color: #000;
+  text-decoration: none;
 }
 
 p.paragraph.ingress.paragraph-1:hover {
@@ -768,6 +782,10 @@ p.paragraph.ingress-guide:hover {
   text-decoration: none;
 }
 
+p.paragraph.link-text-about.p-standard-about:hover {
+  text-decoration: underline;
+}
+
 p.paragraph.footer.p-std.white:active {
   text-decoration: none;
 }
@@ -802,6 +820,14 @@ ul.unorder-list.referens.unordered-list-4 {
   border-bottom-style: solid;
   list-style-position: outside;
   list-style-type: none;
+}
+
+ul.unorder-list.f1.unordered-list-4 {
+  margin-bottom: 20px;
+}
+
+ul.unorder-list.f1.no-space.unordered-list-4 {
+  margin-bottom: 0;
 }
 
 blockquote.citat-about {
@@ -931,7 +957,6 @@ label.radio.quiz-alt {
 /* Layout Elements */
 
 body.body-1 {
-  position: static;
   margin: 0;
   min-width: 10px;
   min-height: 100vw;
@@ -1103,8 +1128,9 @@ body.ord-color {
   background-blend-mode: normal;
 }
 
-.link-container.link-container-6:hover {
-  transform: rotate(-45deg);
+.link-container.con-link-about {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .container-grid.nav-tl.navbar.navbar-dark.navbar-expand-md {
@@ -2136,8 +2162,9 @@ li.list-item.list-item-2 {
 }
 
 .container-grid.container-21 {
-  margin: 0 auto 80px;
-  padding-top: 0;
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto;
   max-width: 600px;
   width: 95%;
   background-color: transparent;
@@ -2159,6 +2186,7 @@ li.list-item.list-item-2 {
 }
 
 li.list-item.list-item-about {
+  color: #000;
   font-size: 19px;
   line-height: 32px;
 }
@@ -2206,6 +2234,7 @@ li.list-item.list-item-about {
 }
 
 .container-grid.guide1-sektion2 {
+  margin-top: 0;
   padding-top: 50px;
   padding-bottom: 20px;
   background-color: #f6f4ea;
@@ -2381,37 +2410,18 @@ li.list-item span.list-item-text-2 {
   height: 60px;
 }
 
-.container-grid.con-h1-about {
-  margin-top: 50px;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  min-height: 50px;
-  max-width: 600px;
-  height: auto;
-  border-bottom-width: .1875rem;
-  border-bottom-style: solid;
-}
-
-.container-grid.con-p-about {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom-width: .1875rem;
-  border-bottom-style: solid;
-}
-
 .container-grid.image-about {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   min-height: 400px;
   max-height: none;
   height: auto;
-  background-image: url('../Varbergs%20Teater%20-1.jpg');
+  background-image: none;
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
   background-origin: padding-box;
-  background-size: 100% auto;
+  background-size: 0 0;
   background-repeat: no-repeat;
 
   background-blend-mode: normal;
@@ -2425,6 +2435,162 @@ li.list-item.list-item-about.small {
 
 li.list-item.last.list-item-about.small {
   margin-bottom: 0;
+}
+
+div.responsive-picture.picture-2 {
+  max-width: none;
+  background-image: url('../Varbergs%20Teater%20-1.jpg');
+  background-attachment: scroll;
+  background-position: left top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  background-blend-mode: normal;
+}
+
+div.responsive-picture.picture-3 {
+  max-width: none;
+  background-image: url('../Varbergs%20Teater%20-1.jpg');
+  background-attachment: scroll;
+  background-position: left top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  background-blend-mode: normal;
+}
+
+li.list-item a.list-item-text-3 {
+  color: #000;
+  font-weight: 400;
+}
+
+li.list-item a.list-item-text-4 {
+  color: #000;
+}
+
+.container-grid.container-27 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 5px 20px 40px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.container-grid.container-28 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 5px 20px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.rule.rule-30-40 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.rule.rule-30-40 hr {
+  border-top-width: 3px;
+  border-top-color: #000;
+}
+
+.rule.rule-40-40 {
+  margin-top: 44px;
+  margin-bottom: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.rule.rule-40-40 hr {
+  border-top-width: 3px;
+  border-top-color: #000;
+}
+
+li.list-item a.list-item-text-5 {
+  color: #000;
+}
+
+li.list-item a.list-item-text-6 {
+  color: #000;
+}
+
+li.list-item span.list-item-text-7 {
+  font-weight: 500;
+}
+
+li.list-item span.list-item-text-8 {
+  font-weight: 500;
+}
+
+li.list-item span.list-item-text-9 {
+  font-weight: 500;
+}
+
+li.list-item span.list-item-text-14 {
+  font-weight: 500;
+}
+
+li.list-item span.list-item-text-15 {
+  font-weight: 500;
+}
+
+li.list-item span.list-item-text-16 {
+  font-weight: 500;
+}
+
+li.list-item span.list-item-text-17 {
+  font-weight: 500;
+}
+
+li.list-item a.list-item-text-3.medium {
+  font-weight: 500;
+}
+
+li.list-item span.list-item-text-4.medium {
+  font-weight: 500;
+}
+
+li.list-item a.list-item-text-5.medium {
+  font-weight: 500;
+}
+
+li.list-item span.list-item-text-3.medium {
+  font-weight: 500;
+}
+
+li.list-item span.list-item-text-5.medium {
+  font-weight: 500;
+}
+
+li.list-item span.list-item-text-6.medium {
+  font-weight: 500;
+}
+
+li.list-item span.list-item-text-10 {
+  font-weight: 500;
+}
+
+li.list-item a.list-item-text-11 {
+  color: #000;
+}
+
+li.list-item a.list-item-text-12 {
+  color: #000;
+}
+
+li.list-item a.list-item-text-13 {
+  color: #000;
+}
+
+.container-grid.container-28.f1-3 {
+  margin-top: 40px;
+  padding-bottom: 20px;
 }
 
 a.glyph.navbar-toggler:visited {
@@ -2441,6 +2607,34 @@ a.glyph.navbar-toggler:focus {
 
 a.glyph.navbar-toggler:hover {
   color: #fff;
+}
+
+li.list-item a.list-item-text-3:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-4:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-5:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-6:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-11:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-12:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-13:hover {
+  text-decoration: underline;
 }
 
 .container-grid.btn-bgr-tl.container-2:active {
@@ -3115,7 +3309,6 @@ a.glyph.navbar-toggler:active {
     margin-top: 40px;
     margin-right: 20px;
     margin-left: 0;
-    z-index: 9999!important;
   }
 
   .container-grid.card-wrap.two-col-tl {

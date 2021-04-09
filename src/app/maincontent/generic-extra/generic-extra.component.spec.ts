@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GenericContentComponent } from './generic-content.component';
+import { GenericExtraComponent } from './generic-extra.component';
 
-describe('GenericContentComponent', () => {
-  let component: GenericContentComponent;
-  let fixture: ComponentFixture<GenericContentComponent>;
+describe('GenericExtraComponent', () => {
+  let component: GenericExtraComponent;
+  let fixture: ComponentFixture<GenericExtraComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GenericContentComponent ]
+      declarations: [ GenericExtraComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GenericContentComponent);
+    fixture = TestBed.createComponent(GenericExtraComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -18,7 +18,6 @@ import { Err404pageComponent } from './shared/err404page/err404page.component';
 
 import { MainFooterComponent } from './shared/main-footer/main-footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { GenericContentComponent } from './maincontent/generic-content/generic-content.component';
 import { MainNavComponent } from './shared/main-nav/main-nav.component';
 import { IntroduktionComponent } from './maincontent/publik/introduktion/introduktion.component';
 import { VarforgoradetComponent } from './maincontent/publik/varforgoradet/varforgoradet.component';
@@ -27,7 +26,7 @@ import { ScrollToTopComponent } from './shared/scroll-to-top/scroll-to-top.compo
 
 const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
-    domain: 'localhost'// it is recommended to set your domain, for cookies to work properly
+    domain: 'dev.guidepublikutveckling.se' //'localhost'// it is recommended to set your domain, for cookies to work properly
   },
   palette: {
     popup: {
@@ -81,7 +80,6 @@ const cookieConfig:NgcCookieConsentConfig = {
     MainNavComponent,
     MainFooterComponent,
     RegisterComponent,
-    GenericContentComponent,
     IntroduktionComponent,
     VarforgoradetComponent,
     OrdlistaComponent,
