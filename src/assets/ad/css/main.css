@@ -218,6 +218,10 @@ h3.f1-3.h3-about.medium {
   margin-bottom: 0;
 }
 
+h3.f3.h3-about {
+  margin-bottom: 20px;
+}
+
 h4.heading-4 {
   text-align: center;
   font-weight: 300;
@@ -708,6 +712,123 @@ p.paragraph.f1-4-space-above.p-standard-about {
   margin-top: 5px;
 }
 
+p.paragraph a.paragraph-text-27 {
+  color: #000;
+}
+
+p.paragraph.p-standard-about.tabell {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+
+p.paragraph.p-standard-about.right.tabell {
+  width: 10%;
+  text-align: right;
+}
+
+p.paragraph.left.p-standard-about.tabell {
+  width: 80%;
+}
+
+p.paragraph.f3.left.p-standard-about.tabell {
+  width: 100%;
+  font-weight: 400;
+}
+
+p.paragraph.bold.f3.left.p-standard-about.tabell {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-28 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-29 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-30 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-31 {
+  font-weight: 700;
+}
+
+p.paragraph.f3.h1-2.left.p-standard-about.tabell {
+  font-weight: 400;
+}
+
+p.paragraph span.paragraph-text-63 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-64 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-65 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-66 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-67 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-68 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-69 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-70 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-71 {
+  font-weight: 500;
+}
+
+p.paragraph span.paragraph-text-72 {
+  font-weight: 500;
+}
+
+p.paragraph span.paragraph-text-73 {
+  font-weight: 500;
+}
+
+p.paragraph span.paragraph-text-74 {
+  font-weight: 500;
+}
+
+p.paragraph span.paragraph-text-75 {
+  font-weight: 400;
+}
+
+p.paragraph span.paragraph-text-76 {
+  font-weight: 500;
+}
+
+p.paragraph span.paragraph-text-77 {
+  font-weight: 500;
+}
+
+p.paragraph span.paragraph-text-78 {
+  font-weight: 500;
+}
+
+p.paragraph span.paragraph-text-79 {
+  font-weight: 500;
+  font-style: normal;
+}
+
 p.paragraph.p-std:hover {
   color: #000;
   text-decoration: underline;
@@ -786,6 +907,10 @@ p.paragraph.link-text-about.p-standard-about:hover {
   text-decoration: underline;
 }
 
+p.paragraph a.paragraph-text-27:hover {
+  text-decoration: underline;
+}
+
 p.paragraph.footer.p-std.white:active {
   text-decoration: none;
 }
@@ -828,6 +953,24 @@ ul.unorder-list.f1.unordered-list-4 {
 
 ul.unorder-list.f1.no-space.unordered-list-4 {
   margin-bottom: 0;
+}
+
+ul.unorder-list.f14b.unordered-list-4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 0;
+}
+
+ul.unorder-list.f3.unordered-list-4 {
+  margin-bottom: 20px;
+}
+
+ul.unorder-list.f3.g1.g1-plus.unordered-list-4 {
+  margin-bottom: 40px;
+}
+
+ul.unorder-list.space-under-h1.unordered-list-4 {
+  margin-bottom: 20px;
 }
 
 blockquote.citat-about {
@@ -1131,6 +1274,10 @@ body.ord-color {
 .link-container.con-link-about {
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.link-container.con-link-about.h1 {
+  margin-top: 40px;
 }
 
 .container-grid.nav-tl.navbar.navbar-dark.navbar-expand-md {
@@ -2590,7 +2737,149 @@ li.list-item a.list-item-text-13 {
 
 .container-grid.container-28.f1-3 {
   margin-top: 40px;
+  padding-top: 5px;
   padding-bottom: 20px;
+}
+
+li.list-item a.list-item-text-18 {
+  color: #000;
+}
+
+.container-grid.container-28.f2 {
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.container-grid.tabell-line {
+  margin-top: 5px;
+}
+
+.container-grid.wrap-tabell {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  background-color: transparent;
+}
+
+.container-grid.container-28.f2.lower {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-bottom: 40px;
+}
+
+.container-grid.f3.tabell-line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex;
+  margin: 0 10px 10px;
+  padding: 10px;
+  width: 50%;
+  background-color: #849c8f;
+}
+
+.container-grid.f3.wrap-tabell {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 0;
+  border-bottom-width: 0;
+  border-bottom-style: solid;
+  background-color: transparent;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+}
+
+.container-grid.f3.left.tabell-line {
+  margin-right: 5px;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-right: 10px;
+  background-color: #f6f4ea;
+}
+
+.container-grid.f3.right.tabell-line {
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 5px;
+  padding-bottom: 10px;
+  background-color: #f6f4ea;
+}
+
+.container-grid.container-28.f2.f3 {
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+li.list-item span.list-item-text-19 {
+  font-weight: 700;
+}
+
+li.list-item span.list-item-text-20 {
+  font-weight: 700;
+}
+
+li.list-item span.list-item-text-21 {
+  font-weight: 700;
+}
+
+li.list-item span.list-item-text-22 {
+  font-weight: 700;
+}
+
+li.list-item span.list-item-text-23 {
+  font-weight: 700;
+}
+
+li.list-item span.list-item-text-24 {
+  font-weight: 700;
+}
+
+li.list-item span.list-item-text-25 {
+  font-weight: 700;
+}
+
+.container-grid.f3.g2.wrap-tabell {
+  margin-top: 32px;
+}
+
+.container-grid.container-28.f2.f3.h1-2 {
+  margin-top: 20px;
+  padding-top: 32px;
+}
+
+.container-grid.f3.h1-2.wrap-tabell {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+}
+
+.container-grid.f3.h1-2.right.tabell-line {
+  margin-top: 10px;
+  margin-left: 0;
+  width: 100%;
+}
+
+.container-grid.f3.h1-2.left.tabell-line {
+  margin-right: 0;
+  width: 100%;
 }
 
 a.glyph.navbar-toggler:visited {
@@ -2637,6 +2926,10 @@ li.list-item a.list-item-text-13:hover {
   text-decoration: underline;
 }
 
+li.list-item a.list-item-text-18:hover {
+  text-decoration: underline;
+}
+
 .container-grid.btn-bgr-tl.container-2:active {
   background-color: #b2a47b;
 }
@@ -2674,6 +2967,16 @@ a.glyph.navbar-toggler:active {
 
   p.paragraph.p-std.strategi {
     color: #fff;
+  }
+
+  p.paragraph.left.p-standard-about.tabell {
+    width: 60%;
+  }
+
+  p.paragraph.p-standard-about.right.tabell {
+    margin-right: 40px;
+    max-width: none;
+    width: 30%;
   }
 
   li.list-item-container.nav-item {
@@ -2783,6 +3086,28 @@ a.glyph.navbar-toggler:active {
 
   .container-grid.card-wrap-tl {
     width: auto;
+  }
+
+  .container-grid.f3.h1-2.left.tabell-line {
+    margin-right: 5px;
+    width: 50%;
+  }
+
+  .container-grid.f3.h1-2.right.tabell-line {
+    margin-top: 0;
+    margin-left: 5px;
+    width: 50%;
+  }
+
+  .container-grid.f3.h1-2.wrap-tabell {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
   }
 }
 

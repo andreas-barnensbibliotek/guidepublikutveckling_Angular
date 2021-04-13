@@ -1,7 +1,9 @@
+
 <h1 class="h1-dekor" [innerHtml]="htmlPageData[0]?.acf.rubrik"></h1>
 <div class="container-grid container-22" style="z-index: 9999!important; position: relative;" >
 
   <a (click)="goBack()"  data-placement="top" class="link-container link-container-6" style="z-index: 9999!important;" title="Tillbaka"></a>
 </div>
 <div class="container-grid container-21" [innerHtml]="htmlPageData[0]?.acf.content">
+  <div class="loader"></div>
 </div>

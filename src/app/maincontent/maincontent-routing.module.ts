@@ -29,6 +29,15 @@ const maincontentRoutes: Routes = [
             {path:'var-det-vart-det',component: VardetvartdetComponent },
             {path:'vilket-ar-nasta-steg',component: VilketarnastastegComponent },
             {path:'f/:slug',component: GenericComponent },
+            {path:'g/:slug',component: GenericComponent },
+            {path:'h/:slug',component: GenericComponent },
+            {path:'i/:slug',component: GenericComponent },
+            {path:'j/:slug',component: GenericComponent },
+            {path:'k/:slug',component: GenericComponent },
+            {path:'l/:slug',component: GenericComponent },
+            {path:'m/:slug',component: GenericComponent },
+            {path:'n/:slug',component: GenericComponent },
+            {path:'o/:slug',component: GenericComponent },
             {path:':slug',component: GenericComponent},
 
           ]
