@@ -200,6 +200,7 @@ h3.h3-about {
   margin-top: 32px;
   margin-bottom: 0;
   color: #000;
+  text-align: left;
   font-weight: 700;
   font-size: 20px;
   line-height: 32px;
@@ -220,6 +221,11 @@ h3.f1-3.h3-about.medium {
 
 h3.f3.h3-about {
   margin-bottom: 20px;
+}
+
+h3.h3-about.k1-2 {
+  margin-top: 10px;
+  text-align: center;
 }
 
 h4.heading-4 {
@@ -829,6 +835,14 @@ p.paragraph span.paragraph-text-79 {
   font-style: normal;
 }
 
+p.paragraph.k1-2.p-standard-about {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
 p.paragraph.p-std:hover {
   color: #000;
   text-decoration: underline;
@@ -934,7 +948,7 @@ ul.unorder-list.unordered-list-3 {
 
 ul.unorder-list.unordered-list-4 {
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 32px;
 }
 
 ul.unorder-list.referens.unordered-list-4 {
@@ -971,6 +985,10 @@ ul.unorder-list.f3.g1.g1-plus.unordered-list-4 {
 
 ul.unorder-list.space-under-h1.unordered-list-4 {
   margin-bottom: 20px;
+}
+
+ul.unorder-list.k1.unordered-list-4 {
+  margin-bottom: 32px;
 }
 
 blockquote.citat-about {
@@ -2882,6 +2900,75 @@ li.list-item span.list-item-text-25 {
   width: 100%;
 }
 
+li.list-item a.list-item-text-26 {
+  color: #000;
+}
+
+li.list-item a.list-item-text-27 {
+  color: #000;
+}
+
+li.list-item a.list-item-text-28 {
+  color: #000;
+}
+
+li.list-item a.list-item-text-29 {
+  color: #000;
+}
+
+li.list-item a.list-item-text-30 {
+  color: #000;
+}
+
+li.list-item a.list-item-text-31 {
+  color: #000;
+}
+
+li.list-item a.list-item-text-32 {
+  color: #000;
+}
+
+li.list-item a.list-item-text-33 {
+  color: #000;
+}
+
+div.responsive-picture.i2.picture-2 {
+  display: block;
+  margin-top: 40px;
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+  background-color: transparent;
+  background-image: url('https://cdn.coffeecupcloud.com/appresources/v1/common/background_online_image.png');
+}
+
+.container-grid.container-6.k1-2 {
+  -ms-flex-pack: center;
+  -ms-flex-align: start;
+  margin-top: 10px;
+
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+          align-content: flex-end;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+}
+
+.container-grid.container-28.f1-3.k1-2 {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.container-grid.container-7.k1-2 {
+  background-image: url('../pil-beige_vit-down-60x60.png');
+}
+
 a.glyph.navbar-toggler:visited {
   color: #fff;
 }
@@ -2927,6 +3014,38 @@ li.list-item a.list-item-text-13:hover {
 }
 
 li.list-item a.list-item-text-18:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-26:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-27:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-28:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-29:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-30:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-31:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-32:hover {
+  text-decoration: underline;
+}
+
+li.list-item a.list-item-text-33:hover {
   text-decoration: underline;
 }
 
