@@ -11,14 +11,14 @@ import { Global } from 'src/app/core/Models/global';
 export class MainNavComponent implements OnInit {
 
   mainNavData:any=[];
-
+  devversion:string= "";
   constructor(private wpApi:WpApiService, public glb:Global) { }
 
   ngOnInit(): void {
     this.wpApi.currentPageDataHandler.subscribe(()=>{
       this.getNavdata();
     })
-  this.getNavdata();
+    this.getNavdata();
   }
 
   getNavdata(){

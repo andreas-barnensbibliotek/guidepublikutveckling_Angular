@@ -1,0 +1,18 @@
+<div class="container-grid con-h1-dekor">
+  <h1 class="h1-dekor" [innerHtml]="htmlPageData[0]?.acf.rubrik">intervju</h1>
+</div>
+<div class="container-grid container-22" style="z-index: 9999!important; position: relative;" >
+  <a (click)="goBack()"  data-placement="top" class="link-container link-container-6" style="z-index: 9999!important;" title="Tillbaka"></a>
+</div>
+<div class="container-grid container-21 upper-intervju" [innerHtml]="htmlPageData[0]?.acf.content">
+</div>
+<div class="container-grid container-29">
+  <div class="responsive-picture picture-2">
+    <picture>
+      <img alt="Placeholder Picture" width="1200" height="799" src="{{htmlPageData[0]?.acf.image_item1.url}}" loading="lazy">
+    </picture>
+  </div>
+</div>
+<div class="container-grid container-21 lower-intervju" [innerHtml]="htmlPageData[0]?.acf.content_item1">
+  <div class="loader"></div>
+</div>

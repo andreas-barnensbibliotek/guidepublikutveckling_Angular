@@ -17,6 +17,7 @@ import { VilketarnastastegComponent } from './privat/vilketarnastasteg/vilketarn
 
 import { IntervjuHeatherComponent } from './publik/video/intervju-heather/intervju-heather.component';
 import { GenericExtraComponent } from './generic-extra/generic-extra.component';
+import { GenericIntervjuComponent } from './generic-intervju/generic-intervju.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { GenericExtraComponent } from './generic-extra/generic-extra.component';
     VilketarnastastegComponent,
     IntervjuHeatherComponent,
     GenericExtraComponent,
+    GenericIntervjuComponent,
   ],
   imports: [
     CommonModule,

@@ -1,3 +1,4 @@
+import { Global } from 'src/app/core/Models/global';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainFooterComponent implements OnInit {
 
-  constructor() { }
+  devversion:string="";
+
+  constructor( public glb:Global) { }
 
   ngOnInit(): void {
+    this.devversion= this.glb.currentversion
   }
 
 }

@@ -12,6 +12,7 @@ import { StartComponent } from './main/start/start.component';
 import { Err404pageComponent } from './shared/err404page/err404page.component';
 import { IntroduktionComponent } from './maincontent/publik/introduktion/introduktion.component';
 import { GenericComponent } from './maincontent/generic/generic.component';
+import { GenericIntervjuComponent } from './maincontent/generic-intervju/generic-intervju.component';
 
 const routerOptions: ExtraOptions = {
   enableTracing: true,
@@ -33,8 +34,10 @@ const routes: Routes = [
 { path: 'register', component: RegisterComponent },
 { path: 'c/hur-val-kanner-du-din-publik', component: HurvalkannerdudinpublikComponent},
 { path: 'c/video',component: IntervjuHeatherComponent },
+{ path: 'c/intervju/:slug',component: GenericIntervjuComponent },
 { path: 'c/:slug',component: GenericComponent },
 { path: 'd/:slug',component: GenericComponent },
+{ path: 'main/:slug',component: GenericComponent },
 { path: '**',  component: Err404pageComponent},
 ];
 

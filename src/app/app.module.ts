@@ -26,7 +26,7 @@ import { ScrollToTopComponent } from './shared/scroll-to-top/scroll-to-top.compo
 
 const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
-    domain: 'dev.guidepublikutveckling.se' //'localhost'// it is recommended to set your domain, for cookies to work properly
+    domain: 'localhost'//'dev.guidepublikutveckling.se' // it is recommended to set your domain, for cookies to work properly
   },
   palette: {
     popup: {
