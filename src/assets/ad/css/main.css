@@ -73,12 +73,6 @@ h1.h1-dekor {
   line-height: 23vw;
 }
 
-h1 span.underrubrik-about {
-  font-weight: 400;
-  font-size: 1.75rem;
-  line-height: 1.5;
-}
-
 h1.h1-intro-guide {
   color: #fff;
   font-weight: 700;
@@ -102,6 +96,10 @@ h1.h1-about {
   font-weight: 700;
   font-size: 8.89vw;
   line-height: 9.52vw;
+}
+
+h1.h1-about.i1 {
+  margin-top: 30px;
 }
 
 h1.big-1.bigbig-1.bottom.vad-pub.white-1:hover {
@@ -517,11 +515,6 @@ p.paragraph.ingress.no-space {
   margin-bottom: 20px;
 }
 
-p.paragraph span.h2-about {
-  font-weight: 700;
-  font-size: 1.1875rem;
-}
-
 p.paragraph.ingress-guide {
   max-width: 700px;
   color: #fff;
@@ -880,6 +873,10 @@ p.paragraph span.paragraph-text-87 {
   font-weight: 700;
 }
 
+p.paragraph.j1-1.p-standard-about {
+  margin-top: 32px;
+}
+
 p.paragraph.p-std:hover {
   color: #000;
   text-decoration: underline;
@@ -1049,6 +1046,14 @@ ul.unorder-list.no-space.unordered-list-4 {
   margin-bottom: 0;
 }
 
+ul.unorder-list.h1-1.unordered-list-4 {
+  padding-top: 10px;
+}
+
+ul.unorder-list.k2-1.unordered-list-4 {
+  margin-top: 20px;
+}
+
 blockquote.citat-about {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -1200,6 +1205,10 @@ body.ord-color {
   background-color: #bbcac2;
 }
 
+body.body-1.intervju {
+  background-color: #dee3e0;
+}
+
 .link-container.link-container-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1328,7 +1337,7 @@ body.ord-color {
 .link-container.link-container-7 {
   margin-top: 30px;
   min-height: 28.57vw;
-  background-image: url('/assets/ad/Fardplan-bild.png');
+  background-image: url('../Fardplan-bild.png');
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
@@ -1350,7 +1359,7 @@ body.ord-color {
   max-height: 60px;
   width: 100%;
   height: 100%;
-  background-image: url('/assets/ad/Close-A.png');
+  background-image: url('../Close-A.png');
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
@@ -1499,7 +1508,7 @@ li.list-item-container.active.nav-item {
   padding-bottom: 8px;
   padding-left: 0;
   min-height: 0;
-  background-image: url('/assets/ad/Metro-lines-high-t-8.png');
+  background-image: url('../Metro-lines-high-t-8.png');
   background-attachment: local;
   background-position: center -38px;
   background-clip: border-box;
@@ -1571,7 +1580,7 @@ li.list-item-container.active.nav-item {
   max-width: 340px;
   max-height: none;
   background-color: transparent;
-  background-image: url('/assets/ad/Metro-lines-long-new-c.png');
+  background-image: url('../Metro-lines-long-new-c.png');
   background-attachment: fixed;
   background-position: -178px -592px;
   background-clip: border-box;
@@ -1679,7 +1688,7 @@ a.glyph.navbar-toggler {
   min-height: 50px;
   max-width: 190px;
   max-height: 50px;
-  background-image: url('/assets/ad/VGR_Logga_vit_2103.png');
+  background-image: url('../VGR_Logga_vit_2103.png');
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
@@ -1712,7 +1721,7 @@ a.glyph.navbar-toggler {
   margin-top: -80px;
   height: 8vw;
   background-color: transparent;
-  background-image: url('/assets/ad/page-divider-bluegreen-up-300.png');
+  background-image: url('../page-divider-bluegreen-up-300.png');
   background-attachment: local;
   background-position: left top;
   background-clip: border-box;
@@ -1839,7 +1848,7 @@ a.glyph.navbar-toggler {
   max-height: 30px;
   width: 30px;
   height: 30px;
-  background-image: url('/assets/ad/pil-svart-60x60-1.png');
+  background-image: url('../pil-svart-60x60-1.png');
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
@@ -1887,7 +1896,7 @@ a.glyph.navbar-toggler {
 }
 
 .container-grid.container-7.white {
-  background-image: url('/assets/ad/pil-vit-60x60.png');
+  background-image: url('../pil-vit-60x60.png');
 }
 
 .container-grid.footer {
@@ -1939,7 +1948,7 @@ a.glyph.navbar-toggler {
   min-height: 50px;
   max-width: 195px;
   max-height: 50px;
-  background-image: url('/assets/ad/VGR_Logga_vit_2103.png');
+  background-image: url('../VGR_Logga_vit_2103.png');
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
@@ -2074,19 +2083,19 @@ div.responsive-picture.picture-1 {
 .container-grid.bluegreen-beige.pagedivider-up {
   position: static;
   margin-top: -80px;
-  background-image: url('/assets/ad/page-divider-bluegreen-beige-up-300.png');
+  background-image: url('../page-divider-bluegreen-beige-up-300.png');
   background-size: cover;
 }
 
 .container-grid.beige-beige.pagedivider-up {
   margin-top: -40px;
-  background-image: url('/assets/ad/page-divider-beige-beige-down-300.png');
+  background-image: url('../page-divider-beige-beige-down-300.png');
   background-size: cover;
 }
 
 .container-grid.beige.pagedivider-up {
   margin-top: -60px;
-  background-image: url('/assets/ad/page-divider-beige-beige-up-300.png');
+  background-image: url('../page-divider-beige-beige-up-300.png');
   background-size: cover;
 }
 
@@ -2166,7 +2175,7 @@ div.responsive-picture.picture-1 {
   max-height: 30px;
   width: 30px;
   height: 30px;
-  background-image: url('/assets/ad/pil-svart-60x60.png');
+  background-image: url('../pil-svart-60x60.png');
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
@@ -2223,7 +2232,7 @@ div.responsive-picture.picture-1 {
 }
 
 .container-grid.bluegreen-beige.pagedivider-up.vad-ar {
-  background-image: url('/assets/ad/page-divider-bluegreen-lightbeige-up-300.png');
+  background-image: url('../page-divider-bluegreen-lightbeige-up-300.png');
 }
 
 .container-grid.card-wrap-tl {
@@ -2347,7 +2356,7 @@ div.responsive-picture.picture-1 {
 
 .container-grid.bluegreen-beige.bottom.pagedivider-up.vad-ar {
   margin-top: 0;
-  background-image: url('/assets/ad/page-divider-aubergine-down-300.png');
+  background-image: url('../page-divider-aubergine-down-300.png');
 }
 
 .container-grid.container-14.orange {
@@ -2383,7 +2392,7 @@ div.responsive-picture.picture-1 {
 }
 
 .container-grid.container-7-1.white {
-  background-image: url('/assets/ad/pil-vit-60x60.png');
+  background-image: url('../pil-vit-60x60.png');
 }
 
 li.list-item.list-item-1 {
@@ -2648,23 +2657,6 @@ li.list-item span.list-item-text-2 {
   height: 60px;
 }
 
-.container-grid.image-about {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-  min-height: 400px;
-  max-height: none;
-  height: auto;
-  background-image: none;
-  background-attachment: scroll;
-  background-position: left top;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-size: 0 0;
-  background-repeat: no-repeat;
-
-  background-blend-mode: normal;
-}
-
 li.list-item.list-item-about.small {
   margin-bottom: 20px;
   font-size: 16px;
@@ -2677,7 +2669,7 @@ li.list-item.last.list-item-about.small {
 
 div.responsive-picture.picture-2 {
   max-width: none;
-  background-image: url('/assets/ad/Varbergs%20Teater%20-1.jpg');
+  /* background-image: url('../Varldskulturmuseet.jpg'); */
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
@@ -2690,7 +2682,7 @@ div.responsive-picture.picture-2 {
 
 div.responsive-picture.picture-3 {
   max-width: none;
-  background-image: url('/assets/ad/Varbergs%20Teater%20-1.jpg');
+  /* background-image: url('../Varbergs%20Teater%20-1.jpg'); */
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
@@ -3039,7 +3031,7 @@ div.responsive-picture.i2.picture-2 {
 }
 
 .container-grid.container-7.k1-2 {
-  background-image: url('/assets/ad/pil-beige_vit-down-60x60.png');
+  background-image: url('../pil-beige_vit-down-60x60.png');
 }
 
 .rule.k5.rule-40-40 {
@@ -3077,6 +3069,14 @@ li.list-item a.list-item-text-37 {
 
 li.list-item a.list-item-text-38 {
   color: #000;
+}
+
+.container-grid.container-29 {
+  width: 100vw;
+}
+
+.rule.intervju.rule-30-40 {
+  margin-bottom: -30px;
 }
 
 a.glyph.navbar-toggler:visited {
@@ -4163,19 +4163,19 @@ a.glyph.navbar-toggler:active {
   }
 
   .container-grid.container-7 {
-    background-image: url('/assets/ad/pil-svart-60x60-1.png');
+    background-image: url('../pil-svart-60x60-1.png');
   }
 
   .container-grid.container-7.white {
-    background-image: url('/assets/ad/pil-vit-60x60.png');
+    background-image: url('../pil-vit-60x60.png');
   }
 
   .container-grid.pagedivider-up {
-    background-image: url('/assets/ad/page-divider-beige-beige-up-300.png');
+    background-image: url('../page-divider-beige-beige-up-300.png');
   }
 
   .container-grid.beige-beige.pagedivider-up {
-    background-image: url('/assets/ad/page-divider-beige-beige-down-300.png');
+    background-image: url('../page-divider-beige-beige-down-300.png');
   }
 
   .container-grid.container-4 {
@@ -4196,7 +4196,7 @@ a.glyph.navbar-toggler:active {
   }
 
   .container-grid.bluegreen-beige.pagedivider-up {
-    background-image: url('/assets/ad/page-divider-bluegreen-beige-up-300.png');
+    background-image: url('../page-divider-bluegreen-beige-up-300.png');
   }
 
   .container-grid.container-4-1 {
@@ -4204,7 +4204,7 @@ a.glyph.navbar-toggler:active {
   }
 
   .container-grid.container-7-1 {
-    background-image: url('/assets/ad/pil-svart-60x60.png');
+    background-image: url('../pil-svart-60x60.png');
   }
 
   .container-grid.container-5-1 {

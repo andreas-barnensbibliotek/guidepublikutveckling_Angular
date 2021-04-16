@@ -13,6 +13,7 @@ import { GuidestartComponent } from './privat/guidestart/guidestart.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GenericComponent } from './generic/generic.component';
+import { GenericIntervjuComponent } from './generic-intervju/generic-intervju.component';
 
 const maincontentRoutes: Routes = [
     {
@@ -28,6 +29,13 @@ const maincontentRoutes: Routes = [
             {path:'vad-behover-ni-pa-farden',component: VadbehovernipafardenComponent },
             {path:'var-det-vart-det',component: VardetvartdetComponent },
             {path:'vilket-ar-nasta-steg',component: VilketarnastastegComponent },
+            {path:'g/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
+            {path:'h/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
+            {path:'i/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
+            {path:'j/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
+            {path:'k/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
+            {path:'l/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
+            {path:'m/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
             {path:'f/:slug',component: GenericComponent },
             {path:'g/:slug',component: GenericComponent },
             {path:'h/:slug',component: GenericComponent },

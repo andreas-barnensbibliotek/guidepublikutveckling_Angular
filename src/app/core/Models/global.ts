@@ -15,8 +15,8 @@ export class Global {
   VisaGuideNav:boolean=false;
   currentversion:string="Version: 0.6.1 2021-04-15"
 
-  server:string = this._localdevserver + this._wpApi;
-  postserver:string = this._localdevserver + this._wpApiPost;
+  server:string = this._devserver + this._wpApi;
+  postserver:string = this._devserver + this._wpApiPost;
   devkey:string = "/devkey/alf/?type=json";
 
   constructor(private router: Router) {

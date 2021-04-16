@@ -3,7 +3,9 @@
 @import "../src/assets/ad/css/main.css";
 @import "../src/assets/ad/css/wireframe-theme.min.css";
 
-
+.body-1, .intervju{
+  overflow-x: hidden;
+}
 .loader,
 .loader:after {
   border-radius: 50%;
@@ -48,4 +50,8 @@
 .link-container.link-container-6:hover{
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+body.intervju {
+  background-color: #dee3e0;
 }
