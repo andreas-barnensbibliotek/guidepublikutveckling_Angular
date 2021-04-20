@@ -6,7 +6,7 @@ h1.heading-1 {
 }
 
 h1.heading-1.site-title {
-  min-width: 400px;
+  min-width: 0;
   font-size: 31px;
 }
 
@@ -70,6 +70,7 @@ h1.h1-dekor {
   letter-spacing: -4px;
   font-weight: 900;
   font-size: 23.68vw;
+  font-size: 21.68vw;
   line-height: 23vw;
 }
 
@@ -424,11 +425,6 @@ p.paragraph.p-standard-about {
   font-weight: 400;
   font-size: 19px;
   line-height: 32px;
-}
-
-p.paragraph span.p-link-about {
-  font-weight: 700;
-  line-height: 1.8;
 }
 
 p.paragraph span.paragraph-text-8 {
@@ -877,6 +873,10 @@ p.paragraph.j1-1.p-standard-about {
   margin-top: 32px;
 }
 
+p.paragraph.b0.p-standard-about {
+  margin-bottom: 40px;
+}
+
 p.paragraph.p-std:hover {
   color: #000;
   text-decoration: underline;
@@ -939,11 +939,6 @@ p.paragraph.p-standard:hover {
 p.paragraph.ingress-about:hover {
   color: #000;
   text-decoration: none;
-}
-
-p.paragraph span.p-link-about:hover {
-  text-decoration: underline;
-  line-height: 1.8;
 }
 
 p.paragraph.ingress-guide:hover {
@@ -1209,6 +1204,22 @@ body.body-1.intervju {
   background-color: #dee3e0;
 }
 
+body.body-1.ord-color {
+  background-color: #e2dbeb;
+}
+
+body.body-1.quizz-color {
+  background-color: #d5d8e6;
+}
+
+body.body-1.omoss-color {
+  background-color: #dbdcc8;
+}
+
+body.body-1.material-color {
+  background-color: #dbdcc8;
+}
+
 .link-container.link-container-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1377,6 +1388,10 @@ body.body-1.intervju {
 
 .link-container.con-link-about.h1 {
   margin-top: 40px;
+}
+
+.link-container.link-container-1.three-col {
+  min-width: 0;
 }
 
 .container-grid.nav-tl.navbar.navbar-dark.navbar-expand-md {
@@ -1680,7 +1695,7 @@ a.glyph.navbar-toggler {
 }
 
 .container-grid.vgr-logo {
-  position: relative;
+  position: absolute;
   top: -800px;
   visibility: visible;
   margin-top: 10px;
@@ -2416,21 +2431,6 @@ li.list-item.list-item-2 {
   background-color: transparent;
 }
 
-.container-grid.container-22 {
-  position: static;
-  float: right;
-  clear: none;
-  margin-top: 0;
-  margin-right: 20px;
-  margin-bottom: 0;
-  padding-top: 0;
-  min-width: 60px;
-  min-height: 60px;
-  max-width: 60px;
-  max-height: 60px;
-  width: auto;
-}
-
 li.list-item.list-item-about {
   color: #000;
   font-size: 19px;
@@ -2669,7 +2669,7 @@ li.list-item.last.list-item-about.small {
 
 div.responsive-picture.picture-2 {
   max-width: none;
-  /* background-image: url('../Varldskulturmuseet.jpg'); */
+  background-image: url('../Varldskulturmuseet.jpg');
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
@@ -2682,7 +2682,7 @@ div.responsive-picture.picture-2 {
 
 div.responsive-picture.picture-3 {
   max-width: none;
-  /* background-image: url('../Varbergs%20Teater%20-1.jpg'); */
+  background-image: url('../Varbergs%20Teater%20-1.jpg');
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
@@ -3079,6 +3079,10 @@ li.list-item a.list-item-text-38 {
   margin-bottom: -30px;
 }
 
+.container-grid.card-wrap-tl.varfor {
+  min-width: 0;
+}
+
 a.glyph.navbar-toggler:visited {
   color: #fff;
 }
@@ -3335,7 +3339,7 @@ a.glyph.navbar-toggler:active {
   }
 
   .container-grid.card-wrap-tl {
-    width: auto;
+    width: 100%;
   }
 
   .container-grid.f3.h1-2.left.tabell-line {
@@ -3415,7 +3419,8 @@ a.glyph.navbar-toggler:active {
   }
 
   .link-container.link-container-5 {
-    max-width: 590px;
+    max-width: none;
+    width: 100%;
 
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
@@ -3622,7 +3627,7 @@ a.glyph.navbar-toggler:active {
 
   .container-grid.card-wrap-tl {
     margin-right: 0;
-    max-width: 590px;
+    max-width: none;
   }
 
   .container-grid.container-17 {
@@ -3750,6 +3755,11 @@ a.glyph.navbar-toggler:active {
     padding-bottom: 0;
   }
 
+  .link-container.link-container-1.three-col {
+    min-width: 33%;
+    max-width: 33%;
+  }
+
   .container-grid.collapse.navbar-collapse {
     -ms-flex-align: start;
     margin-right: 0;
@@ -3867,23 +3877,19 @@ a.glyph.navbar-toggler:active {
 
   .container-grid.card-wrap-tl {
     margin-right: 20px;
+    min-width: 49%;
     min-height: 800px;
+    width: auto;
   }
 
   .container-grid.container-6-1.pilb {
-    margin-right: 40px;
+    margin-right: 20px;
   }
 
   .container-grid.container-5-1.varfor {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-  }
-
-  .container-grid.container-22 {
-    margin-top: 40px;
-    margin-right: 20px;
-    margin-left: 0;
   }
 
   .container-grid.card-wrap.two-col-tl {
@@ -3949,6 +3955,42 @@ a.glyph.navbar-toggler:active {
     margin-top: 40px;
     margin-right: 20px;
     margin-left: 0;
+  }
+
+  .container-grid.card-wrap-tl.varfor {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-width: 49%;
+    max-width: 50%;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .container-grid.container-19 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+
+  .container-grid.container-6-1 {
+    margin-right: 0;
+  }
+
+  .container-grid.card-wrap-tl.empty.varfor {
+    width: 50%;
+  }
+
+  .container-grid.container-6-1.vad-ar {
+    margin-right: 40px;
   }
 }
 
@@ -4099,6 +4141,10 @@ a.glyph.navbar-toggler:active {
     color: #fff;
   }
 
+  h1.h1-about {
+    color: #000;
+  }
+
   p.paragraph.p-standard {
     margin-top: 0;
     padding-bottom: 50px;
@@ -4116,6 +4162,47 @@ a.glyph.navbar-toggler:active {
   p.paragraph.ingress-about {
     font-size: 28px;
     line-height: 42px;
+  }
+
+  p.paragraph a.paragraph-text-88 {
+    color: #000;
+  }
+
+  p.paragraph a.paragraph-text-89 {
+    color: #000;
+  }
+
+  p.paragraph a.paragraph-text-90 {
+    color: #000;
+  }
+
+  p.paragraph a.paragraph-text-91 {
+    color: #000;
+  }
+
+  p.paragraph a.paragraph-text-92 {
+    color: #000;
+  }
+
+  p.paragraph a.paragraph-text-88:hover {
+    text-decoration: underline;
+  }
+
+  p.paragraph a.paragraph-text-89:hover {
+    text-decoration: underline;
+  }
+
+  p.paragraph a.paragraph-text-90:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  p.paragraph a.paragraph-text-91:hover {
+    text-decoration: underline;
+  }
+
+  p.paragraph a.paragraph-text-92:hover {
+    text-decoration: underline;
   }
 
   /* Layout Elements */
@@ -4146,6 +4233,10 @@ a.glyph.navbar-toggler:active {
   }
 
   .link-container.card-guide-w.link-container-1 {
+    min-width: 33%;
+  }
+
+  .link-container.link-container-1.three-col {
     min-width: 33%;
   }
 

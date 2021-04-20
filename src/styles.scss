@@ -56,11 +56,19 @@
 body.intervju {
   background-color: #dee3e0;
 }
+body.ord-color {
+  background-color: #e2dbeb;
+}
+body.quizz-color {
+  background-color: #d5d8e6;
+}
+body.material-color {
+  background-color: #dbdcc8;
+}
 
+// @media screen and (max-width: 39.0625rem) {
+//   body{
+//       position: absolute ;
+//   }
 
-@media screen and (max-width: 39.0625rem) {
-  body{
-      position: absolute ;
-  }
-
-  }
+//   }

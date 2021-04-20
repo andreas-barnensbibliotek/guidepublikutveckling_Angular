@@ -30,15 +30,15 @@ const routes: Routes = [
 { path: 'introduktion', component: IntroduktionComponent, data: { bodyClass: 'body-1' }  },
 { path: 'varforgoradet', component: VarforgoradetComponent, data: { bodyClass: 'body-1' }  },
 { path: 'quiz', component: QuizComponent, data: { bodyClass: 'body-1' }},
-{ path: 'ordlista', component: OrdlistaComponent, data: { bodyClass: 'ord-color'}},
 { path: 'register', component: RegisterComponent },
-{ path: 'c/hur-val-kanner-du-din-publik', component: HurvalkannerdudinpublikComponent},
+{ path: 'c/hur-val-kanner-du-din-publik', component: HurvalkannerdudinpublikComponent, data: { bodyClass: 'quizz-color'}},
 { path: 'c/video/:slug',component: IntervjuHeatherComponent },
 { path: 'c/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
 { path: 'd/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
 { path: 'c/:slug',component: GenericComponent },
 { path: 'd/:slug',component: GenericComponent },
-{ path: 'main/:slug',component: GenericComponent },
+{ path: 'main/ordlista', component: OrdlistaComponent, data: { bodyClass: 'ord-color'}},
+{ path: 'main/:slug',component: GenericComponent, data: { bodyClass: 'material-color'} },
 { path: '**',  component: Err404pageComponent},
 ];
 
