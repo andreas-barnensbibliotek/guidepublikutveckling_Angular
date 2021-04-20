@@ -6,6 +6,7 @@
 .body-1, .intervju{
   overflow-x: hidden;
 }
+
 .loader,
 .loader:after {
   border-radius: 50%;
@@ -55,3 +56,11 @@
 body.intervju {
   background-color: #dee3e0;
 }
+
+
+@media screen and (max-width: 39.0625rem) {
+  body{
+      position: absolute ;
+  }
+
+  }
