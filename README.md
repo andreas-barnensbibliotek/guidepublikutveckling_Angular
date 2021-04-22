@@ -45,3 +45,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     fix länkar footer
     ändrat mailto till: info@guidepublikutveckling.se  
 ```
+## version 0.8.2  
+```
+  uppdaterat:
+    fix css textstorlek 
+```

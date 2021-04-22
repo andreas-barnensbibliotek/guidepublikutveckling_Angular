@@ -114,7 +114,7 @@ h1.big-1.bigbig-1.bottom.vad-pub.white-1:hover {
 h2.h2-bold {
   color: #000;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 38px;
 }
 
@@ -143,7 +143,7 @@ h2.h2-regular.heading-3 {
   margin-right: 10px;
   margin-left: 20px;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h2.h2-regular {
@@ -256,8 +256,8 @@ p.paragraph.paragraph-1 {
 
 p.paragraph.ingress.paragraph-1 {
   margin-top: 8.76vw;
-  font-size: 28px;
-  line-height: 42px;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 p.paragraph.p-std {
@@ -265,8 +265,8 @@ p.paragraph.p-std {
   margin-top: 0;
   color: #000;
   font-weight: 400;
-  font-size: 19px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 p.paragraph.p-std.white {
@@ -293,9 +293,8 @@ p.paragraph.citat.paragraph-2 {
   clear: none;
   margin-right: 0;
   margin-left: 0;
-  color: #fff;
-  font-size: 5.2vw;
-  line-height: 8.67vw;
+  max-width: 600px;
+  font-size: 24px;
 }
 
 p.paragraph span.paragraph-text-2 {
@@ -346,16 +345,16 @@ p.paragraph.p-standard.paragraph-4 {
   height: auto;
   border-bottom-width: 0;
   border-bottom-style: none;
-  font-size: 19px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 p.paragraph.p-standard-bold {
   margin-right: 40px;
   color: #000;
   font-weight: 700;
-  font-size: 19px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 p.paragraph.ingress {
@@ -371,6 +370,8 @@ p.paragraph.ingress.white {
 
 p.paragraph.ingress-1.paragraph-1-1.top.vad-pub {
   margin-top: 20px;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 p.paragraph span.h2-regular {
@@ -403,10 +404,6 @@ p.paragraph span.h3-about {
   line-height: 1.6;
 }
 
-p.paragraph span.paragraph-text-1 {
-  font-weight: 400;
-}
-
 p.paragraph span.paragraph-text-10 {
   font-weight: 700;
 }
@@ -419,15 +416,16 @@ p.paragraph span.h2-text {
 
 p.paragraph.ingress-about {
   margin-bottom: 40px;
-  font-size: 28px;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 p.paragraph.p-standard-about {
   margin-bottom: 0;
   color: #000;
   font-weight: 400;
-  font-size: 19px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 p.paragraph span.paragraph-text-8 {
@@ -512,12 +510,15 @@ p.paragraph span.paragraph-text-25 {
 
 p.paragraph.ingress.no-space {
   margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 36px;
 }
 
 p.paragraph.ingress-guide {
   max-width: 700px;
   color: #fff;
-  font-size: 28px;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 p.paragraph span.paragraph-text-32 {
@@ -878,6 +879,14 @@ p.paragraph.j1-1.p-standard-about {
 
 p.paragraph.b0.p-standard-about {
   margin-bottom: 40px;
+}
+
+p.paragraph.ingress.no-space.white {
+  font-size: 24px;
+}
+
+p.paragraph.citat.index.paragraph-2 {
+  color: #fff;
 }
 
 p.paragraph.p-std:hover {
@@ -1341,6 +1350,7 @@ body.body-1.intervjuer-color {
       -ms-flex-direction: column;
           flex-direction: column;
   min-width: 50%;
+  max-width: 650px;
 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1368,6 +1378,7 @@ body.body-1.intervjuer-color {
 
 .link-container.alt-guide-start.card-guide.link-container-1.two-col {
   margin-bottom: 10px;
+  max-width: 710px;
 }
 
 .link-container.link-container-6 {
@@ -2519,7 +2530,7 @@ li.list-item.list-item-about {
 
 li.list-item.list-item-guide {
   color: #fff;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 li.list-item.black.list-item-guide {
@@ -3238,13 +3249,6 @@ a.glyph.navbar-toggler:active {
 
   p.paragraph.ingress.paragraph-1 {
     margin-top: 50px;
-    font-size: 28px;
-    line-height: 42px;
-  }
-
-  p.paragraph.citat.paragraph-2 {
-    font-size: 30px;
-    line-height: 50px;
   }
 
   p.paragraph.p-std.strategi {
@@ -3434,10 +3438,6 @@ a.glyph.navbar-toggler:active {
 
   p.paragraph.p-std.white {
     margin-top: 0;
-  }
-
-  p.paragraph.citat.paragraph-2 {
-    line-height: 50px;
   }
 
   /* Layout Elements */
@@ -3745,10 +3745,6 @@ a.glyph.navbar-toggler:active {
 
   h1.bigbig-1 {
     font-size: 120px;
-  }
-
-  p.paragraph.citat.paragraph-2 {
-    line-height: 50px;
   }
 
   p.paragraph.ingress {
@@ -4187,11 +4183,6 @@ a.glyph.navbar-toggler:active {
   p.paragraph.ingress {
     max-width: 800px;
     color: #000;
-    font-size: 28px;
-    line-height: 42px;
-  }
-
-  p.paragraph.ingress-about {
     font-size: 28px;
     line-height: 42px;
   }
