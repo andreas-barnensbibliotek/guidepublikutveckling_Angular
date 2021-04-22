@@ -11,15 +11,17 @@ import { Location } from '@angular/common';
 })
 export class GenericIntervjuComponent implements OnInit {
 
-
   htmlPageData:any=[];
   currpageSlug:any;
+  placeholderblock:boolean= false;
 
   constructor(private wpApi:WpApiService, private glb:Global, private _location:Location, private route:ActivatedRoute, private router:Router,) {
      this.glb.VisaMainNav= false;
   }
 
   ngOnInit(): void {
+    this.showPlaceholder(true);
+
     this.route.paramMap.subscribe(prams =>{
       this.currpageSlug = prams.get('slug');
 
@@ -40,7 +42,8 @@ export class GenericIntervjuComponent implements OnInit {
       };
 
       this.htmlPageData = Response
-      console.log(this.htmlPageData)
+      // console.log(this.htmlPageData)
+      this.showPlaceholder(false);
     });
   }
 
@@ -50,5 +53,9 @@ export class GenericIntervjuComponent implements OnInit {
 
   ngOnDestroy(){
     this.glb.VisaMainNav= true;
+  }
+
+  showPlaceholder(status:boolean){
+    this.placeholderblock= status;
   }
 }

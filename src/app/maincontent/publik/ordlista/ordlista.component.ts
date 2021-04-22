@@ -12,14 +12,14 @@ import { Location } from '@angular/common';
 export class OrdlistaComponent implements OnInit, OnDestroy {
 
   htmlPageData:any=[];
+  placeholderblock:boolean= false;
 
   constructor(private wpApi:WpApiService, private glb:Global, private router: Router, private _location:Location) {
      this.glb.VisaMainNav= false;
   }
 
   ngOnInit(): void {
-
-
+    this.showPlaceholder(true);
     this.wpApi.currentPageDataHandler.subscribe(()=>{
       this.getMaindata();
     })
@@ -31,6 +31,7 @@ export class OrdlistaComponent implements OnInit, OnDestroy {
 
       this.htmlPageData = Response
       console.log(this.htmlPageData)
+      this.showPlaceholder(false);
     });
   }
 
@@ -40,5 +41,9 @@ export class OrdlistaComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(){
     this.glb.VisaMainNav= true;
+  }
+
+  showPlaceholder(status:boolean){
+    this.placeholderblock= status;
   }
 }

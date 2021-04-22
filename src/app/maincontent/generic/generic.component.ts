@@ -13,17 +13,20 @@ export class GenericComponent implements OnInit {
 
   htmlPageData:any=[];
   currpageSlug:any;
+  placeholderblock:boolean= false;
 
   constructor(private wpApi:WpApiService, private glb:Global, private _location:Location, private route:ActivatedRoute, private router:Router,) {
      this.glb.VisaMainNav= false;
   }
 
   ngOnInit(): void {
+    this.showPlaceholder(true);
     this.route.paramMap.subscribe(prams =>{
       this.currpageSlug = prams.get('slug');
 
       this.wpApi.currentPageDataHandler.subscribe(()=>{
         this.getMaindata(this.currpageSlug);
+
       })
       this.getMaindata(this.currpageSlug);
 
@@ -35,11 +38,12 @@ export class GenericComponent implements OnInit {
     this.wpApi.getPageSlug(slug).subscribe(Response => {
 
       if((Object.keys(Response).length === 0)){
-        this.router.navigateByUrl("/404");
+        // this.router.navigateByUrl("/404");
       };
 
       this.htmlPageData = Response
       console.log(this.htmlPageData)
+      this.showPlaceholder(false);
     });
   }
 
@@ -49,5 +53,9 @@ export class GenericComponent implements OnInit {
 
   ngOnDestroy(){
     this.glb.VisaMainNav= true;
+  }
+
+  showPlaceholder(status:boolean){
+    this.placeholderblock= status;
   }
 }

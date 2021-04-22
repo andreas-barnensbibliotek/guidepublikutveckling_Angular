@@ -70,7 +70,6 @@ h1.h1-dekor {
   letter-spacing: -4px;
   font-weight: 900;
   font-size: 23.68vw;
-  font-size: 21.68vw;
   line-height: 23vw;
 }
 
@@ -101,6 +100,10 @@ h1.h1-about {
 
 h1.h1-about.i1 {
   margin-top: 30px;
+}
+
+h1.h1-dekor.intervjuer {
+  font-size: 20.68vw;
 }
 
 h1.big-1.bigbig-1.bottom.vad-pub.white-1:hover {
@@ -1220,6 +1223,10 @@ body.body-1.material-color {
   background-color: #dbdcc8;
 }
 
+body.body-1.intervjuer-color {
+  background-color: #e2dbeb;
+}
+
 .link-container.link-container-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1392,6 +1399,12 @@ body.body-1.material-color {
 
 .link-container.link-container-1.three-col {
   min-width: 0;
+}
+
+.link-container.link-container-8 {
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100%;
 }
 
 .container-grid.nav-tl.navbar.navbar-dark.navbar-expand-md {
@@ -1915,7 +1928,8 @@ a.glyph.navbar-toggler {
 }
 
 .container-grid.footer {
-  padding-top: 60px;
+  margin-top: 0;
+  padding-top: 0;
   padding-bottom: 40px;
   height: auto;
   background-color: #000;
@@ -3083,6 +3097,20 @@ li.list-item a.list-item-text-38 {
   min-width: 0;
 }
 
+.container-grid.worksheets-footer {
+  margin: 0 auto 50px;
+  padding-top: 8px;
+  width: 280px;
+  height: 80px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: #fff;
+}
+
+.rule.intervjuer.rule-30-40 {
+  margin-bottom: 60px;
+}
+
 a.glyph.navbar-toggler:visited {
   color: #fff;
 }
@@ -4116,6 +4144,10 @@ a.glyph.navbar-toggler:active {
 
   .container-grid.card-wrap-tl.empty.varfor {
     background-color: transparent;
+  }
+
+  .container-grid.footer {
+    padding-top: 0;
   }
 }
 

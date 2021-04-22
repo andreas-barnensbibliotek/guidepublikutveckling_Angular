@@ -7,7 +7,7 @@ import { QuizComponent } from './main/ajquiz/quiz/quiz.component';
 import { AuthGuardGuard } from './core/authGuard/auth-guard.guard';
 
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes,ExtraOptions } from '@angular/router';
+import { RouterModule, Routes,ExtraOptions, PreloadAllModules } from '@angular/router';
 import { StartComponent } from './main/start/start.component';
 import { Err404pageComponent } from './shared/err404page/err404page.component';
 import { IntroduktionComponent } from './maincontent/publik/introduktion/introduktion.component';
@@ -19,6 +19,7 @@ const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
   scrollOffset: [0, 64],
+  preloadingStrategy: PreloadAllModules,
 };
 const routes: Routes = [
   { path: '',  redirectTo: 'hem', pathMatch: 'full' },
@@ -35,9 +36,10 @@ const routes: Routes = [
 { path: 'c/video/:slug',component: IntervjuHeatherComponent },
 { path: 'c/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
 { path: 'd/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
+{ path: 'b/:slug',component: GenericComponent },
 { path: 'c/:slug',component: GenericComponent },
 { path: 'd/:slug',component: GenericComponent },
-{ path: 'main/ordlista', component: OrdlistaComponent, data: { bodyClass: 'ord-color'}},
+{ path: 'mains/:slug', component: GenericComponent, data: { bodyClass: 'ord-color'}},
 { path: 'main/:slug',component: GenericComponent, data: { bodyClass: 'material-color'} },
 { path: '**',  component: Err404pageComponent},
 ];
