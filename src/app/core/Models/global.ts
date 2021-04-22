@@ -13,7 +13,7 @@ export class Global {
   userregistered:string = ""
   VisaMainNav:boolean=true;
   VisaGuideNav:boolean=false;
-  currentversion:string="Version: 0.8.0 2021-04-22"
+  currentversion:string="Version: 0.8.1 2021-04-20"
 
   server:string = this._devserver + this._wpApi;
   postserver:string = this._devserver + this._wpApiPost;

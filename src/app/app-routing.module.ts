@@ -36,6 +36,7 @@ const routes: Routes = [
 { path: 'c/video/:slug',component: IntervjuHeatherComponent },
 { path: 'c/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
 { path: 'd/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
+{ path: 'intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
 { path: 'b/:slug',component: GenericComponent },
 { path: 'c/:slug',component: GenericComponent },
 { path: 'd/:slug',component: GenericComponent },

@@ -26,14 +26,22 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-Updates
--------
-version 0.8.0
-  inlagt:
-  intervjusida
+## Updates
 
-  uppdaterat:
+## version 0.8.0
+``` python
+  inlagt:  
+  intervjusida
+  uppdaterat
     arbetsmaterial
     sidfot
-    wp editor: fix så att inte html ändras( obs a tagar ändras)
----------------------------------------------------------------
+    wp editor: fix så att inte html ändras( obs: a taggar töms)
+```
+## version 0.8.1  
+```
+  uppdaterat:
+    fix intervjusida. rätt länkning wp
+    updaterat router
+    fix länkar footer
+    ändrat mailto till: info@guidepublikutveckling.se  
+```
