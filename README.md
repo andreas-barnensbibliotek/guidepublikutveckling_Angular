@@ -59,3 +59,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     länk introduktion: /c/video/heather-maitland 
   
 ```
+## version 0.9.0  
+```
+Ny versionsnummer pgr. uppdateringar och fixar från 0.8.4- 0.8.9
+ uppdaterat:
+  fix av vimeo cross-scripting. (blockades av adblocker).grr..
+
+```

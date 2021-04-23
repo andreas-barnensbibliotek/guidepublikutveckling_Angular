@@ -11,7 +11,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./intervju-heather.component.scss']
 })
 export class IntervjuHeatherComponent implements OnInit {
-  videoUrl:any= "";
+  videoUrl:any;
   dangerousVideoUrl:any = 'https://player.vimeo.com/video/';
   showVideobox:boolean = false;
   htmlPageData:any=[];
@@ -19,11 +19,12 @@ export class IntervjuHeatherComponent implements OnInit {
 
   // testurl:any = "https://www.youtube.com/embed/m4OsocmQ6JM";
   // testid:string = "25370939";
-  videoUrl2:any;
+  // videoUrl2:any;
 
   constructor(private wpApi:WpApiService, private glb:Global, private _location:Location, private route:ActivatedRoute, private router:Router, private _sanitizer: DomSanitizer) {
     this.glb.VisaMainNav= false;
-    this.updateVimeoVideoUrl("") //initiera så att det inte blir crossscriptrequest error
+
+    // this.updateVimeoVideoUrl(this.testid) //initiera så att det inte blir crossscriptrequest error
   }
 
   ngOnInit(): void {
@@ -42,16 +43,19 @@ export class IntervjuHeatherComponent implements OnInit {
 
     this.wpApi.getPageSlug(slug).subscribe(Response => {
 
+      this.htmlPageData = Response
+
       if((Object.keys(Response).length === 0)){
         this.router.navigateByUrl("/404");
       };
 
-      this.htmlPageData = Response
-
       // console.log("detta visas: " + this.htmlPageData[0]?.acf.link_item1);
-      if(this.htmlPageData[0]?.acf.link_item1){
+      if(this.htmlPageData[0]?.acf.link_item1!=""){
+        // console.log("detta: " +this.htmlPageData[0]?.acf.link_item1)
         this.showVideobox= true;
         this.updateVimeoVideoUrl(this.htmlPageData[0]?.acf.link_item1);
+      }else{
+        this.showVideobox= false;
       }
 
       console.log(this.htmlPageData)
@@ -72,6 +76,7 @@ export class IntervjuHeatherComponent implements OnInit {
     // close as possible to the input data so
     // that it's easier to check if the value is safe.
     // this.dangerousVideoUrl = 'https://player.vimeo.com/video/' + id;
-    this.videoUrl = this._sanitizer.bypassSecurityTrustResourceUrl(this.dangerousVideoUrl + id);
+    this.videoUrl = this._sanitizer.bypassSecurityTrustResourceUrl(this.dangerousVideoUrl + id.trim());
+
   }
 }
