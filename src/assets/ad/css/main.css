@@ -164,6 +164,10 @@ h2.h2-big-about {
   line-height: 42px;
 }
 
+h2.h2-bold.start-guide {
+  color: #45606c;
+}
+
 h2.h2-bold.white:hover {
   color: #fff;
   text-decoration: underline;
@@ -891,11 +895,12 @@ p.paragraph.citat.index.paragraph-2 {
 
 p.paragraph.p-std:hover {
   color: #000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 p.paragraph.p-std.white:hover {
   color: #fff;
+  text-decoration: underline;
 }
 
 p.paragraph:hover {
@@ -963,6 +968,14 @@ p.paragraph.link-text-about.p-standard-about:hover {
 }
 
 p.paragraph a.paragraph-text-27:hover {
+  text-decoration: underline;
+}
+
+p.paragraph.p-std.strategi:hover {
+  text-decoration: none;
+}
+
+p.paragraph span.paragraph-text-59:hover {
   text-decoration: underline;
 }
 
@@ -1362,20 +1375,6 @@ body.body-1.intervjuer-color {
   margin-bottom: 40px;
 }
 
-.link-container.link-container-7 {
-  margin-top: 30px;
-  min-height: 28.57vw;
-  background-image: url('../Fardplan-bild.png');
-  background-attachment: scroll;
-  background-position: left top;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-
-  background-blend-mode: normal;
-}
-
 .link-container.alt-guide-start.card-guide.link-container-1.two-col {
   margin-bottom: 10px;
   max-width: 710px;
@@ -1416,6 +1415,10 @@ body.body-1.intervjuer-color {
   padding-right: 20px;
   padding-left: 20px;
   width: 100%;
+}
+
+.link-container.card-guide.j0.link-container-1.two-col {
+  margin-bottom: 0;
 }
 
 .container-grid.nav-tl.navbar.navbar-dark.navbar-expand-md {
@@ -2664,14 +2667,6 @@ li.list-item span.list-item-text-2 {
   background-color: #45606c;
 }
 
-.container-grid.container-5.fardplan-intro {
-  min-height: auto;
-}
-
-.container-grid.fardplan-intro.guide1-sektion3 {
-  background-color: #45606c;
-}
-
 .container-grid.con-close {
   float: right;
   min-width: 60px;
@@ -3120,6 +3115,11 @@ li.list-item a.list-item-text-38 {
 
 .rule.intervjuer.rule-30-40 {
   margin-bottom: 60px;
+}
+
+.container-grid.fardplan.guide1-sekktion4 {
+  padding-top: 30px;
+  background-color: #45606c;
 }
 
 a.glyph.navbar-toggler:visited {

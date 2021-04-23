@@ -32,7 +32,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ``` python
   inlagt:  
   intervjusida
-  uppdaterat
+  uppdaterat:
     arbetsmaterial
     sidfot
     wp editor: fix så att inte html ändras( obs: a taggar töms)
@@ -49,4 +49,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ```
   uppdaterat:
     fix css textstorlek 
+```
+## version 0.8.3  
+```
+  inlagt:
+    ny sida c5 intervju video ( fix av inställningar vimeo)
+  uppdaterat:
+    sida: guide (Färdplan för publikutveckling) nya fält i wp och ändring i component (9 nya länkar)
+    länk introduktion: /c/video/heather-maitland 
+  
 ```

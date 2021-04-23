@@ -17,20 +17,13 @@ export class IntervjuHeatherComponent implements OnInit {
   htmlPageData:any=[];
   currpageSlug:any;
 
-  testurl:any = "https://www.youtube.com/embed/m4OsocmQ6JM";
-  testid:string = "25370939";
+  // testurl:any = "https://www.youtube.com/embed/m4OsocmQ6JM";
+  // testid:string = "25370939";
   videoUrl2:any;
 
   constructor(private wpApi:WpApiService, private glb:Global, private _location:Location, private route:ActivatedRoute, private router:Router, private _sanitizer: DomSanitizer) {
     this.glb.VisaMainNav= false;
-
     this.updateVimeoVideoUrl("") //initiera så att det inte blir crossscriptrequest error
-
-    // this.videoUrl2= this._sanitizer.bypassSecurityTrustResourceUrl("");
-    // this.wpApi.currentPageDataHandler.subscribe(()=>{
-    //   this.getMaindata();
-    // })
-    // this.getMaindata();
   }
 
   ngOnInit(): void {
@@ -45,7 +38,6 @@ export class IntervjuHeatherComponent implements OnInit {
     });
   }
 
-
   getMaindata(slug:string){
 
     this.wpApi.getPageSlug(slug).subscribe(Response => {
@@ -55,7 +47,8 @@ export class IntervjuHeatherComponent implements OnInit {
       };
 
       this.htmlPageData = Response
-console.log("detta visas: " + this.htmlPageData[0]?.acf.link_item1);
+
+      // console.log("detta visas: " + this.htmlPageData[0]?.acf.link_item1);
       if(this.htmlPageData[0]?.acf.link_item1){
         this.showVideobox= true;
         this.updateVimeoVideoUrl(this.htmlPageData[0]?.acf.link_item1);

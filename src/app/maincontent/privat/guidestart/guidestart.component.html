@@ -7,17 +7,55 @@
   </div>
   <div class="container-grid guide1-sektion2">
     <div class="container-grid container-5" >
-      <h1 class="h1-overrubrik-guide" [innerHtml]="htmlPageData[0]?.acf.rubrik_item1"></h1>
-      <h1 class="bigbig" [innerHtml]="htmlPageData[0]?.acf.rubrik_item2"></h1>
+      <div [innerHtml]="htmlPageData[0]?.acf.rubrik_item1"></div>
       <div class="container-grid two-col-tl card-wrap">
-        <a routerLink="{{htmlPageData[0]?.acf.link_item2}}" [innerHtml]="htmlPageData[0]?.acf.content_item2" class="link-container link-container-1 two-col card-guide alt-guide-start" title="Vad är publikutveckling?">
-          </a>
+        <a routerLink="{{htmlPageData[0]?.acf.link_item1}}" [innerHtml]="htmlPageData[0]?.acf.content_item1" class="link-container link-container-1 two-col card-guide alt-guide-start" title="Vad är publikutveckling?">
+        </a>
+        <a routerLink="{{htmlPageData[0]?.acf.link_item2}}" [innerHtml]="htmlPageData[0]?.acf.content_item2" class="link-container link-container-1 two-col card-guide" title="Var befinner ni er nu?">
+        </a>
       </div>
     </div>
   </div>
-  <div class="container-grid guide1-sektion3 fardplan-intro">
-    <div class="container-grid container-5 fardplan-intro">
-      <h1 class="h1-intro-guide" [innerHtml]="htmlPageData[0]?.acf.rubrik_item3"></h1>
-      <a routerLink="{{htmlPageData[0]?.acf.link_item3}}" class="link-container link-container-7" title="Var befinner ni er nu?"></a>
+
+  <div class="container-grid guide1-sekktion4 fardplan">
+    <div class="container-grid container-5 guide-3x3">
+      <div class="container-grid two-col-tl card-wrap-w guide-3x3">
+      <!-- item 3 -->
+        <a routerLink="{{htmlPageData[0]?.acf.link_item3}}" [innerHtml]="htmlPageData[0]?.acf.content_item3" class="link-container link-container-1 card-guide-w" title="{{htmlPageData[0]?.acf.rubrik_item3}}">
+        </a>
+      <!-- item 4 -->
+        <a routerLink="{{htmlPageData[0]?.acf.link_item4}}" [innerHtml]="htmlPageData[0]?.acf.content_item4" class="link-container link-container-1 card-guide-w" title="{{htmlPageData[0]?.acf.rubrik_item4}}">
+        </a>
+      <!-- item 5 -->
+        <a routerLink="{{htmlPageData[0]?.acf.link_item5}}" [innerHtml]="htmlPageData[0]?.acf.content_item5" class="link-container link-container-1 card-guide-w" title="{{htmlPageData[0]?.acf.rubrik_item5}}">
+        </a>
+
+      </div>
+      <div class="container-grid two-col-tl card-wrap-w guide-3x3 sek2and3-no-margin-up">
+
+        <!-- item 6 -->
+        <a routerLink="{{htmlPageData[0]?.acf.link_item6}}" [innerHtml]="htmlPageData[0]?.acf.content_item6" class="link-container link-container-1 card-guide-w" title="{{htmlPageData[0]?.acf.rubrik_item6}}">
+        </a>
+        <!-- item 7 -->
+        <a routerLink="{{htmlPageData[0]?.acf.link_item7}}" [innerHtml]="htmlPageData[0]?.acf.content_item7" class="link-container link-container-1 card-guide-w" title="{{htmlPageData[0]?.acf.rubrik_item7}}">
+        </a>
+        <!-- item 8 -->
+        <a routerLink="{{htmlPageData[0]?.acf.link_item8}}" [innerHtml]="htmlPageData[0]?.acf.content_item8" class="link-container link-container-1 card-guide-w" title="{{htmlPageData[0]?.acf.rubrik_item8}}">
+        </a>
+
+      </div>
+      <div class="container-grid two-col-tl card-wrap-w guide-3x3 sek2and3-no-margin-up">
+
+        <!-- item 9 -->
+        <a routerLink="{{htmlPageData[0]?.acf.link_item9}}" [innerHtml]="htmlPageData[0]?.acf.content_item9" class="link-container link-container-1 card-guide-w" title="{{htmlPageData[0]?.acf.rubrik_item9}}">
+        </a>
+        <!-- item 10 -->
+        <a routerLink="{{htmlPageData[0]?.acf.link_item10}}" [innerHtml]="htmlPageData[0]?.acf.content_item10" class="link-container link-container-1 card-guide-w" title="{{htmlPageData[0]?.acf.rubrik_item10}}">
+        </a>
+         <!-- item 11 Contentlast -->
+         <a routerLink="{{htmlPageData[0]?.acf.link_contentlast}}" [innerHtml]="htmlPageData[0]?.acf.contentlast" class="link-container link-container-1 card-guide-w" title="{{htmlPageData[0]?.acf.rubrik_Contentlast}}">
+        </a>
+
+      </div>
     </div>
   </div>
