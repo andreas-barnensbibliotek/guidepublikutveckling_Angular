@@ -6,13 +6,6 @@
     </div>
   </div>
   <div class="container-grid guide1-sektion2">
-    <div class="container-grid container-5">
-      <h1 class="h1-overrubrik-guide" [innerHtml]="htmlPageData[0]?.acf.rubrik_item1"></h1>
-      <h1 class="bigbig" [innerHtml]="htmlPageData[0]?.acf.rubrik_item2"></h1>
-      <div class="container-grid two-col-tl card-wrap no-space-up-two-col">
-        <a routerLink="{{htmlPageData[0]?.acf.link_item2}}" [innerHtml]="htmlPageData[0]?.acf.content_item2" class="link-container link-container-1 two-col card-guide" title="" >
-        </a>
-
-      </div>
+    <div class="container-grid container-5" [innerHtml]="htmlPageData[0]?.acf.content_item1">
     </div>
   </div>

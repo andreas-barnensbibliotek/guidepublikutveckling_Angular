@@ -1,78 +1,23 @@
 <div class="container-grid pagedivider-up bluegreen-beige"></div>
-<div class="container-grid guide1-sektion1">
-  <div class="container-grid container-23">
-    <h1 class="h1-intro-guide" [innerHtml]="htmlPageData[0]?.acf.rubrik"></h1>
-    <p class="paragraph ingress-guide" [innerHtml]="htmlPageData[0]?.acf.content"></p>
+  <div class="container-grid guide1-sektion1">
+    <div class="container-grid container-23" [innerHtml]="htmlPageData[0]?.acf.content">
+       </div>
   </div>
-</div>
-<div class="container-grid guide1-sektion2">
-  <div class="container-grid container-5">
-    <h1 class="h1-overrubrik-guide" [innerHtml]="htmlPageData[0]?.acf.rubrik_item1"></h1>
-    <h1 class="bigbig" [innerHtml]="htmlPageData[0]?.acf.rubrik_item2"></h1>
-    <div class="container-grid two-col-tl card-wrap">
-      <a routerLink="{{htmlPageData[0]?.acf.link_item2}}" class="link-container link-container-1 two-col card-guide" title="Hitta den perfekta passformen">
-        <div class="container-grid"  [innerHtml]="htmlPageData[0]?.acf.content_item2">
-        </div>
-        <div class="container-grid container-6">
-          <div class="rule rule-1">
-            <hr>
-          </div>
-          <div class="container-grid container-7"></div>
-        </div>
-      </a>
-      <a routerLink="{{htmlPageData[0]?.acf.link_item3}}" class="link-container link-container-1 two-col card-guide" title="Lär känna din organisation">
-        <div class="container-grid" [innerHtml]="htmlPageData[0]?.acf.content_item3">
-        </div>
-        <div class="container-grid container-6">
-          <div class="rule rule-1">
-            <hr>
-          </div>
-          <div class="container-grid container-7"></div>
-        </div>
-      </a>
-      <a routerLink="{{htmlPageData[0]?.acf.link_item4}}" class="link-container link-container-1 two-col card-guide" title="Varför stöttar man?">
-        <div class="container-grid" [innerHtml]="htmlPageData[0]?.acf.content_item4">
-          </div>
-        <div class="container-grid container-6">
-          <div class="rule rule-1">
-            <hr>
-          </div>
-          <div class="container-grid container-7"></div>
-        </div>
-      </a></div>
+
+  <div class="container-grid guide1-sektion2">
+    <div class="container-grid container-5" [innerHtml]="htmlPageData[0]?.acf.content_item1">
+
+    </div>
   </div>
-</div>
-<div class="container-grid guide1-sektion3">
-  <div class="container-grid container-5">
-    <h1 class="h1-overrubrik-guide" [innerHtml]="htmlPageData[0]?.acf.rubrik_item5"></h1>
-    <h1 class="bigbig white" [innerHtml]="htmlPageData[0]?.acf.rubrik_item6"></h1>
-    <div class="container-grid two-col-tl card-wrap">
-      <a routerLink="{{htmlPageData[0]?.acf.link_item6}}" class="link-container link-container-1 two-col card-guide" title="Ta reda på mer om din publik">
-        <div class="container-grid" [innerHtml]="htmlPageData[0]?.acf.content_item6">
-        </div>
-        <div class="container-grid container-6">
-          <div class="rule rule-1">
-            <hr>
-          </div>
-          <div class="container-grid container-7"></div>
-        </div>
-      </a></div>
+
+  <div class="container-grid guide1-sektion3 alt">
+    <div class="container-grid container-5" [innerHtml]="htmlPageData[0]?.acf.content_item2">
+
+    </div>
   </div>
-</div>
-<div class="container-grid guide1-sektion4">
-  <div class="container-grid container-5">
-    <h1 class="h1-overrubrik-guide white" [innerHtml]="htmlPageData[0]?.acf.rubrik_item7"></h1>
-    <h1 class="bigbig white" [innerHtml]="htmlPageData[0]?.acf.rubrik_item8"></h1>
-    <div class="container-grid two-col-tl card-wrap">
-      <a routerLink="{{htmlPageData[0]?.acf.link_item8}}" class="link-container link-container-1 two-col card-guide" title="Ta reda på mer om ditt närområde">
-        <div class="container-grid" [innerHtml]="htmlPageData[0]?.acf.content_item8">
-        </div>
-        <div class="container-grid container-6">
-          <div class="rule rule-1 white">
-            <hr>
-          </div>
-          <div class="container-grid container-7 white"></div>
-        </div>
-      </a></div>
+
+  <div class="container-grid guide1-sektion4">
+    <div class="container-grid container-5" [innerHtml]="htmlPageData[0]?.acf.content_item3">
+
+    </div>
   </div>
-</div>

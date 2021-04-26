@@ -9,28 +9,14 @@
   <div class="container-grid container-5">
     <h1 class="h1-overrubrik-guide" [innerHtml]="htmlPageData[0]?.acf.rubrik_item1"></h1>
     <h1 class="bigbig" [innerHtml]="htmlPageData[0]?.acf.rubrik_item2"></h1>
-    <div class="container-grid two-col-tl card-wrap">
-      <a routerLink="{{htmlPageData[0]?.acf.link_item2}}" class="link-container link-container-1 two-col card-guide" title="Vad fungerar?">
-        <div class="container-grid"  [innerHtml]="htmlPageData[0]?.acf.content_item2">
-        </div>
-        <div class="container-grid container-6">
-          <div class="rule rule-1">
-            <hr>
-          </div>
-          <div class="container-grid container-7"></div>
-        </div>
-      </a>
-
-      <a routerLink="{{htmlPageData[0]?.acf.link_item3}}" [innerHtml]="htmlPageData[0]?.acf.content_item3" class="link-container link-container-1 two-col card-guide" title="Utvärderingsmetoder">
-      </a>
-      <p class="paragraph p-std p-standard-bold" [innerHtml]="htmlPageData[0]?.acf.rubrik_item4">Här är ett exempel:</p>
+    <div class="container-grid two-col-tl card-wrap" [innerHtml]="htmlPageData[0]?.acf.content_item1">
     </div>
-    <div class="container-grid container-26 m0" [innerHtml]="htmlPageData[0]?.acf.content_item4">
+    <div class="container-grid container-26 m0" [innerHtml]="htmlPageData[0]?.acf.content_item2">
     </div>
-    <div class="container-grid container-26" [innerHtml]="htmlPageData[0]?.acf.content_item5">
+    <div class="container-grid container-26" [innerHtml]="htmlPageData[0]?.acf.content_item3">
     </div>
     <p class="paragraph p-std var-det-fix">
-      <a href="{{htmlPageData[0]?.acf.link_item6}}" [innerHtml]="htmlPageData[0]?.acf.content_item6" title="Arbetsblad">
+      <a href="{{htmlPageData[0]?.acf.link_item4}}" [innerHtml]="htmlPageData[0]?.acf.content_item4" title="Arbetsblad">
       </a>
     </p>
   </div>

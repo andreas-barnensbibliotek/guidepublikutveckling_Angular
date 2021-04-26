@@ -10,7 +10,9 @@
       <h1 class="h1-overrubrik-guide" [innerHtml]="htmlPageData[0]?.acf.rubrik_item1"></h1>
       <h1 class="bigbig" [innerHtml]="htmlPageData[0]?.acf.rubrik_item2"></h1>
       <div class="container-grid two-col-tl card-wrap">
-        <a routerLink="{{htmlPageData[0]?.acf.link_item2}}" class="link-container link-container-1 two-col card-guide" title="">
+        <div class="container-grid" [innerHtml]="htmlPageData[0]?.acf.content_item1">
+        </div>
+        <a href="{{htmlPageData[0]?.acf.link_item2}}" class="link-container link-container-1 two-col card-guide" target="_blank" title="Arbetsblad">
           <div class="container-grid" [innerHtml]="htmlPageData[0]?.acf.content_item2">
           </div>
           <div class="container-grid container-6">
@@ -20,27 +22,20 @@
             <div class="container-grid container-7"></div>
           </div>
         </a>
-
-        <a routerLink="{{htmlPageData[0]?.acf.link_item3}}" class="link-container link-container-1 two-col card-guide" title="">
-          <div class="container-grid" [innerHtml]="htmlPageData[0]?.acf.content_item3">
+        <div class="container-grid container-25">
+          <div class="container-grid container-24" [innerHtml]="htmlPageData[0]?.acf.content_item3">
           </div>
-          <div class="container-grid container-6">
-            <div class="rule rule-1">
-              <hr>
-            </div>
-            <div class="container-grid container-7"></div>
+          <div class="container-grid container-24"[innerHtml]="htmlPageData[0]?.acf.content_item4">
           </div>
-        </a>
-        <a routerLink="{{htmlPageData[0]?.acf.link_item4}}" class="link-container link-container-1 two-col card-guide" title="">
-          <div class="container-grid" [innerHtml]="htmlPageData[0]?.acf.content_item4">
-          </div>
-          <div class="container-grid container-6">
-            <div class="rule rule-1">
-              <hr>
-            </div>
-            <div class="container-grid container-7"></div>
-          </div>
-        </a>
         </div>
+        <div class="container-grid" [innerHtml]="htmlPageData[0]?.acf.content_item5">
+        </div>
+        <a routerLink="{{htmlPageData[0]?.acf.link_item6}}" class="link-container link-container-1 two-col card-guide" title="{{htmlPageData[0]?.acf.rubrik_item6}}"  [innerHtml]="htmlPageData[0]?.acf.content_item6">
+        </a>
+        <div class="container-grid" [innerHtml]="htmlPageData[0]?.acf.content_item7">
+        </div>
+        <a routerLink="{{htmlPageData[0]?.acf.link_item8}}"  class="link-container link-container-1 two-col card-guide" title="{{htmlPageData[0]?.acf.rubrik_item8}}" [innerHtml]="htmlPageData[0]?.acf.content_item8">
+        </a>
+      </div>
     </div>
   </div>

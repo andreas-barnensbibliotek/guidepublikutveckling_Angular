@@ -66,3 +66,19 @@ Ny versionsnummer pgr. uppdateringar och fixar från 0.8.4- 0.8.9
   fix av vimeo cross-scripting. (blockades av adblocker).grr..
 
 ```
+
+## version 0.9.1  
+```
+korr från Republik_0435-E-exported (thomas)
+ 
+ uppdaterat:
+  Main navigation, 
+  Alla nio huvud-sidor under guiden. De som har riktiga sidnamn.
+  F4 (ta bort f4-1 och f4-5, de är ihopslagna med f4)
+  C2
+  F3
+  J1
+  H1
+  H3
+  
+```
