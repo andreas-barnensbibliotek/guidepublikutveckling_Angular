@@ -82,3 +82,10 @@ korr från Republik_0435-E-exported (thomas)
   H3
   
 ```
+## version 0.9.2  
+```
+ uppdaterat:
+  Cookiecontent ny text.
+  style.scss added p.paragraph.p-standard.paragraph-4.white:hover
+  
+```

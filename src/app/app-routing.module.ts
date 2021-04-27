@@ -15,7 +15,7 @@ import { GenericComponent } from './maincontent/generic/generic.component';
 import { GenericIntervjuComponent } from './maincontent/generic-intervju/generic-intervju.component';
 
 const routerOptions: ExtraOptions = {
-  enableTracing: true,
+  enableTracing: false,
   scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
   scrollOffset: [0, 64],

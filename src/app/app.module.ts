@@ -45,23 +45,21 @@ const cookieConfig:NgcCookieConsentConfig = {
   elements:{
     messagelink: `
     <span id="cookieconsent:desc" class="cc-message">{{message}}<p>
-      <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{cookiePolicyHref}}" target="_blank">{{cookiePolicyLink}}</a>,
-      <a aria-label="learn more about our privacy policy" tabindex="1" class="cc-link" href="{{privacyPolicyHref}}" target="_blank">{{privacyPolicyLink}}</a> and our
-      <a aria-label="learn more about our terms of service" tabindex="2" class="cc-link" href="{{tosHref}}" target="_blank">{{tosLink}}</a></p>
-    </span>
+      <a aria-label="learn more about cookies" class="cc-link" href="{{cookiePolicyHref}}" target="_blank" rel="noreferrer">{{cookiePolicyLink}}</a>
+      </p></span>
     `,
   },
   content:{
-    message: 'På guidepublikutveckling.se använder vi cookies för att ge dig en bra användarupplevelse. Genom att bläddra vidare godkänner du att vi använder cookies och browserstorage.',
+    message: 'På guidepublikutveckling.se använder vi cookies för att ge dig en bra användarupplevelse. Genom att använda cookies så slipper du som användare registrera dej flera gånger för att få tillgång till guiden. Väljer du att Tillåta kakor/coockies på vår webplats, godkänner du att vi använder cookies och browserstorage.',
 
-    cookiePolicyLink: 'Cookie Policy',
-    cookiePolicyHref: 'https://cookie.com',
+    cookiePolicyLink: 'Läs mer om cookie/kakor',
+    cookiePolicyHref: 'https://www.cookiesandyou.com/',
 
     privacyPolicyLink: 'Privacy Policy',
     privacyPolicyHref: 'https://privacy.com',
 
     tosLink: 'hantering av Service',
-    tosHref: 'https://tos.com',
+    tosHref: 'https://www.vgregion.se/kulturutveckling',
     header: 'Kakor används på denna webbplats. Cookies used on the website!',
     dismiss: 'avböj!',
     allow: 'Tillåt kakor/ cookies',
@@ -84,7 +82,7 @@ const cookieConfig:NgcCookieConsentConfig = {
     VarforgoradetComponent,
     OrdlistaComponent,
     ScrollToTopComponent,
-    HurvalkannerdudinpublikComponent
+    HurvalkannerdudinpublikComponent,
   ],
   imports: [
     BrowserModule,
