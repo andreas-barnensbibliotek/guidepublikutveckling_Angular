@@ -6,3 +6,33 @@
   overflow: auto;
   max-height: 90vh;
 }
+.modal-dialog{min-width: 40vw;
+max-width: 600px;}
+
+div.h2-quiz {
+  margin-bottom: .5rem;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+}
+div.p-standard-quiz {
+
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+.btn-quiz{
+  color: #fff;
+  background-color: #849c8f;
+  border-color: #849c8f;
+  min-width: 15rem;
+}
+.btn-quiz-cancel{
+  color: #fff;
+  background-color: #575756;
+  border-color: #575756;
+  min-width: 15rem;
+}
+.quiz_margin{
+  margin-top:2rem;
+}

@@ -22,25 +22,25 @@
 <div class="row">
   <div class="col-12" style="justify-content: left;display: flex;">
     <!-- <button type="button" class="btn btn-default" (click)="HomePage()" style="margin-right: 30px;">Avbryt</button> -->
-    <button type="button" class="btn btn-primary" (click)="submitTest()">Svara</button>
+    <button type="button" class="btn btn-quiz" (click)="submitTest()">Svara</button>
   </div>
 </div>
 <div bsModal #submitModal="bs-modal" class="modal fade" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-body text-center" style="color: #196f77;">
-        <h4>Totalt antal frågor: {{allQuestions.length}} </h4>
-        <h4>
+      <div class="modal-body text-left" >
+        <div class="h2-quiz">Totalt antal frågor: {{allQuestions.length}} </div>
+        <div class="h2-quiz">
           Svar totalt: {{totalAnswered}}
-        </h4>
-        <h4>
-          Rätt svar : {{rightAnswer}}
-        </h4>
-        <span>
-          <button type="button" class="btn btn-primary" (click)="checkAnswers()" style="margin-right: 17px;">Se svaren</button>
-        </span>
-        <button type="button" class="btn btn-default" (click)="submitModal.hide()" style="margin-left: 17px;">Stäng</button>
+        </div>
+        <div class="h2-quiz">
+          Rätt svar: {{rightAnswer}}
+        </div>
+        <div class="quiz_margin">
+          <button type="button" class="btn btn-quiz" (click)="checkAnswers()" style="margin-right: 17px;">Se svaren</button>
+
+        <button type="button" class="btn btn-quiz-cancel" (click)="submitModal.hide()" style="margin-left: 17px;">Stäng</button></div>
       </div>
     </div>
     <!-- /.modal-content -->
@@ -166,14 +166,14 @@
   aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-body text-center" style="color: #196f77;">
-        <div *ngFor="let ques of allQuestions" [style.color]="!ques.selected? '#ffc107' : ques.selected == ques.answer ? 'green': 'red'">
-          <div>{{ques.question}}</div>
-          <div>Ditt svar: {{ques[ques.selected]}}</div>
-          <div>Rätt svar: {{ques.answer}}) {{ques[ques.answer]}}</div>
-          <hr>
+      <div class="modal-body text-left" >
+        <div *ngFor="let ques of allQuestions" [style.color]="!ques.selected? '#000' : ques.selected == ques.answer ? 'green': 'red'">
+          <div class="h2-quiz">{{ques.question}}</div>
+          <div class="p-standard-quiz" >Ditt svar: {{ques[ques.selected]}}</div>
+          <div class="p-standard-quiz">Rätt svar: {{ques.answer}}) {{ques[ques.answer]}}</div>
+        <hr>
         </div>
-        <button type="button" class="btn btn-default" (click)="answerModal.hide()" style="margin-left: 17px;">Stäng</button>
+        <button type="button" class="btn btn-quiz-cancel" (click)="answerModal.hide()" style="margin-left: 17px;">Stäng</button>
       </div>
     </div>
     <!-- /.modal-content -->

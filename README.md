@@ -104,3 +104,9 @@ baserat på Republik_0428-C_exported
   -ändrat guide till Guiden på start
   
 ```
+## version 0.9.4
+```
+ uppdaterat:
+  -css ul a skall vara underline  
+  - Quiz modal css fix.  
+```
