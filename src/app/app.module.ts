@@ -22,6 +22,7 @@ import { MainNavComponent } from './shared/main-nav/main-nav.component';
 import { IntroduktionComponent } from './maincontent/publik/introduktion/introduktion.component';
 import { VarforgoradetComponent } from './maincontent/publik/varforgoradet/varforgoradet.component';
 import { ScrollToTopComponent } from './shared/scroll-to-top/scroll-to-top.component';
+import { RegisterformComponent } from './shared/register/registerform/registerform.component';
 
 
 const cookieConfig:NgcCookieConsentConfig = {
@@ -83,6 +84,7 @@ const cookieConfig:NgcCookieConsentConfig = {
     OrdlistaComponent,
     ScrollToTopComponent,
     HurvalkannerdudinpublikComponent,
+    RegisterformComponent,
   ],
   imports: [
     BrowserModule,

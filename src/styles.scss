@@ -65,7 +65,12 @@ body.quizz-color {
 body.material-color {
   background-color: #dbdcc8;
 }
-
+body.reg-color {
+  background-color: #dbdcc8;
+}
+.text-black{
+  color: #000 !important;
+}
 // @media screen and (max-width: 39.0625rem) {
 //   body{
 //       position: absolute ;
@@ -81,4 +86,10 @@ h1.h1-dekor{
 p.paragraph.p-standard.paragraph-4.white:hover {
   color: #fff;
   text-decoration: none;
+}
+.sitelogo_link:hover{
+  text-decoration: none;
+}
+.responsive-video{
+  margin-bottom: 2rem;
 }

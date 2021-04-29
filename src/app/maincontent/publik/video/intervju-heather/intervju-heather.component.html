@@ -14,4 +14,5 @@
   <div class="responsive-video vimeo" *ngIf="showVideobox" >
     <iframe [src]="videoUrl" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
+  <div [innerHtml]="htmlPageData[0]?.acf.content_item1"></div>
 </div>

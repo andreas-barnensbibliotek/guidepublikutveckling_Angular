@@ -31,7 +31,7 @@ const routes: Routes = [
 { path: 'introduktion', component: IntroduktionComponent, data: { bodyClass: 'body-1' }  },
 { path: 'varforgoradet', component: VarforgoradetComponent, data: { bodyClass: 'body-1' }  },
 { path: 'quiz', component: QuizComponent, data: { bodyClass: 'body-1' }},
-{ path: 'register', component: RegisterComponent },
+{ path: 'register', component: RegisterComponent, data: { bodyClass: 'reg-color'}  },
 { path: 'c/hur-val-kanner-du-din-publik', component: HurvalkannerdudinpublikComponent, data: { bodyClass: 'quizz-color'}},
 { path: 'c/video/:slug',component: IntervjuHeatherComponent },
 { path: 'c/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },

@@ -1,0 +1,47 @@
+
+
+
+<form [formGroup]="regFormgoup" (ngSubmit)="onSubmit()" class="form-container form-container-1">
+  <input
+        [class.is-invalid]="txtRegnamn.invalid && txtRegnamn.touched" formControlName="txtRegnamn"
+        id="txtRegnamn" name="namn" placeholder="Namn" title="namn" type="text" required="required" class="form-control input-1">
+        <div class="text-danger" *ngIf="txtRegnamn.invalid && txtRegnamn.touched">Du måste fylla i namn</div>
+  <input
+        [class.is-invalid]="txtRegOrganisation.invalid && txtRegOrganisation.touched" formControlName="txtRegOrganisation"
+        id="txtRegOrganisation" name="txtRegOrganisation" title="Organisation" placeholder="Organisation" type="text" required="required" class="form-control input-2">
+        <div class="text-danger" *ngIf="txtRegOrganisation.invalid && txtRegOrganisation.touched">Du måste fylla i organisation</div>
+  <input
+        [class.is-invalid]="txtRegRoll.invalid && txtRegRoll.touched" formControlName="txtRegRoll"
+        id="txtRegRoll" name="txtRegRoll" placeholder="Roll" title="Roll" type="text" required="required" class="form-control input-3">
+        <div class="text-danger" *ngIf="txtRegRoll.invalid && txtRegRoll.touched">Du måste fylla i din arbetsroll</div>
+  <input
+        [class.is-invalid]="txtRegEpost.invalid && txtRegEpost.touched" formControlName="txtRegEpost"
+        id="txtRegEpost" name="txtRegEpost" title="E-post" placeholder="E-post" type="text" required="required" class="form-control email-1">
+        <div class="text-danger" *ngIf="txtRegEpost.invalid && txtRegEpost.touched">Du måste fylla i en giltig epostadress</div>
+
+  <input name="chkboxregConfirm" id="chkboxregConfirm"  formControlName="chkboxregConfirm"
+        type="checkbox" aria-describedby="regConfirmHelpBlock" required="required"  class="formcheckbox">
+        <label for="chkboxregConfirm" class="checkbox checkbox-1"><span>Ja</span></label>
+        <div class="text-danger ml-2" *ngIf="chkboxregConfirm.invalid && chkboxregConfirm.touched">Du måste godkänna för att gå vidare</div>
+
+<p class="paragraph p-standard-about reg">Jag godkänner att de uppgifter jag fyller i lagras hos Förvaltningen för kulturutveckling.<br><br>Vi skyddar dina personuppgifter i enlighet med EU:s dataskyddsförordning GDPR (General Data Protection Regulation) och dess grundläggande principer om att personuppgifter ska behandlas på ett lagligt, korrekt och öppet sätt i förhållande till dig som registrerad deltagare.<br></p>
+<a href="https://edpb.europa.eu/our-work-tools/general-guidance/gdpr-guidelines-recommendations-best-practices_en" class="link-container con-link-about" title="gdpr" target="_blank">
+  <div class="container-grid">
+    <p class="paragraph p-standard-about">Läs mer om hur dina personuppgifter skyddas här<br></p>
+  </div>
+
+</a>
+<span href="var_befinner_ni_er_nu.html" class="link-container link-container-1 two-col card-guide reg" title="Registrera för att starta guidens första del">
+  <div class="container-grid">
+
+    <button name="submit" type="submit" [disabled]="!regFormgoup.valid" class="btn btn-link submitbutton"><h2 class="h2-bold start-guide">Starta guidens första del</h2></button>
+        <div class="text-muted" *ngIf="regFormgoup.invalid && regFormgoup.touched">*Du måste fylla i alla fält</div>
+  </div>
+  <div class="container-grid container-6">
+    <div class="rule rule-1">
+      <hr>
+    </div>
+    <div class="container-grid container-7"></div>
+  </div>
+</span>
+</form>

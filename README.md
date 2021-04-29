@@ -30,40 +30,40 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## version 0.8.0
 ``` python
-  inlagt:  
-  intervjusida
+  -inlagt:  
+  -intervjusida
   uppdaterat:
-    arbetsmaterial
-    sidfot
-    wp editor: fix så att inte html ändras( obs: a taggar töms)
+    -arbetsmaterial
+    -sidfot
+    -wp editor: fix så att inte html ändras( obs: a taggar töms)
 ```
 ## version 0.8.1  
 ```
   uppdaterat:
-    fix intervjusida. rätt länkning wp
-    updaterat router
-    fix länkar footer
-    ändrat mailto till: info@guidepublikutveckling.se  
+    -fix intervjusida. rätt länkning wp
+    -updaterat router
+    -fix länkar footer
+    -ändrat mailto till: info@guidepublikutveckling.se  
 ```
 ## version 0.8.2  
 ```
   uppdaterat:
-    fix css textstorlek 
+   -fix css textstorlek 
 ```
 ## version 0.8.3  
 ```
   inlagt:
-    ny sida c5 intervju video ( fix av inställningar vimeo)
+  -ny sida c5 intervju video ( fix av inställningar vimeo)
   uppdaterat:
-    sida: guide (Färdplan för publikutveckling) nya fält i wp och ändring i component (9 nya länkar)
-    länk introduktion: /c/video/heather-maitland 
+   -sida: guide (Färdplan för publikutveckling) nya fält i wp och ändring i component (9 nya länkar)
+   -länk introduktion: /c/video/heather-maitland 
   
 ```
 ## version 0.9.0  
 ```
 Ny versionsnummer pgr. uppdateringar och fixar från 0.8.4- 0.8.9
  uppdaterat:
-  fix av vimeo cross-scripting. (blockades av adblocker).grr..
+  -fix av vimeo cross-scripting. (blockades av adblocker).grr..
 
 ```
 
@@ -72,20 +72,35 @@ Ny versionsnummer pgr. uppdateringar och fixar från 0.8.4- 0.8.9
 korr från Republik_0435-E-exported (thomas)
  
  uppdaterat:
-  Main navigation, 
-  Alla nio huvud-sidor under guiden. De som har riktiga sidnamn.
-  F4 (ta bort f4-1 och f4-5, de är ihopslagna med f4)
-  C2
-  F3
-  J1
-  H1
-  H3
+  -Main navigation, 
+  -Alla nio huvud-sidor under guiden. De som har riktiga sidnamn.
+  -F4 (ta bort f4-1 och f4-5, de är ihopslagna med f4)
+  -C2
+  -F3
+  -J1
+  -H1
+  -H3
   
 ```
 ## version 0.9.2  
 ```
  uppdaterat:
-  Cookiecontent ny text.
-  style.scss added p.paragraph.p-standard.paragraph-4.white:hover
+  -Cookiecontent ny text.
+  -style.scss added p.paragraph.p-standard.paragraph-4.white:hover
+  
+```
+## version 0.9.3  
+```
+baserat på Republik_0428-C_exported
+ Inlagt:
+  -registreringssida
+  -to top bild
+  -sitelogo länkt till start 
+  -brödtext videocomponent ( heathers video)
+ uppdaterat:
+  -css version Republik_0428-C_exported
+  -ny class .text-black =svart text ( /guide/vilka-vill-ni-ha-ombord)
+  -sidfot ändrat länknamn till: Till RePubliks hemsida
+  -ändrat guide till Guiden på start
   
 ```
