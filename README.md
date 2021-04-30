@@ -110,3 +110,17 @@ baserat på Republik_0428-C_exported
   -css ul a skall vara underline  
   - Quiz modal css fix.  
 ```
+## version 0.9.5
+```
+ uppdaterat:
+  -css länkar i mainnav menyn fixad
+  -css mobil hamburgermeny img
+  -html update:
+    -Hem (endast wp innehåll)
+    -Vad är publik… temp och innehåll
+    -Varför göra… temp och innehåll
+    -Guide – färdplan… temp och innehåll
+    -Var befinner… innehåll (omstruktur i wp)
+    - Hur ska ni ta er… temp och innehåll (omstruktur i wp)
+
+```

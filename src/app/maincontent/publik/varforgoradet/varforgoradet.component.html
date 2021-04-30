@@ -5,14 +5,14 @@
 </div>
 <div class="container-grid pagedivider-up bluegreen-beige vad-ar"></div>
 <div class="container-grid sektion2-tl-1 vad-pub-1" [innerHtml]="htmlPageData[0]?.acf.content">
-  </div>
-<div class="container-grid vad-pub beige-1 container-4-1">
+</div>
+<div class="container-grid vad-pub beige-1 container-4-1 varfor">
   <div class="container-grid container-5-1 varfor">
     <div class="container-grid container-19">
       <div class="container-grid card-wrap-tl varfor no7">
         <div class="container-grid container-16" [innerHtml]="htmlPageData[0]?.acf.content_item1">
-          </div>
-        <a routerLink="{{htmlPageData[0]?.acf.link_item1}}" class="link-container link-container-4">
+        </div>
+        <a routerLink="{{htmlPageData[0]?.acf.link_item1}}" class="link-container link-container-4 no1">
           <p class="paragraph p-standard-bold no-space-lower" [innerHtml]="htmlPageData[0]?.acf.rubrik_item1"> </p>
           <div class="container-grid container-6-1">
             <div class="rule rule-1-1">
@@ -52,24 +52,27 @@
             <div class="container-grid container-7-1"></div>
           </div>
         </a>
-        <a routerLink="{{htmlPageData[0]?.acf.link_item4}}" class="link-container link-container-4" title="{{htmlPageData[0]?.acf.rubrik_item4}}">
-          <p class="paragraph p-standard-bold no-space-lower" [innerHtml]="htmlPageData[0]?.acf.rubrik_item4"></p>
-          <div class="container-grid container-6-1">
-            <div class="rule rule-1-1">
-              <hr>
-            </div>
-            <div class="container-grid container-7-1"></div>
-          </div>
-        </a>
+
       </div>
       <div class="container-grid card-wrap-tl varfor empty"></div>
     </div>
   </div>
+
+  <a routerLink="{{htmlPageData[0]?.acf.link_item4}}" class="link-container link-container-5 varfor" title="{{htmlPageData[0]?.acf.rubrik_item4}}">
+    <p class="paragraph ingress no-space" [innerHtml]="htmlPageData[0]?.acf.rubrik_item4"></p>
+    <div class="container-grid container-6-1 pilb">
+      <div class="rule rule-1-1">
+        <hr>
+      </div>
+      <div class="container-grid container-7-1"></div>
+    </div>
+  </a>
 </div>
+
 <div class="container-grid pagedivider-up bluegreen-beige vad-ar bottom"></div>
 <div class="container-grid container-18 green">
   <div class="container-grid container-17">
-    <a routerLink="{{htmlPageData[0]?.acf.link_item5}}" class="link-container link-container-4" title="{{htmlPageData[0]?.acf.rubrik_item5}}" [innerHtml]="htmlPageData[0]?.acf.content_item5">
+    <a routerLink="{{htmlPageData[0]?.acf.link_item5}}" class="link-container link-container-5" title="{{htmlPageData[0]?.acf.rubrik_item5}}" [innerHtml]="htmlPageData[0]?.acf.content_item5">
 
     </a>
   </div>

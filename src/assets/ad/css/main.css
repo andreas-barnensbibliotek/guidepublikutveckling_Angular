@@ -386,6 +386,7 @@ p.paragraph.ingress.white {
 
 p.paragraph.ingress-1.paragraph-1-1.top.vad-pub {
   margin-top: 20px;
+  margin-bottom: 0;
   font-size: 24px;
   line-height: 36px;
 }
@@ -572,7 +573,7 @@ p.paragraph span.paragraph-text-39 {
 
 p.paragraph.p-std.strategi {
   margin-bottom: 8px;
-  color: #fff;
+  color: #000;
   text-align: left;
 }
 
@@ -961,6 +962,18 @@ p.paragraph.p-standard.paragraph-4.varde {
   padding-bottom: 0;
 }
 
+p.paragraph.p-std.space-down-10 {
+  margin-bottom: 10px;
+}
+
+p.paragraph span.paragraph-text-93 {
+  font-style: italic;
+}
+
+p.paragraph span.paragraph-text-94 {
+  font-style: italic;
+}
+
 p.paragraph.p-std:hover {
   color: #000;
   text-decoration: none;
@@ -1179,8 +1192,10 @@ a.link-text.nav-link {
 a.link-text.nav-link.nav-link-tl {
   margin-right: 10px;
   margin-left: 10px;
-  padding: 0 0 4px;
+  padding: 0;
   max-width: none;
+  border-top: .25rem solid transparent;
+  border-bottom: .25rem solid transparent;
   color: #fff;
   text-decoration: none;
   font-size: 17px;
@@ -1226,7 +1241,12 @@ a.link-text.nav-link-tl:focus {
 
 a.link-text.nav-link.nav-link-tl:focus {
   padding-bottom: 0;
+  border-top: .25rem solid transparent;
+  border-bottom-width: .25rem;
+  border-bottom-style: solid;
   color: #fff;
+  font-weight: 400;
+  font-size: 17px;
 }
 
 a.link-text.nav-link-tl:hover {
@@ -1240,8 +1260,8 @@ a.link-text.nav-link.nav-link-tl:hover {
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 0;
-  border-bottom-width: .25rem;
-  border-bottom-style: solid;
+  border-top: .25rem solid transparent;
+  border-bottom: .25rem solid #fff;
   border-radius: 0;
   color: #fff;
   font-weight: 400;
@@ -1256,7 +1276,11 @@ a.link-text.nav-link-tl:active {
 
 a.link-text.nav-link.nav-link-tl:active {
   padding-bottom: 0;
+  border-top: .25rem solid transparent;
+  border-bottom: .25rem solid #fff;
   color: #fff;
+  font-weight: 400;
+  font-size: 17px;
 }
 
 /* Interaction Elements */
@@ -1586,6 +1610,22 @@ body.body-1.reg-color {
   padding-right: 0;
 }
 
+.link-container.card-guide.guide.link-container-1.two-col {
+  margin-bottom: 70px;
+  padding-right: 30px;
+  min-width: 33%;
+  max-width: 510px;
+  width: auto;
+}
+
+.link-container.alt-link.link-container-4.tva-rader {
+  margin-top: 20px;
+}
+
+.link-container.link-container-4.vad {
+  width: 100%;
+}
+
 .container-grid.nav-tl.navbar.navbar-dark.navbar-expand-md {
   position: relative;
   z-index: 100;
@@ -1892,11 +1932,19 @@ a.glyph.navbar-toggler {
   padding-top: 10px;
   padding-bottom: 0;
   min-height: 50px;
-  color: #fff;
+  background-image: url('../hamburgermenu_vit.png');
+  background-attachment: scroll;
+  background-position: center center;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: 60% auto;
+  background-repeat: no-repeat;
+  color: transparent;
   text-align: left;
   font-size: 24px;
 
   -webkit-text-stroke-color: #fff;
+  background-blend-mode: normal;
 }
 
 .container-grid.vgr-logo {
@@ -2054,6 +2102,7 @@ a.glyph.navbar-toggler {
   display:    -moz-box;
   display: -ms-flexbox;
   display:         flex;
+  padding-right: 40px;
   min-height: 30px;
   max-height: 30px;
   height: 30px;
@@ -2439,9 +2488,7 @@ div.responsive-picture.picture-1 {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 50px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 50px auto 0;
   padding-top: 0;
   padding-bottom: 0;
   max-width: 1020px;
@@ -2679,7 +2726,7 @@ li.list-item span.list-item-text-2 {
   padding: 10px;
   width: 45%;
   border-radius: 12px;
-  background-color: #45606c;
+  background-color: #fff;
 }
 
 .container-grid.container-25 {
@@ -2689,7 +2736,7 @@ li.list-item span.list-item-text-2 {
   display: -ms-flexbox;
   display:         flex;
   -ms-flex-pack: justify;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding-top: 0;
   max-width: 550px;
 
@@ -2710,13 +2757,14 @@ li.list-item span.list-item-text-2 {
   max-height: none;
   width: 100%;
   height: auto;
-  background-color: #704f81;
+  background-color: #fff;
 }
 
 .container-grid.card-wrap-w.guide-3x3.two-col-tl {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 30px;
   margin-bottom: 0;
 
   -webkit-box-orient: vertical;
@@ -3219,7 +3267,8 @@ li.list-item a.list-item-text-38 {
 }
 
 .container-grid.fardplan.guide1-sekktion4 {
-  padding-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 0;
   background-color: #45606c;
 }
 
@@ -3355,12 +3404,32 @@ li.list-item a.list-item-text-43 {
   background-color: #fff;
 }
 
+.container-grid.beige-1.container-4-1.vad-pub.varfor {
+  margin-bottom: 20px;
+}
+
+.container-grid.container-14 {
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1020px;
+  width: 95%;
+}
+
+.container-grid.guide.guide1-sektion2 {
+  padding-bottom: 0;
+}
+
+.container-grid.container-15 {
+  margin-bottom: 0;
+}
+
 a.glyph.navbar-toggler:visited {
-  color: #fff;
+  color: transparent;
 }
 
 a.glyph.navbar-toggler:focus {
-  color: #fff;
+  color: transparent;
 }
 
 .container-grid.btn-bgr-tl.container-2:hover {
@@ -3368,7 +3437,7 @@ a.glyph.navbar-toggler:focus {
 }
 
 a.glyph.navbar-toggler:hover {
-  color: #fff;
+  color: transparent;
 }
 
 li.list-item a.list-item-text-3:hover {
@@ -3485,7 +3554,7 @@ li.list-item-container.active.nav-item:hover {
 }
 
 a.glyph.navbar-toggler:active {
-  color: #fff;
+  color: transparent;
 }
 
 @media screen and (min-width: 36rem) {
@@ -3721,6 +3790,10 @@ a.glyph.navbar-toggler:active {
   .link-container.link-container-4 {
     min-height: 60px;
     width: 100%;
+  }
+
+  .link-container.card-guide.guide.link-container-1.two-col {
+    max-width: 510px;
   }
 
   .container-grid.guide-row1.guide-row3 {
@@ -4066,6 +4139,15 @@ a.glyph.navbar-toggler:active {
     width: auto;
   }
 
+  .link-container.card-guide.guide.link-container-1.two-col {
+    padding-right: 0;
+    max-width: 650px;
+  }
+
+  .link-container.link-container-4.vad {
+    width: auto;
+  }
+
   .container-grid.collapse.navbar-collapse {
     -ms-flex-align: center;
     margin-right: 0;
@@ -4231,7 +4313,7 @@ a.glyph.navbar-toggler:active {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 70px;
+    margin-top: 30px;
     margin-bottom: 20px;
 
     -webkit-flex-wrap: nowrap;
@@ -4296,6 +4378,7 @@ a.glyph.navbar-toggler:active {
 
   .container-grid.container-6-1 {
     margin-right: 0;
+    width: 100%;
   }
 
   .container-grid.card-wrap-tl.empty.varfor {
@@ -4315,27 +4398,27 @@ a.glyph.navbar-toggler:active {
   }
 
   .container-grid.card-wrap-tl.no6 {
-    min-height: 400px;
+    min-height: 430px;
   }
 
   .container-grid.card-wrap-tl.no5 {
-    min-height: 400px;
+    min-height: 430px;
   }
 
   .container-grid.card-wrap-tl.no4 {
-    min-height: 425px;
+    min-height: 440px;
   }
 
   .container-grid.card-wrap-tl.no3 {
-    min-height: 425px;
+    min-height: 440px;
   }
 
   .container-grid.card-wrap-tl.no2 {
-    min-height: 460px;
+    min-height: 505px;
   }
 
   .container-grid.card-wrap-tl.no1 {
-    min-height: 460px;
+    min-height: 505px;
   }
 
   .container-grid.card-wrap-tl.no7.varfor {
@@ -4351,6 +4434,10 @@ a.glyph.navbar-toggler:active {
 
   .container-grid.card-wrap-tl.no8.varfor {
     margin-top: 0;
+  }
+
+  .container-grid.container-6 {
+    padding-right: 0;
   }
 
   .container-grid.collapse.navbar-collapse:hover {
@@ -4400,6 +4487,10 @@ a.glyph.navbar-toggler:active {
     font-size: 30px;
   }
 
+  h2.h2-bold:hover {
+    text-decoration: none;
+  }
+
   p.paragraph.ingress.paragraph-1 {
     margin-top: 0;
     margin-right: 50px;
@@ -4411,22 +4502,46 @@ a.glyph.navbar-toggler:active {
     margin-left: 20px;
   }
 
+  p.paragraph.p-std.strategi {
+    color: #000;
+  }
+
   p.paragraph.no-space-lower.p-standard-bold.white:hover {
     color: #fff;
+  }
+
+  p.paragraph.link-text-about.p-standard-about:hover {
+    color: #000;
   }
 
   a.link-text.nav-link.nav-link-tl {
     color: #fff;
   }
 
+  a.link-text.nav-link.nav-link-tl:focus {
+    border-bottom-color: #fff;
+    font-weight: 400;
+    font-size: 17px;
+  }
+
   a.link-text.nav-link.nav-link-tl:hover {
     color: #fff;
+  }
+
+  a.link-text.nav-link.nav-link-tl:active {
+    border-bottom-color: #fff;
+    font-weight: 400;
+    font-size: 17px;
   }
 
   /* Layout Elements */
 
   .link-container.link-container-5 {
     margin-top: 0;
+  }
+
+  .link-container.link-container-5.varfor {
+    margin-top: 50px;
   }
 
   .container-grid.sektion2-content {
@@ -4515,19 +4630,32 @@ a.glyph.navbar-toggler:active {
   }
 
   .container-grid.card-wrap-tl.no4 {
-    min-height: 370px;
+    min-height: 385px;
   }
 
   .container-grid.card-wrap-tl.no3 {
-    min-height: 370px;
+    min-height: 385px;
   }
 
   .container-grid.card-wrap-tl.no2 {
-    min-height: 370px;
+    min-height: 425px;
   }
 
   .container-grid.card-wrap-tl.no1 {
-    min-height: 370px;
+    min-height: 425px;
+  }
+
+  .container-grid.fardplan.guide1-sekktion4 {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .rule.rule-1 hr {
+    border-top-color: #000;
+  }
+
+  .container-grid.container-24 {
+    background-color: #fff;
   }
 }
 
@@ -4597,6 +4725,16 @@ a.glyph.navbar-toggler:active {
 
   p.paragraph.ingress-guide {
     color: #fff;
+  }
+
+  p.paragraph span.h2-regular {
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  p.paragraph span.paragraph-text-7 {
+    font-weight: 700;
+    font-size: 1.25rem;
   }
 
   p.paragraph a.paragraph-text-88:hover {
@@ -4767,22 +4905,22 @@ a.glyph.navbar-toggler:active {
   }
 
   .container-grid.card-wrap-tl.no3 {
-    min-height: 340px;
+    min-height: 355px;
     background-color: #7a6a57;
   }
 
   .container-grid.card-wrap-tl.no4 {
-    min-height: 340px;
+    min-height: 355px;
     background-color: #436e73;
   }
 
   .container-grid.card-wrap-tl.no5 {
-    min-height: 310px;
+    min-height: 340px;
     background-color: #718f6b;
   }
 
   .container-grid.card-wrap-tl.no6 {
-    min-height: 310px;
+    min-height: 340px;
     background-color: #a8a25f;
   }
 
@@ -4792,5 +4930,30 @@ a.glyph.navbar-toggler:active {
 
   .container-grid.card-wrap-tl.no8.varfor {
     margin-top: 0;
+  }
+
+  .container-grid.beige-1.container-4-1.vad-pub.varfor {
+    margin-top: 20px;
+  }
+
+  .coffeebuilder_focus {
+    font-size: 1.125rem;
+  }
+
+  .container-grid.fardplan.guide1-sekktion4 {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .container-grid.card-wrap-w.guide-3x3.two-col-tl {
+    margin-top: 30px;
+  }
+
+  .container-grid.container-14 {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1020px;
+    width: 95%;
   }
 }
