@@ -27,7 +27,7 @@ import { RegisterformComponent } from './shared/register/registerform/registerfo
 
 const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
-    domain: 'dev.guidepublikutveckling.se' //'localhost'// it is recommended to set your domain, for cookies to work properly
+    domain: 'guidepublikutveckling.se' //'localhost'// it is recommended to set your domain, for cookies to work properly
   },
   palette: {
     popup: {

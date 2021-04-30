@@ -124,3 +124,9 @@ baserat på Republik_0428-C_exported
     - Hur ska ni ta er… temp och innehåll (omstruktur i wp)
 
 ```
+## version 1.0.0
+```
+ Flytt av sidan från dev till live.
+ ssl https
+ 
+```
