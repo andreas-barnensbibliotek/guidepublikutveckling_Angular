@@ -130,3 +130,10 @@ baserat på Republik_0428-C_exported
  ssl https
  
 ```
+## version 1.0.1
+```
+uppdaterat:
+ Uppdatering av intervjusidor
+ to top image
+ 
+```
