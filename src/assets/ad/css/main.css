@@ -974,6 +974,50 @@ p.paragraph span.paragraph-text-94 {
   font-style: italic;
 }
 
+p.paragraph span.paragraph-text-95 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-96 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-97 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-98 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-99 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-100 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-101 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-102 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-103 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-104 {
+  font-weight: 700;
+}
+
+p.paragraph span.paragraph-text-105 {
+  font-weight: 700;
+}
+
 p.paragraph.p-std:hover {
   color: #000;
   text-decoration: none;
@@ -1550,7 +1594,7 @@ body.body-1.reg-color {
   max-height: 60px;
   width: 100%;
   height: 100%;
-  background-image: url('../Close-A.png');
+  background-image: url('../../../assets/ad/Close-A.png');
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
@@ -3422,6 +3466,10 @@ li.list-item a.list-item-text-43 {
 
 .container-grid.container-15 {
   margin-bottom: 0;
+}
+
+div.responsive-picture.picture-2.portrait {
+  margin-top: 30px;
 }
 
 a.glyph.navbar-toggler:visited {
