@@ -107,7 +107,6 @@ h1.h1-dekor.intervjuer {
 }
 
 h1.big-1.bigbig-1.bottom.vad-pub.white-1:hover {
-  text-decoration: none;
   font-weight: 700;
 }
 
@@ -184,12 +183,12 @@ h2.h2-bold.white {
 
 h2.h2-bold.white:hover {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 h2.h2-bold:hover {
   color: #000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 h2:hover {
@@ -1031,6 +1030,10 @@ p.paragraph.no-space-lower.p-standard-bold.white {
   padding-top: 10px;
 }
 
+p.paragraph.link.p-std {
+  text-decoration: none;
+}
+
 p.paragraph.p-std:hover {
   color: #000;
   text-decoration: none;
@@ -1038,7 +1041,7 @@ p.paragraph.p-std:hover {
 
 p.paragraph.p-std.white:hover {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 p.paragraph:hover {
@@ -1097,7 +1100,6 @@ p.paragraph.ingress-about:hover {
 }
 
 p.paragraph.ingress-guide:hover {
-  color: #fff;
   text-decoration: none;
 }
 
@@ -1119,6 +1121,18 @@ p.paragraph span.paragraph-text-59:hover {
 
 p.paragraph.p-standard-about:hover {
   text-decoration: none;
+}
+
+p.paragraph.no-space-lower.p-standard-bold.white:hover {
+  color: #fff;
+}
+
+p.paragraph.link.p-std.white:hover {
+  text-decoration: underline;
+}
+
+p.paragraph.link.p-std:hover {
+  text-decoration: underline;
 }
 
 p.paragraph.footer.p-std.white:active {
@@ -4875,10 +4889,6 @@ a.glyph.navbar-toggler:active {
 
   p.paragraph a.paragraph-text-92:hover {
     text-decoration: underline;
-  }
-
-  p.paragraph.ingress-guide:hover {
-    color: #fff;
   }
 
   /* Layout Elements */
