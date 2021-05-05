@@ -15,9 +15,9 @@
     </div>
     <div class="container-grid container-26" [innerHtml]="htmlPageData[0]?.acf.content_item3">
     </div>
-    <p class="paragraph p-std var-det-fix">
-      <a href="{{htmlPageData[0]?.acf.link_item4}}" [innerHtml]="htmlPageData[0]?.acf.content_item4" target="_blank" ref="noreferrer" title="Arbetsblad">
-      </a>
-    </p>
+    <p class="paragraph p-std var-det-fix" [innerHtml]="htmlPageData[0]?.acf.content_item4"></p>
+    <a href="{{htmlPageData[0]?.acf.link_item5}}" [innerHtml]="htmlPageData[0]?.acf.content_item5" class="link-container link-container-1 two-col card-guide" target="_blank" ref="noreferrer" title="{{htmlPageData[0]?.acf.rubrik_item5}}">
+    </a>
+
   </div>
 </div>

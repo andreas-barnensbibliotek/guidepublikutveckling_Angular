@@ -274,6 +274,7 @@ p.paragraph.p-std {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
+  padding-right: 30px;
   min-width: 50%;
   max-width: 650px;
   color: #000;
@@ -539,10 +540,6 @@ p.paragraph.ingress-guide {
   line-height: 36px;
 }
 
-p.paragraph span.paragraph-text-32 {
-  font-weight: 700;
-}
-
 p.paragraph span.paragraph-text-33 {
   font-weight: 700;
 }
@@ -573,7 +570,6 @@ p.paragraph span.paragraph-text-39 {
 
 p.paragraph.p-std.strategi {
   margin-bottom: 8px;
-  color: #000;
   text-align: left;
 }
 
@@ -648,10 +644,6 @@ p.paragraph span.paragraph-text-55 {
   font-weight: 700;
 }
 
-p.paragraph span.paragraph-text-56 {
-  font-weight: 700;
-}
-
 p.paragraph span.paragraph-text-57 {
   font-weight: 700;
 }
@@ -666,7 +658,7 @@ p.paragraph span.paragraph-text-59 {
 
 p.paragraph.p-std.var-det-fix {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   max-width: 510px;
 }
 
@@ -913,10 +905,6 @@ p.paragraph.white {
   color: #fff;
 }
 
-p.paragraph.alt.ingress-guide {
-  margin-bottom: 0;
-}
-
 p.paragraph span.paragraph-text-1 {
   color: #000;
 }
@@ -1016,6 +1004,31 @@ p.paragraph span.paragraph-text-104 {
 
 p.paragraph span.paragraph-text-105 {
   font-weight: 700;
+}
+
+p.paragraph.down36.ingress-guide {
+  margin-bottom: 36px;
+}
+
+p.paragraph.down28.p-std.space-down {
+  margin-bottom: 28px;
+}
+
+p.paragraph.alt.ingress-guide.no-space-up {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p.paragraph.p-space-down-40.p-std {
+  margin-bottom: 18px;
+}
+
+p.paragraph.p-std.spacedown28 {
+  margin-bottom: 28px;
+}
+
+p.paragraph.no-space-lower.p-standard-bold.white {
+  padding-top: 10px;
 }
 
 p.paragraph.p-std:hover {
@@ -1202,6 +1215,10 @@ ul.unorder-list.h1-1.unordered-list-4 {
 
 ul.unorder-list.k2-1.unordered-list-4 {
   margin-top: 20px;
+}
+
+ul.unorder-list.spacedown40.unordered-list-2 {
+  margin-bottom: 28px;
 }
 
 blockquote.citat-about {
@@ -1594,7 +1611,7 @@ body.body-1.reg-color {
   max-height: 60px;
   width: 100%;
   height: 100%;
-  background-image: url('../../../assets/ad/Close-A.png');
+  background-image: url('../Close-A.png');
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
@@ -1664,10 +1681,32 @@ body.body-1.reg-color {
 
 .link-container.alt-link.link-container-4.tva-rader {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .link-container.link-container-4.vad {
   width: 100%;
+}
+
+.link-container.alt-link.link-container-4.space32 {
+  margin-bottom: 32px;
+  min-height: 50px;
+}
+
+.link-container.card-guide.link-container-1.space-bottom.two-col {
+  margin-bottom: 20px;
+}
+
+.link-container.alt-link.link-container-4.lower.tva-rader {
+  margin-top: 0;
+}
+
+.link-container.alt-link.link-container-4.tva-rader.upper {
+  margin-top: 0;
+}
+
+.link-container.card-guide.link-container-1.lower.two-col {
+  margin-bottom: 30px;
 }
 
 .container-grid.nav-tl.navbar.navbar-dark.navbar-expand-md {
@@ -2738,14 +2777,6 @@ li.list-item.black.list-item-guide {
   margin-top: 40px;
 }
 
-li.list-item span.list-item-text-1 {
-  font-weight: 700;
-}
-
-li.list-item span.list-item-text-2 {
-  font-weight: 700;
-}
-
 .container-grid.card-wrap.two-col-tl {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
@@ -2780,7 +2811,7 @@ li.list-item span.list-item-text-2 {
   display: -ms-flexbox;
   display:         flex;
   -ms-flex-pack: justify;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   padding-top: 0;
   max-width: 550px;
 
@@ -3333,8 +3364,8 @@ li.list-item a.list-item-text-38 {
 }
 
 .rule.rule-2 {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   max-width: 630px;
 }
 
@@ -3470,6 +3501,42 @@ li.list-item a.list-item-text-43 {
 
 div.responsive-picture.picture-2.portrait {
   margin-top: 30px;
+}
+
+.container-grid.card-wrap.no-space-up.two-col-tl {
+  margin-top: 20px;
+}
+
+.container-grid.alt.bg-color.guide1-sektion3 {
+  background-color: #ceb1c4;
+}
+
+.container-grid.container-32 {
+  margin-bottom: 0;
+}
+
+.container-grid.spacedown28 {
+  margin-bottom: 10px;
+}
+
+.rule.rule-2.upper {
+  margin-top: 40px;
+}
+
+.container-grid.alt.bg-color-2.guide1-sektion3 {
+  background-color: #bbcac2;
+}
+
+.container-grid.card-wrap.no-space-up.space-down-ombord.two-col-tl {
+  margin-bottom: 20px;
+}
+
+div.responsive-video.video-platform-1 {
+  margin-top: 40px;
+}
+
+.container-grid.container-33 {
+  margin-bottom: 20px;
 }
 
 a.glyph.navbar-toggler:visited {
@@ -3625,10 +3692,6 @@ a.glyph.navbar-toggler:active {
     margin-top: 50px;
   }
 
-  p.paragraph.p-std.strategi {
-    color: #fff;
-  }
-
   p.paragraph.left.p-standard-about.tabell {
     width: 60%;
   }
@@ -3639,10 +3702,18 @@ a.glyph.navbar-toggler:active {
     width: 30%;
   }
 
+  p.paragraph.p-std.spacedown28 {
+    margin-bottom: 0;
+  }
+
   /* Layout Elements */
 
   .link-container.link-container-4 {
     min-height: 60px;
+  }
+
+  .link-container.alt-link.link-container-4.space-two-rows.space32 {
+    margin-bottom: 8px;
   }
 
   li.list-item-container.nav-item {
@@ -4144,6 +4215,10 @@ a.glyph.navbar-toggler:active {
     padding-bottom: 0;
   }
 
+  p.paragraph.p-std {
+    padding-right: 0;
+  }
+
   a.link-text.nav-link.nav-link-tl {
     padding-bottom: 0;
     border-top: .25rem solid transparent;
@@ -4550,10 +4625,6 @@ a.glyph.navbar-toggler:active {
     margin-left: 20px;
   }
 
-  p.paragraph.p-std.strategi {
-    color: #000;
-  }
-
   p.paragraph.no-space-lower.p-standard-bold.white:hover {
     color: #fff;
   }
@@ -4586,10 +4657,6 @@ a.glyph.navbar-toggler:active {
 
   .link-container.link-container-5 {
     margin-top: 0;
-  }
-
-  .link-container.link-container-5.varfor {
-    margin-top: 50px;
   }
 
   .container-grid.sektion2-content {
@@ -4771,10 +4838,6 @@ a.glyph.navbar-toggler:active {
     color: #000;
   }
 
-  p.paragraph.ingress-guide {
-    color: #fff;
-  }
-
   p.paragraph span.h2-regular {
     font-weight: 700;
     font-size: 1.25rem;
@@ -4783,6 +4846,14 @@ a.glyph.navbar-toggler:active {
   p.paragraph span.paragraph-text-7 {
     font-weight: 700;
     font-size: 1.25rem;
+  }
+
+  p.paragraph.alt.ingress-guide.no-space-up {
+    margin-top: 0;
+  }
+
+  p.paragraph.down28.p-std.space-down {
+    margin-bottom: 28px;
   }
 
   p.paragraph a.paragraph-text-88:hover {
@@ -4843,6 +4914,10 @@ a.glyph.navbar-toggler:active {
 
   .link-container.link-container-1.three-col {
     min-width: 33%;
+  }
+
+  .link-container.alt-link.link-container-4.space32 {
+    margin-bottom: 32px;
   }
 
   .container-grid.collapse.navbar-collapse {

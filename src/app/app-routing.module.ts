@@ -1,3 +1,4 @@
+import { VemskalockaenmotvilligpublikochhurComponent } from './maincontent/publik/vemskalockaenmotvilligpublikochhur/vemskalockaenmotvilligpublikochhur.component';
 import { IntervjuHeatherComponent } from './maincontent/publik/video/intervju-heather/intervju-heather.component';
 import { HurvalkannerdudinpublikComponent } from './maincontent/publik/C/hurvalkannerdudinpublik/hurvalkannerdudinpublik.component';
 import { OrdlistaComponent } from './maincontent/publik/ordlista/ordlista.component';
@@ -33,6 +34,7 @@ const routes: Routes = [
 { path: 'quiz', component: QuizComponent, data: { bodyClass: 'body-1' }},
 { path: 'register', component: RegisterComponent, data: { bodyClass: 'reg-color'}  },
 { path: 'c/hur-val-kanner-du-din-publik', component: HurvalkannerdudinpublikComponent, data: { bodyClass: 'quizz-color'}},
+{ path: 'd/vem-ska-locka-en-motvillig-publik-och-hur', component: VemskalockaenmotvilligpublikochhurComponent, data: { bodyClass: 'body-1' }  },
 { path: 'c/video/:slug',component: IntervjuHeatherComponent },
 { path: 'c/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },
 { path: 'd/intervju/:slug',component: GenericIntervjuComponent, data: { bodyClass: 'intervju'} },

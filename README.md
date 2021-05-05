@@ -137,3 +137,17 @@ uppdaterat:
  to top image
  
 ```
+## version 1.0.2
+```
+Inlagt:
+  ny compoment vem-ska-locka-en-motvillig-publik-och-hur, youtubevid
+uppdaterat:
+  approuter: vem-ska-locka-en-motvillig-publik-och-hur video
+  Flytta brödtexten till ovanför videon video/heather-maitland. Struktur och wp
+  vilka vill ni ha ombord? Struktur och wp
+  Var det värt det?  Struktur och wp
+  hur ska ni tar er dit? Sruktur och wp, fel i css 
+  Varför göra det? Struktur och wp
+  Ta reda på mer om ditt närområde. wp
+  
+```

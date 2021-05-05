@@ -5,15 +5,17 @@
   <a (click)="goBack()"  data-placement="top" class="link-container link-container-6" style="z-index: 9999!important;" title="Tillbaka"></a>
 </div>
 <div class="container-grid container-21">
-  <div [innerHtml]="htmlPageData[0]?.acf.rubrik_item1">
+
+  <div [innerHtml]="htmlPageData[0]?.acf.content">
     <div class="loader"></div>
   </div>
-  <div class="rule rule-30-40">
-    <hr>
-  </div>
-  <p class="paragraph p-standard-about" [innerHtml]="htmlPageData[0]?.acf.content_item1"></p>
-  <div class="responsive-video vimeo video-platform-1" *ngIf="showVideobox" >
+
+  <div class="responsive-video youtube" *ngIf="showVideobox">
     <iframe [src]="videoUrl" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
 
+  <div [innerHtml]="htmlPageData[0]?.acf.content_item1"></div>
+
+
 </div>
+
